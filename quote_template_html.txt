@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>請款單</title>
+    <style>
+        body { font-family: "PingFang TC","Microsoft JhengHei",Arial,sans-serif; margin: 20px; line-height: 1.6; }
+
+        /* ── Header ───────────────────── */
+        .header { overflow: hidden; }
+        .logo   { float: left; width: 50px; height: 50px; margin-right: 10px; }
+        h1      { margin: 0; line-height: 50px; }
+        .meta   { text-align:right; font-size:12px; margin:4px 0 0 0; }
+        .meta p { margin:0; }
+
+        /* ── Info table (公司/客戶資料) ── */
+        table.info { width:100%; border-collapse: collapse; margin-top:12px; }
+        table.info th, table.info td { border:1px solid #0066cc; padding:6px; }
+        table.info th { background:#edf4fd; width:120px; font-weight:600; text-align:left; }
+
+        /* ── Detail table (項目明細) ── */
+        table.detail { width:100%; border-collapse: collapse; margin-top:14px; }
+        table.detail th, table.detail td { border:1px solid #0066cc; padding:6px; }
+        table.detail th { background:#e6f0fa; text-align:left; }
+        table.detail .amount { text-align:right; font-family:Consolas,"Courier New",monospace; }
+        table.detail tbody tr:nth-child(even){background:#f8f9fa;}
+        table.detail th.qty, table.detail td.qty { width:60px; text-align:center; }
+        /* table.detail th.amount { width:120px; } */
+
+        /* ── others ── */
+        .total { font-weight:bold; text-align:right; margin-top:10px; }
+        .footer{ margin-top:10px; }
+            /* 連接 info 與 detail 表格無縫 */
+        table.info { margin-bottom:0; }
+        /* table.info tr:last-child td { border-bottom:none; } */
+        table.detail { margin-top:0; }
+        /* table.detail tr:first-child th, table.detail tr:first-child td { border-top:none; } */
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="data:image/png;base64,{{ logo_base64 }}" class="logo" alt="Logo">
+        <h1>速利進銷存系統 - 請款單</h1>
+    </div>
+    <div class="meta">
+        <p>請款單編號：{{ quote_number }}</p>
+        <p>開立日期：{{ quote_date }}</p>
+    </div>
+
+    <!-- Info table (上半部分) -->
+        <!-- Info table (上半部分) → 改為 4 欄固定寬度，缺角問題解決 -->
+    <table class="info">
+
+                <tr><th>客戶</th><td colspan="3">{{ customer_name }}</td></tr>
+        <tr>
+            <th>開立公司</th><td>全葳軟體資訊有限公司</td>
+            <th>地址</th><td>244新北市林口區仁愛路二段518號13樓</td>
+        </tr>
+        <tr>
+            <th>統一編號</th><td>54857852</td>
+            <th>電話</th><td>0913&nbsp;201&nbsp;320</td>
+        </tr>
+    </table>
+
+    <!-- Detail table (下半部分) -->
+    <table class="detail">
+        <thead>
+            <tr>
+                <th>項目</th>
+                <th>說明</th>
+                <th class="qty">數量</th>
+                <th class="amount">請款金額</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in items %}
+            <tr>
+                <td>{{ row.item }}</td>
+                <td>{{ row.description }}</td>
+                <td class="qty">{{ row.quantity }}</td>
+                <td class="amount">{{ row.amount }}</td>
+            </tr>
+            {% endfor %}
+
+            {% if show_tax %}
+            <tr>
+                <td>營業稅</td>
+                <td>5%</td>
+                <td class="qty">-</td>
+                <td class="amount">{{ tax_amount }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+    <!-- Total & payment notice -->
+    <p class="total">
+        {% if show_tax %}總金額 新台幣 ${% else %}總金額 (未稅) 新台幣 ${% endif %}
+        {{ total_amount_with_tax }}
+    </p>
+
+    <p>{% if show_tax %}發票將於付款後另行開立，{% endif %}請於 {{ due_date }} 前付款<br>
+       如有任何問題請洽詢 Line 官方帳號 @cwsoft「全葳軟體資訊有限公司」<br>
+       或聯繫 {{ account_info.contact_name }} 先生，謝謝</p>
+
+    <!-- Bank info -->
+    <div class="footer">
+        <p>帳號資訊:</p>
+        <p>戶名: {{ account_info.name }}</p>
+        <p>匯款帳號: {{ account_info.account_number }}</p>
+        <p>行庫: {{ account_info.bank }}</p>
+        <p>聯絡人: {{ account_info.contact_name }} {{ account_info.contact_phone }}</p>
+    </div>
+</body>
+</html>

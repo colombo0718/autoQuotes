@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>選擇付款方式</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #333;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .pay-button {
+      font-size: 1.2em;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .linepay {
+      background-color: #06c755;
+    }
+
+    .linepay:hover {
+      background-color: #04b34a;
+    }
+
+    .ecpay {
+      background-color: #0070cc;
+    }
+
+    .ecpay:hover {
+      background-color: #005ca3;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      .pay-button {
+        font-size: 1em;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>請選擇付款方式</h1>
+  <div class="button-container">
+    <button class="pay-button linepay" onclick="location.href='/linepay'">使用 LINE Pay 付款</button>
+    <button class="pay-button ecpay" onclick="location.href='/ecpay'">使用 信用卡 付款</button>
+  </div>
+</body>
+</html>

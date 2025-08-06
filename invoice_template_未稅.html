@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>請款單</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { overflow: hidden; }
+        .logo { float: left; width: 50px; height: 50px; margin-right: 10px; }
+        h1 { margin: 0; line-height: 50px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; clear: both; }
+        th, td { border: 1px solid #0066cc; padding: 8px; text-align: left; }
+        th { background-color: #e6f0fa; }
+        .total { font-weight: bold; text-align: right; margin-top: 10px; }
+        .footer { margin-top: 10px; }
+        /* .info { margin-top: 10px; font-size: 12px; } */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="data:image/png;base64,{{ logo_base64 }}" class="logo" alt="Logo">
+        <h1>速利進銷存系統 - 請款單</h1>
+    </div>
+    <div class="info">
+        <p>客戶: {{ customer_name }}</p>
+        <p>開立公司: 全葳軟體資訊有限公司 | 統一編號: 54857852 | 地址: 244新北市林口區仁愛路二段518號13樓 | 電話: 0913 201 320</p>
+        <p>請款單編號: {{ invoice_number }} | 開立日期: {{ invoice_date }}</p>
+    </div>
+    <table>
+        <tr>
+            <th>項目</th>
+            <th>說明</th>
+            <th>數量</th>
+            <th>請款金額</th>
+        </tr>
+        {% for row in items %}
+        <tr>
+            <td>{{ row.item }}</td>
+            <td>{{ row.description }}</td>
+            <td>{{ row.quantity }}</td>
+            <td>{{ row.amount }}</td>
+        </tr>
+        {% endfor %}
+        <!-- <tr>
+            <td>營業稅</td>
+            <td>5%</td>
+            <td>-</td>
+            <td>{{ tax_amount }}</td>
+        </tr> -->
+    </table>
+    <p class="total">總金額 新台幣 $ {{ total_amount_with_tax }}</p>
+    <p>請於 {{ due_date }} 前付款<br>
+       如有任何問題請洽詢Line官方帳號@cwsoft "全葳軟體資訊有限公司"<br>
+       或聯繫{{ account_info.contact_name }}先生，謝謝</p>
+    
+    <div class="footer">
+        <p>帳號資訊:</p>
+        <p>戶名: {{ account_info.name }}</p>
+        <p>匯款帳號: {{ account_info.account_number }}</p>
+        <p>行庫: {{ account_info.bank }}</p>
+        <p>聯絡人: {{ account_info.contact_name }} {{ account_info.contact_phone }}</p>
+    </div>
+</body>
+</html>

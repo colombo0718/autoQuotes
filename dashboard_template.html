@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>會計帳務系統</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    /* table { border-collapse: collapse; width: 100%; } */
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    .status-ok { background-color: #c8e6c9; }
+    .status-warning { background-color: #fff9c4; }
+    .status-error { background-color: #ffcdd2; }
+    .off { background-color: #999999; }
+  </style>
+</head>
+<body>
+  <h1>會計帳務系統</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>主索引</th>
+        <th>公司名稱</th>
+        <th>授權點數</th>
+        <th>活躍分店</th>
+        <th>線上收費</th>
+        <th>報價需求</th>
+        <th>含稅未稅</th>
+        <th>收費月數</th>
+        <th>月租折扣(%off)</th>
+        <th>報價單</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for c in companies %}
+      <tr >
+        <td>{{ loop.index }}</td>
+        <td>{{ c.primary_key}}</td>
+        <td>{{ c.company_name }}</td>
+        <td class="{% if c.active_count > c.license_count %}status-error{% elif c.active_count == c.license_count  %}status-warning{% else %}status-ok{% endif %}">
+            {{ c.license_count }}</td>
+        <td class="{% if c.active_count > c.license_count %}status-error{% elif c.active_count == c.license_count  %}status-warning{% else %}status-ok{% endif %}">
+            {{ c.active_count }}</td>
+        <td class="{% if c.online_pay == 0 %}off{% endif %}">{{ c.online_pay }}</td>
+        <td class="{% if c.quote_required == 0 %}off{% endif %}">{{ c.quote_required }}</td>
+        <td>
+            <input type="checkbox"  checked >
+        </td>
+        <td>
+            <input type="range" min="1" max="12" step="1" value="{{ c.charge_months }}"
+                style="width: 100px;"
+                oninput="this.nextElementSibling.innerText = this.value + ' 個月'">
+            <span>{{ c.charge_months }} 個月</span>
+        </td>
+        <td>
+            <input type="range" min="0" max="90" step="10" value="{{ c.discount }}" 
+                style="width: 100px;"
+                oninput="this.nextElementSibling.innerText = this.value + '%';">
+            <span>{{ c.discount }}%</span>
+        </td>
+        <td><a href="{{ c.pdf_path }}" target="_blank">下載</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

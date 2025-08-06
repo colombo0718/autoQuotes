@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>請款單</title>
+    <style>
+        body { font-family: "PingFang TC","Microsoft JhengHei",Arial,sans-serif; margin: 20px; line-height: 1.6; }
+        .header { overflow: hidden; }
+        .logo   { float: left; width: 50px; height: 50px; margin-right: 10px; }
+        h1      { margin: 0; line-height: 50px; }
+
+
+        .meta   { width:100%; text-align:right; font-size:12px; margin:4px 0 0 0; }
+        .meta p { margin:0; }
+        /* 小型兩欄表 (編號 / 日期) */
+        .meta-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 14px; }
+        .meta-table td { border: 1px solid #9ec5fe; padding: 4px 6px; }
+        .meta-table td.label { width: 120px; background:#edf4fd; font-weight:600; }
+
+        /* 主資料表 */
+        table.main { width: 100%; border-collapse: collapse; margin-top: 14px; }
+        table.main th, table.main td { border: 1px solid #9ec5fe; padding: 6px; text-align: left; }
+        table.main th.head { background:#edf4fd; }
+        table.main .amount { text-align: right; font-family: Consolas,"Courier New",monospace; }
+        tbody tr:nth-child(even){background:#f8f9fa;}
+
+        .total  { font-weight: bold; text-align: right; margin-top: 10px; }
+        .footer { margin-top: 10px; }
+    </style>
+</head>
+<body>
+        <!-- 頁眉 → Logo + 標題 -->
+    <div class="header">
+        <img src="data:image/png;base64,{{ logo_base64 }}" class="logo" alt="Logo">
+        <h1>速利進銷存系統 - 請款單</h1>
+    </div>
+
+    <!-- 右上角小字 (編號 / 日期) -->
+        <div class="meta">
+            <p>請款單編號：{{ invoice_number }}</p>
+            <p>開立日期：{{ invoice_date }}</p>
+        </div>
+
+    <!-- 主資料表：先列公司/客戶資訊，再列項目明細 --> 
+    <table class="main">
+        <tbody>
+            <tr>
+                <th class="head" style="width:120px;">客戶</th>
+                <td colspan="3">{{ customer_name }}</td>
+            </tr>
+            <tr>
+                <th class="head">開立公司</th>
+                <td colspan="3">全葳軟體資訊有限公司</td>
+            </tr>
+            <tr>
+                <th class="head">統一編號</th>
+                <td>54857852</td>
+                <th class="head" style="width:120px;">電話</th>
+                <td>0913&nbsp;201&nbsp;320</td>
+            </tr>
+            <tr>
+                <th class="head">地址</th>
+                <td colspan="3">244新北市林口區仁愛路二段518號13樓</td>
+            </tr>
+
+            <!-- 明細表頭 -->
+            <tr>
+                <th class="head">項目</th>
+                <th class="head">說明</th>
+                <th class="head" style="width:60px;">數量</th>
+                <th class="head amount">請款金額</th>
+            </tr>
+
+            <!-- 明細列 -->
+            {% for row in items %}
+            <tr>
+                <td>{{ row.item }}</td>
+                <td>{{ row.description }}</td>
+                <td>{{ row.quantity }}</td>
+                <td class="amount">{{ row.amount }}</td>
+            </tr>
+            {% endfor %}
+
+            {% if show_tax %}
+            <tr>
+                <td>營業稅</td>
+                <td>5%</td>
+                <td>-</td>
+                <td class="amount">{{ tax_amount }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+    <!-- 總計 & 付款說明 -->
+    <p class="total">
+        {% if show_tax %}總金額 新台幣 ${% else %}總金額 (未稅) 新台幣 ${% endif %}
+        {{ total_amount_with_tax }}
+    </p>
+
+    <p>{% if show_tax %}發票將於付款後另行開立，{% endif %}請於 {{ due_date }} 前付款<br>
+       如有任何問題請洽詢 Line 官方帳號 @cwsoft「全葳軟體資訊有限公司」<br>
+       或聯繫 {{ account_info.contact_name }} 先生，謝謝</p>
+
+    <!-- 帳戶資訊 -->
+    <div class="footer">
+        <p>帳號資訊:</p>
+        <p>戶名: {{ account_info.name }}</p>
+        <p>匯款帳號: {{ account_info.account_number }}</p>
+        <p>行庫: {{ account_info.bank }}</p>
+        <p>聯絡人: {{ account_info.contact_name }} {{ account_info.contact_phone }}</p>
+    </div>
+</body>
+</html>
