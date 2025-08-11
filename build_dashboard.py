@@ -68,10 +68,10 @@ def get_companies_data():
         discount = row1[discount_idx] or 0
         unit_price = int(2600 * ((100-discount) / 100))
 
-        auth_quantity = 0
+        license_count = 0
         for row2 in rows2:
             if row2[1] == row1[0] and row2[2] == 1:
-                auth_quantity = row2[3]
+                license_count = row2[3]
 
         
         conn3 = pyodbc.connect(f'DRIVER={{{driver}}};SERVER={server};DATABASE={db_name};UID={username};PWD={password}')
@@ -83,7 +83,8 @@ def get_companies_data():
         close_idx = columns3.index("是否已收店")
         onlinepay_disable_idx = columns3.index("線上付款_停用")
 
-        active_branches = 0
+        active_count = 0
+        branches_info = []
         active_branch_names=[]
 
         for row3 in rows3:
@@ -96,10 +97,15 @@ def get_companies_data():
                 continue
             # print(f"{branch_numb:02d}",branch_name)
             # print( branch_numb ,branch_name)
-            
 
+            # 初始化分店資訊
+            branch_info = {
+                "name": branch_name,
+                "is_charge": False, # 預設為未活躍 不收費
+                "doc_num": None
+            }
+            
             # [檢索兩種單據]
-            is_active = False # 預設為未活躍
             current_date = date.today()
             yymm = f"{str(current_date.year)[2:]}{current_date.month:02d}"  # 取年份後兩位，月補零
 
@@ -113,7 +119,8 @@ def get_companies_data():
                 if document_number[1:5]==yymm:
                     if document_number[7:9] == branch_numb :
                         print(document_number)
-                        is_active = True
+                        branch_info["is_charge"] = True
+                        branch_info["doc_num"] = document_number
                         break
 
             cursor3.execute("SELECT 單據編號 FROM 出貨單")
@@ -123,41 +130,34 @@ def get_companies_data():
                 if document_number[1:5]==yymm:
                     if document_number[7:9] == branch_numb :
                         print(document_number)
-                        is_active = True
+                        branch_info["is_charge"] = True
+                        branch_info["doc_num"] = document_number
                         break
-            # print( branch_numb ,branch_name,is_active)
-            # if branch_name not in ['ABC', "鑫瑞總倉", "XYZ總倉",'總部']: # 專門針對總倉的折衷辦法
-            #     active_branch_names.append(branch_name)
-            if is_active :
-                active_branches+=1
+
+            if branch_info["is_charge"]: 
+                active_count+=1
                 active_branch_names.append(branch_name)
-            
-        #     for r in rows3:
-        #         if r[onlinepay_disable_idx] == 1 or r[close_idx] == 1 or r[1] == "總倉":
-        #             continue
-        #         active_branches.append(r[1])
-        #     cursor3.close()
-        #     conn3.close()
-        # except Exception as e:
-        #     print(f"⚠ 無法連線 {db_name}：{e}")
-        #     active_branches = []
+
+            branches_info.append(branch_info)
 
         # 判斷需報價
         quote_required=0
-        if  active_branches >= auth_quantity and online_pay:
+        if  active_count >= license_count and online_pay:
             quote_required=1
 
         print(active_branch_names)
         companies.append({
             "primary_key":primary_key,
             "company_name": db_name,
-            "branches": active_branch_names,
-            "active_branche_num": active_branches,
-            "license_count": auth_quantity,
+            "branches_info": branches_info,
+            "branches": active_branch_names,  # 過度給generate_quote()的資料
+            "license_count": license_count,
+            "active_count": active_count,
             "online_pay":online_pay,
             "quote_required":quote_required,
             "charge_months": charge_months,
-            "discount": discount
+            "discount": discount,
+            "unit_price":unit_price
         })
 
     return companies
@@ -167,22 +167,21 @@ if __name__ == "__main__":
     companies_data = get_companies_data()
     for company in companies_data:
         unit_price = 2600
-        months = 6
-        if company["company_name"] in ["紳鴻", "有支手機", "布魯斯"]:
-            months = 1
-        if company["company_name"] == "艾瑪":
-            unit_price = 1300
+        # months = 6
+        # if company["company_name"] in ["紳鴻", "有支手機", "布魯斯"]:
+        #     months = 1
+        # if company["company_name"] == "艾瑪":
+        #     unit_price = 1300
 
         pdf_path = generate_quote(
             company_data=company,
-            period_months=months,
+            period_months=company["charge_months"],
             price_includes_tax=True,
-            unit_price=unit_price,
-            template_name="quote_template_html.txt",  # 或改成 quote_template.html
+            unit_price=company["unit_price"],
+            template_name="quote_template2.html",  # 或改成 quote_template.html
             output_dir="output_quotes"
         )
         company["pdf_path"] = str(pdf_path).replace("\\", "/")
-        company["active_count"] = len(company["branches"])
 
     # 產出 HTML 儀表板
     env = Environment(loader=FileSystemLoader("."))

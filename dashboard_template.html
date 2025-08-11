@@ -8,10 +8,28 @@
     /* table { border-collapse: collapse; width: 100%; } */
     table { border-collapse: collapse; }
     th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    thead th {
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 1;
+    }
     .status-ok { background-color: #c8e6c9; }
     .status-warning { background-color: #fff9c4; }
     .status-error { background-color: #ffcdd2; }
     .off { background-color: #999999; }
+    .disabled-link {
+      color: #ccc;              /* 顏色變淡 */
+      pointer-events: none;       /* 無法點擊 */
+      text-decoration: none;      /* 去掉底線 */
+      cursor: default;            /* 游標變普通 */
+    }
+    .enable-link {
+      color: #0000ee;
+      text-decoration: underline;
+      pointer-events: auto;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -24,12 +42,14 @@
         <th>公司名稱</th>
         <th>授權點數</th>
         <th>活躍分店</th>
+        <th>分店資訊</th>
         <th>線上收費</th>
         <th>報價需求</th>
         <th>含稅未稅</th>
         <th>收費月數</th>
         <th>月租折扣(%off)</th>
-        <th>報價單</th>
+        <th>產出單據</th>
+        <th>檢視單據</th>
       </tr>
     </thead>
     <tbody>
@@ -42,8 +62,13 @@
             {{ c.license_count }}</td>
         <td class="{% if c.active_count > c.license_count %}status-error{% elif c.active_count == c.license_count  %}status-warning{% else %}status-ok{% endif %}">
             {{ c.active_count }}</td>
-        <td class="{% if c.online_pay == 0 %}off{% endif %}">{{ c.online_pay }}</td>
-        <td class="{% if c.quote_required == 0 %}off{% endif %}">{{ c.quote_required }}</td>
+        <td>
+          <button onclick="document.getElementById('modal_{{ c.primary_key }}').showModal()">查看</button>
+        </td>
+        <td class="{% if c.online_pay == 0 %}off{% endif %}">
+            {{ c.online_pay }}</td>
+        <td class="{% if c.quote_required == 0 %}off{% endif %}">
+            {{ c.quote_required }}</td>
         <td>
             <input type="checkbox"  checked >
         </td>
@@ -59,10 +84,49 @@
                 oninput="this.nextElementSibling.innerText = this.value + '%';">
             <span>{{ c.discount }}%</span>
         </td>
-        <td><a href="{{ c.pdf_path }}" target="_blank">下載</a></td>
+        <td>
+          <button onclick="
+            document.getElementById('download_{{ c.primary_key }}').classList.remove('disabled-link'); 
+            document.getElementById('download_{{ c.primary_key }}').classList.add('enable-link');">
+            生成</button>
+        </td>
+        <td>
+          <a href="{{ c.pdf_path }}" target="_blank" id="download_{{ c.primary_key }}"
+            class="{% if not c.quote_required %}disabled-link{% endif %}">
+            下載
+          </a>
+        </td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
+
+
+  {% for c in companies %}
+  <dialog id="modal_{{ c.primary_key }}">
+    <h3>{{ c.company_name }} - 分店資訊</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>分店名稱</th>
+          <th>是否收費</th>
+          <th>近期單號</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for b in c.branches_info %}
+        <tr>
+          <td>{{ b.name }}</td>
+          <td><input type="checkbox" {% if b.is_charge %}checked{% endif %}></td>
+          <td>{{ b.doc_num }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <button onclick="this.parentElement.close()">關閉</button>
+  </dialog>
+  {% endfor %}
+
+
 </body>
 </html>

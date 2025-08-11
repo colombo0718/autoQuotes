@@ -236,7 +236,7 @@ if __name__ == "__main__":
         period_months=6,              # 本次開立 1 個月
         price_includes_tax=False,     # 單價未含稅 → 之後加 5%
         tax_rate=0.05,                # 稅率（預設 5%）
-        template_name="quote_template.html",  # Jinja2 樣板
+        template_name="quote_template2.html",  # Jinja2 樣板
         output_dir="output_quotes",   # PDF 輸出資料夾
     )
 
