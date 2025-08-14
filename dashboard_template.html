@@ -91,7 +91,7 @@
             生成</button>
         </td>
         <td>
-          <a href="{{ c.pdf_path }}" target="_blank" id="download_{{ c.primary_key }}"
+          <a href="{{ c.quote_path }}" target="_blank" id="download_{{ c.primary_key }}"
             class="{% if not c.quote_required %}disabled-link{% endif %}">
             下載
           </a>
@@ -109,6 +109,7 @@
       <thead>
         <tr>
           <th>分店名稱</th>
+          <th>是否總倉</th>
           <th>是否收費</th>
           <th>近期單號</th>
         </tr>
@@ -117,6 +118,7 @@
         {% for b in c.branches_info %}
         <tr>
           <td>{{ b.name }}</td>
+          <td>{{ b.is_main }}</td>
           <td><input type="checkbox" {% if b.is_charge %}checked{% endif %}></td>
           <td>{{ b.doc_num }}</td>
         </tr>

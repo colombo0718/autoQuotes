@@ -1,0 +1,5459 @@
+[
+  {
+    "primary_key": 4,
+    "company_name": "太子",
+    "branches_info": [
+      {
+        "name": "太子科技總店",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250811000001"
+      },
+      {
+        "name": "蘆洲長安店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070002"
+      }
+    ],
+    "branches": [
+      "蘆洲長安店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_太子_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 6,
+    "company_name": "成峰",
+    "branches_info": [
+      {
+        "name": "雲璟總部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250811000001"
+      },
+      {
+        "name": "遠傳北新店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250811010001"
+      }
+    ],
+    "branches": [
+      "遠傳北新店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_成峰_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 7,
+    "company_name": "百發",
+    "branches_info": [
+      {
+        "name": "百發仁三店",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "P250813000006"
+      }
+    ],
+    "branches": [],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_百發_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 10,
+    "company_name": "保東",
+    "branches_info": [
+      {
+        "name": "八德店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010003"
+      },
+      {
+        "name": "永康店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813070003"
+      }
+    ],
+    "branches": [
+      "八德店",
+      "永康店"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_保東_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 17,
+    "company_name": "義鋒",
+    "branches_info": [
+      {
+        "name": "聯強南華店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812010001"
+      },
+      {
+        "name": "聯強寶山店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "義鋒網路",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "聯強南華店",
+      "聯強寶山店",
+      "義鋒網路"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_義鋒_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 18,
+    "company_name": "聯福",
+    "branches_info": [
+      {
+        "name": "總部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250811000003"
+      },
+      {
+        "name": "Apple",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813010002"
+      },
+      {
+        "name": "SONY",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813020001"
+      },
+      {
+        "name": "Vass1",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250810030001"
+      },
+      {
+        "name": "龍潭業代",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813040002"
+      },
+      {
+        "name": "ASUS",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813050001"
+      },
+      {
+        "name": "Vass4",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "SAM",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813070001"
+      },
+      {
+        "name": "Vass2",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "同行客訂",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "湖口業代",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812100004"
+      },
+      {
+        "name": "外倉在途中",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "南崁業代",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中壢業代",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813130004"
+      },
+      {
+        "name": "總部出貨",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813140001"
+      },
+      {
+        "name": "竹北業代",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813150003"
+      },
+      {
+        "name": "新竹業代",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813160005"
+      },
+      {
+        "name": "八德業代",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812170001"
+      },
+      {
+        "name": "林口業代",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "Apple",
+      "SONY",
+      "Vass1",
+      "龍潭業代",
+      "ASUS",
+      "Vass4",
+      "SAM",
+      "Vass2",
+      "同行客訂",
+      "湖口業代",
+      "外倉在途中",
+      "南崁業代",
+      "中壢業代",
+      "總部出貨",
+      "竹北業代",
+      "新竹業代",
+      "八德業代",
+      "林口業代"
+    ],
+    "license_count": 0,
+    "active_count": 12,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_聯福_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 19,
+    "company_name": "台釱",
+    "branches_info": [
+      {
+        "name": "台釱總倉",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250811000001"
+      },
+      {
+        "name": "溪湖TWM",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811020005"
+      },
+      {
+        "name": "二林TWM",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030005"
+      },
+      {
+        "name": "田中TWM",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813040011"
+      },
+      {
+        "name": "田中T-STAR",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "北斗TWM",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070009"
+      }
+    ],
+    "branches": [
+      "溪湖TWM",
+      "二林TWM",
+      "田中TWM",
+      "田中T-STAR",
+      "北斗TWM"
+    ],
+    "license_count": 0,
+    "active_count": 4,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_台釱_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 30,
+    "company_name": "環球",
+    "branches_info": [
+      {
+        "name": "環球管理部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "環球中正店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010005"
+      }
+    ],
+    "branches": [
+      "環球中正店"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_環球_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 31,
+    "company_name": "聯合",
+    "branches_info": [
+      {
+        "name": "後勤管理處",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "聯合電信行",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "傳遠電信行",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020015"
+      },
+      {
+        "name": "林森二樓倉庫",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "怡禾企業社",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "聯合電信行",
+      "傳遠電信行",
+      "林森二樓倉庫",
+      "怡禾企業社"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_聯合_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 35,
+    "company_name": "感動",
+    "branches_info": [
+      {
+        "name": "總 倉",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250813000002"
+      },
+      {
+        "name": "中山店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "成功店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020003"
+      },
+      {
+        "name": "台南特約總倉",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812030001"
+      },
+      {
+        "name": "景新店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "興南店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813050002"
+      },
+      {
+        "name": "景平店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812060003"
+      },
+      {
+        "name": "員山店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813070003"
+      },
+      {
+        "name": "幸福店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "仁愛店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812090007"
+      },
+      {
+        "name": "容生倉",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813100001"
+      },
+      {
+        "name": "大摩倉",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "仁和店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "迴龍萬壽",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "三民建興",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "高雄茄萣",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812150016"
+      },
+      {
+        "name": "佳里光復",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "麻豆中山",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812170006"
+      },
+      {
+        "name": "善化站前",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "中山店",
+      "成功店",
+      "台南特約總倉",
+      "景新店",
+      "興南店",
+      "景平店",
+      "員山店",
+      "幸福店",
+      "仁愛店",
+      "容生倉",
+      "大摩倉",
+      "仁和店",
+      "迴龍萬壽",
+      "三民建興",
+      "高雄茄萣",
+      "佳里光復",
+      "麻豆中山",
+      "善化站前"
+    ],
+    "license_count": 0,
+    "active_count": 9,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_感動_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 37,
+    "company_name": "六六屋",
+    "branches_info": [
+      {
+        "name": "六六屋",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010004"
+      },
+      {
+        "name": "新機地",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020008"
+      },
+      {
+        "name": "新豐店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813030001"
+      },
+      {
+        "name": "暖暖店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813040002"
+      },
+      {
+        "name": "網路",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813050007"
+      },
+      {
+        "name": "遠傳店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813080004"
+      },
+      {
+        "name": "暖暖遠傳",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813100001"
+      }
+    ],
+    "branches": [
+      "六六屋",
+      "新機地",
+      "新豐店",
+      "暖暖店",
+      "網路",
+      "遠傳店",
+      "暖暖遠傳"
+    ],
+    "license_count": 0,
+    "active_count": 7,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_六六屋_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 39,
+    "company_name": "怡呈",
+    "branches_info": [
+      {
+        "name": "頂尖大本營",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250808010003"
+      },
+      {
+        "name": "沙田遠傳",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020007"
+      },
+      {
+        "name": "SONY專賣店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813040002"
+      },
+      {
+        "name": "台灣大哥大",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813050003"
+      },
+      {
+        "name": "靜宜遠傳",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "捷鑫通訊行",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "頂尖大本營",
+      "沙田遠傳",
+      "SONY專賣店",
+      "台灣大哥大",
+      "靜宜遠傳",
+      "捷鑫通訊行"
+    ],
+    "license_count": 0,
+    "active_count": 4,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_怡呈_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 42,
+    "company_name": "佳展",
+    "branches_info": [
+      {
+        "name": "神腦",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010005"
+      },
+      {
+        "name": "神乎奇機",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "通霄遠傳",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台灣大哥大",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "苑裡中山",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812050004"
+      },
+      {
+        "name": "大甲中山",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "神腦",
+      "神乎奇機",
+      "通霄遠傳",
+      "台灣大哥大",
+      "苑裡中山",
+      "大甲中山"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_佳展_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 43,
+    "company_name": "達文西",
+    "branches_info": [
+      {
+        "name": "總管理處",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250812000003"
+      },
+      {
+        "name": "台哥大-嘉義興業西",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      },
+      {
+        "name": "台灣大哥大-麻豆中山",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030014"
+      },
+      {
+        "name": "1300電通",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台灣大哥大-台南府前",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "台哥大-嘉義興業西",
+      "台灣大哥大-麻豆中山",
+      "1300電通",
+      "台灣大哥大-台南府前"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_達文西_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 45,
+    "company_name": "超訊",
+    "branches_info": [
+      {
+        "name": "台哥大-民雄店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010010"
+      },
+      {
+        "name": "中華-民族店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020001"
+      },
+      {
+        "name": "神腦-民權店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030002"
+      },
+      {
+        "name": "中華-東榮店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "亞太-林森店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "亞太-民族店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大-水上中興",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070012"
+      },
+      {
+        "name": "遠傳-建國店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "台哥大-民雄店",
+      "中華-民族店",
+      "神腦-民權店",
+      "中華-東榮店",
+      "亞太-林森店",
+      "亞太-民族店",
+      "台哥大-水上中興",
+      "遠傳-建國店"
+    ],
+    "license_count": 0,
+    "active_count": 4,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_超訊_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 48,
+    "company_name": "誠訊",
+    "branches_info": [
+      {
+        "name": "龜山",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "建國",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020005"
+      },
+      {
+        "name": "迴龍",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "文化二",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "景美",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "三峽中正",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "羅東中正",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811070007"
+      },
+      {
+        "name": "羅東興東",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812080007"
+      },
+      {
+        "name": "羅東中正南",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "龜山",
+      "建國",
+      "迴龍",
+      "文化二",
+      "景美",
+      "三峽中正",
+      "羅東中正",
+      "羅東興東",
+      "羅東中正南"
+    ],
+    "license_count": 0,
+    "active_count": 3,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_誠訊_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 51,
+    "company_name": "泛都",
+    "branches_info": [
+      {
+        "name": "三多",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "左營Ⅱ",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020001"
+      },
+      {
+        "name": "華榮",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "西子灣",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台灣之星-左營店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "三多",
+      "左營Ⅱ",
+      "華榮",
+      "西子灣",
+      "台灣之星-左營店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_泛都_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 59,
+    "company_name": "辰銘",
+    "branches_info": [
+      {
+        "name": "總公司",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "鶯歌南昌",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010005"
+      },
+      {
+        "name": "鶯歌中正",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "鶯歌南昌",
+      "鶯歌中正"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_辰銘_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 60,
+    "company_name": "韡碩",
+    "branches_info": [
+      {
+        "name": "龍安店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811010003"
+      },
+      {
+        "name": "桃鶯店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "龍安2店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "復興店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "龍安店",
+      "桃鶯店",
+      "龍安2店",
+      "復興店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_韡碩_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 67,
+    "company_name": "正欣",
+    "branches_info": [
+      {
+        "name": "A1-正欣",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250808030001"
+      },
+      {
+        "name": "管理處",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "A1-正欣"
+    ],
+    "license_count": 8,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_正欣_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 72,
+    "company_name": "桃鶯",
+    "branches_info": [
+      {
+        "name": "總部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250812000001"
+      },
+      {
+        "name": "台灣桃鶯",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010023"
+      },
+      {
+        "name": "台灣更寮腳",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812040030"
+      },
+      {
+        "name": "遠傳巨展",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812100023"
+      },
+      {
+        "name": "介壽888",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "遠傳麻園",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台灣之星桃園八德",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "大溪崎頂",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "遠傳介壽(更寮腳)",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813160004"
+      }
+    ],
+    "branches": [
+      "台灣桃鶯",
+      "台灣更寮腳",
+      "遠傳巨展",
+      "介壽888",
+      "遠傳麻園",
+      "台灣之星桃園八德",
+      "大溪崎頂",
+      "遠傳介壽(更寮腳)"
+    ],
+    "license_count": 0,
+    "active_count": 4,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_桃鶯_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 74,
+    "company_name": "天亞",
+    "branches_info": [
+      {
+        "name": "南平低頭族",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "天亞大園",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020003"
+      },
+      {
+        "name": "天亞大興",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "天亞南崁",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811040004"
+      }
+    ],
+    "branches": [
+      "南平低頭族",
+      "天亞大園",
+      "天亞大興",
+      "天亞南崁"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_天亞_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 76,
+    "company_name": "翔生",
+    "branches_info": [
+      {
+        "name": "樂聲通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250807010002"
+      }
+    ],
+    "branches": [
+      "樂聲通訊"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_翔生_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 78,
+    "company_name": "src2008",
+    "branches_info": [],
+    "branches": [],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_src2008_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 79,
+    "company_name": "遠寬",
+    "branches_info": [
+      {
+        "name": "美麗華產品展示中心",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250810010001"
+      },
+      {
+        "name": "三創產品展示中心",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030002"
+      },
+      {
+        "name": "產品序號管理倉",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813040008"
+      },
+      {
+        "name": "巨城快閃店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "美麗華產品展示中心",
+      "三創產品展示中心",
+      "產品序號管理倉",
+      "巨城快閃店",
+      ""
+    ],
+    "license_count": 0,
+    "active_count": 3,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_遠寬_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 82,
+    "company_name": "馹灃",
+    "branches_info": [
+      {
+        "name": "果林店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813030002"
+      },
+      {
+        "name": "南崁店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250807050004"
+      }
+    ],
+    "branches": [
+      "果林店",
+      "南崁店"
+    ],
+    "license_count": 12,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_馹灃_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 83,
+    "company_name": "威勝",
+    "branches_info": [
+      {
+        "name": "土城永寧",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "文山景美",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020002"
+      },
+      {
+        "name": "新店民族",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "勝泉通訊",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "木柵木新",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "五華大哥大",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "鶯歌建國",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070010"
+      }
+    ],
+    "branches": [
+      "土城永寧",
+      "文山景美",
+      "新店民族",
+      "勝泉通訊",
+      "木柵木新",
+      "五華大哥大",
+      "鶯歌建國"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_威勝_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 87,
+    "company_name": "齊越",
+    "branches_info": [
+      {
+        "name": "齊奕",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "奕大",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813030002"
+      }
+    ],
+    "branches": [
+      "齊奕",
+      "奕大"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_齊越_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 90,
+    "company_name": "航聯",
+    "branches_info": [
+      {
+        "name": "航聯",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010002"
+      },
+      {
+        "name": "大翔",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020008"
+      }
+    ],
+    "branches": [
+      "航聯",
+      "大翔"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_航聯_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 95,
+    "company_name": "祺申",
+    "branches_info": [
+      {
+        "name": "平鎮中豐店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020004"
+      }
+    ],
+    "branches": [
+      "平鎮中豐店"
+    ],
+    "license_count": 18,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_祺申_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 99,
+    "company_name": "摩斯",
+    "branches_info": [
+      {
+        "name": "總倉(代理商)",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "預備倉",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "網路商城",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "總倉-遠傳",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "總倉-太電",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台南P",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "高雄P",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "嘉義P",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "寄貨倉",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "大螢膜PRO-南紡夢時代百貨",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "SAM-善化中山",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "FET-麻豆興中",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "FET-嘉義仁愛",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "FET-台南仁和",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "FET-高雄建興",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "TCC-台南仁和",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "FET-新市中正",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "總倉(圓貿配件)",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "大螢膜PRO-夜市",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "TCC-文賢",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "FET-善化站前",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "大摩-仁和",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "TCC-高雄大昌",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "FET-麻豆中山",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "TCC-中山北",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "善化P",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "大螢膜PRO-遠東百貨",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "FET-高雄茄萣",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "TCC-高雄茄萣",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "預備倉",
+      "網路商城",
+      "總倉-遠傳",
+      "總倉-太電",
+      "台南P",
+      "高雄P",
+      "嘉義P",
+      "寄貨倉",
+      "大螢膜PRO-南紡夢時代百貨",
+      "SAM-善化中山",
+      "FET-麻豆興中",
+      "FET-嘉義仁愛",
+      "FET-台南仁和",
+      "FET-高雄建興",
+      "TCC-台南仁和",
+      "FET-新市中正",
+      "總倉(圓貿配件)",
+      "大螢膜PRO-夜市",
+      "TCC-文賢",
+      "FET-善化站前",
+      "大摩-仁和",
+      "TCC-高雄大昌",
+      "FET-麻豆中山",
+      "TCC-中山北",
+      "善化P",
+      "大螢膜PRO-遠東百貨",
+      "FET-高雄茄萣",
+      "TCC-高雄茄萣"
+    ],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_摩斯_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 100,
+    "company_name": "富亞士",
+    "branches_info": [
+      {
+        "name": "富亞士",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "富亞士"
+    ],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_富亞士_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 101,
+    "company_name": "歐肯得",
+    "branches_info": [
+      {
+        "name": "HB",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250813000018"
+      },
+      {
+        "name": "經銷商(寄賣)",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "經銷商(寄賣)"
+    ],
+    "license_count": 3,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_歐肯得_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 104,
+    "company_name": "鉅廷",
+    "branches_info": [
+      {
+        "name": "總管理處",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大-朴子山通",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大-嘉義垂楊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020003"
+      },
+      {
+        "name": "台哥大-中埔中山",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大-佳里光復",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "台哥大-朴子山通",
+      "台哥大-嘉義垂楊",
+      "台哥大-中埔中山",
+      "台哥大-佳里光復"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_鉅廷_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 110,
+    "company_name": "金馬講",
+    "branches_info": [
+      {
+        "name": "金馬講-慈文(原旗艦)",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250808010003"
+      },
+      {
+        "name": "金馬講-南平",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020004"
+      },
+      {
+        "name": "金馬講-南崁",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "亞太-龍安(撤店)",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "遠傳-龍安",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812050009"
+      },
+      {
+        "name": "金馬講-藝文(撤店)",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "金馬講-大竹",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813070002"
+      },
+      {
+        "name": "亞太-南平(撤店)",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台星-龍安(撤店)",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "金馬講-慈文(原旗艦)",
+      "金馬講-南平",
+      "金馬講-南崁",
+      "亞太-龍安(撤店)",
+      "遠傳-龍安",
+      "金馬講-藝文(撤店)",
+      "金馬講-大竹",
+      "亞太-南平(撤店)",
+      "台星-龍安(撤店)"
+    ],
+    "license_count": 0,
+    "active_count": 4,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_金馬講_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 116,
+    "company_name": "遠輝",
+    "branches_info": [
+      {
+        "name": "遠傳南屯黎明",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010001"
+      }
+    ],
+    "branches": [
+      "遠傳南屯黎明"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_遠輝_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 123,
+    "company_name": "邦喬",
+    "branches_info": [
+      {
+        "name": "大里-大明(總倉)",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "大里-成功(台哥大)",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010004"
+      },
+      {
+        "name": "大里-內新(台哥大)",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020007"
+      },
+      {
+        "name": "潭子-中山(台哥大)",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813040007"
+      }
+    ],
+    "branches": [
+      "大里-成功(台哥大)",
+      "大里-內新(台哥大)",
+      "潭子-中山(台哥大)"
+    ],
+    "license_count": 0,
+    "active_count": 3,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_邦喬_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 127,
+    "company_name": "卓盛",
+    "branches_info": [
+      {
+        "name": "龍安店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "莊一店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811010024"
+      },
+      {
+        "name": "已出貨",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "管理部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大榮民",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "忠孝店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "義勇店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "平鎮大潤發店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "網通-永安店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "廣福店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "福國店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "分倉",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "OPPO店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "A+ STORE",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "網通-龍東店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "龍東店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大仁愛",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "過嶺店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中山東",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "新生店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812210014"
+      },
+      {
+        "name": "REALME",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "網通-北龍店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中壢NOVA店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "遠傳興豐店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "尖山店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大埔心",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大北龍",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大介壽",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "網通-中正店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "遠傳仁愛店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "ASUS專賣店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "龍安店",
+      "莊一店",
+      "已出貨",
+      "台哥大榮民",
+      "忠孝店",
+      "中華店",
+      "義勇店",
+      "平鎮大潤發店",
+      "網通-永安店",
+      "廣福店",
+      "福國店",
+      "分倉",
+      "OPPO店",
+      "A+ STORE",
+      "網通-龍東店",
+      "龍東店",
+      "台哥大仁愛",
+      "過嶺店",
+      "中山東",
+      "新生店",
+      "REALME",
+      "網通-北龍店",
+      "中壢NOVA店",
+      "遠傳興豐店",
+      "尖山店",
+      "台哥大埔心",
+      "台哥大北龍",
+      "台哥大介壽",
+      "網通-中正店",
+      "遠傳仁愛店",
+      "ASUS專賣店"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_卓盛_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 129,
+    "company_name": "星威",
+    "branches_info": [
+      {
+        "name": "星威通訊",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "星威-文七店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020003"
+      },
+      {
+        "name": "星威-文二店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "星威通訊",
+      "星威-文七店",
+      "星威-文二店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_星威_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 136,
+    "company_name": "全葳",
+    "branches_info": [
+      {
+        "name": "全葳",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "全葳"
+    ],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_全葳_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 140,
+    "company_name": "光速",
+    "branches_info": [
+      {
+        "name": "光速總倉",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "光速博愛店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "光速博愛店"
+    ],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_光速_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 141,
+    "company_name": "艾瑪",
+    "branches_info": [
+      {
+        "name": "鑫瑞總倉",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250813000002"
+      },
+      {
+        "name": "鑫瑞(網路)",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250808030001"
+      }
+    ],
+    "branches": [
+      "鑫瑞(網路)"
+    ],
+    "license_count": 5,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_艾瑪_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 142,
+    "company_name": "成翊",
+    "branches_info": [
+      {
+        "name": "成翊通訊",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "成翊通訊"
+    ],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_成翊_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 145,
+    "company_name": "家智",
+    "branches_info": [
+      {
+        "name": "家智通訊行",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010003"
+      },
+      {
+        "name": "前進通訊",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "家智通訊行",
+      "前進通訊"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_家智_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 148,
+    "company_name": "祐祐",
+    "branches_info": [
+      {
+        "name": "祐祐通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010005"
+      }
+    ],
+    "branches": [
+      "祐祐通訊"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_祐祐_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 149,
+    "company_name": "丞品",
+    "branches_info": [
+      {
+        "name": "丞品通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250805010001"
+      }
+    ],
+    "branches": [
+      "丞品通訊"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_丞品_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 155,
+    "company_name": "捷迅",
+    "branches_info": [
+      {
+        "name": "捷迅",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      }
+    ],
+    "branches": [
+      "捷迅"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_捷迅_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 159,
+    "company_name": "大不同",
+    "branches_info": [
+      {
+        "name": "大不同-總店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "新公館店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250809030001"
+      }
+    ],
+    "branches": [
+      "大不同-總店",
+      "新公館店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 1,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_大不同_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 164,
+    "company_name": "均威",
+    "branches_info": [
+      {
+        "name": "總部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "五甲店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250809010001"
+      }
+    ],
+    "branches": [
+      "五甲店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_均威_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 172,
+    "company_name": "閎海",
+    "branches_info": [
+      {
+        "name": "朴子文化",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "閎海數位",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "民族二店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "土庫遠傳店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "灣橋台哥大",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "林森台星",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "竹崎遠傳門市",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "閎海數位",
+      "民族二店",
+      "土庫遠傳店",
+      "灣橋台哥大",
+      "林森台星",
+      "竹崎遠傳門市"
+    ],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_閎海_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 175,
+    "company_name": "肝鐵仁",
+    "branches_info": [],
+    "branches": [],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_肝鐵仁_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 178,
+    "company_name": "翰諾",
+    "branches_info": [
+      {
+        "name": "通訊世代",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010003"
+      }
+    ],
+    "branches": [
+      "通訊世代"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_翰諾_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 181,
+    "company_name": "太和",
+    "branches_info": [
+      {
+        "name": "南平低頭族",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "太和數位",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250805020003"
+      }
+    ],
+    "branches": [
+      "南平低頭族",
+      "太和數位"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_太和_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 183,
+    "company_name": "關廟",
+    "branches_info": [
+      {
+        "name": "關廟台灣大哥大",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812010001"
+      },
+      {
+        "name": "西港台灣大哥大",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "關廟台灣大哥大",
+      "西港台灣大哥大"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_關廟_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 185,
+    "company_name": "禾創",
+    "branches_info": [
+      {
+        "name": "凱威斯寵物洗劑-Kay Weiss",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "基隆店-禾創",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250804010001"
+      }
+    ],
+    "branches": [
+      "基隆店-禾創"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_禾創_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 190,
+    "company_name": "海悅",
+    "branches_info": [
+      {
+        "name": "海悅",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250813000012"
+      },
+      {
+        "name": "晉榮",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "晉榮"
+    ],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_海悅_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 194,
+    "company_name": "台哥大白河",
+    "branches_info": [
+      {
+        "name": "台哥大-白河",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010003"
+      }
+    ],
+    "branches": [
+      "台哥大-白河"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 50,
+    "unit_price": 1300,
+    "quote_path": "output_quotes/quote_台哥大白河_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 206,
+    "company_name": "昊星",
+    "branches_info": [
+      {
+        "name": "昊星-中正店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811020003"
+      },
+      {
+        "name": "高強-大業店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250809040005"
+      },
+      {
+        "name": "寶山店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "昊星-中正店",
+      "高強-大業店",
+      "寶山店"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_昊星_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 209,
+    "company_name": "君品",
+    "branches_info": [
+      {
+        "name": "君品通訊行",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010002"
+      },
+      {
+        "name": "君品南崁店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813030001"
+      }
+    ],
+    "branches": [
+      "君品通訊行",
+      "君品南崁店"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_君品_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 221,
+    "company_name": "同音",
+    "branches_info": [
+      {
+        "name": "同音通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813010005"
+      },
+      {
+        "name": "南崁倉",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "同音通訊",
+      "南崁倉"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_同音_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 223,
+    "company_name": "兆洋",
+    "branches_info": [
+      {
+        "name": "遠傳龍江",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "遠傳中正北",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250808020002"
+      },
+      {
+        "name": "遠傳桂林",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812030001"
+      }
+    ],
+    "branches": [
+      "遠傳龍江",
+      "遠傳中正北",
+      "遠傳桂林"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_兆洋_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 241,
+    "company_name": "昌煜洋",
+    "branches_info": [
+      {
+        "name": "昌煜洋-總部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中和德光店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813050001"
+      },
+      {
+        "name": "五股成泰店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070003"
+      }
+    ],
+    "branches": [
+      "中和德光店",
+      "五股成泰店"
+    ],
+    "license_count": 0,
+    "active_count": 2,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_昌煜洋_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 242,
+    "company_name": "天成",
+    "branches_info": [
+      {
+        "name": "總部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "樹林中華店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020001"
+      },
+      {
+        "name": "新莊富國店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "新店光明店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中和員山店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "樹林中華店",
+      "新莊富國店",
+      "新店光明店",
+      "中和員山店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_天成_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 243,
+    "company_name": "立亞",
+    "branches_info": [
+      {
+        "name": "總公司",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "土城學府店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "蘆洲長安店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812060001"
+      },
+      {
+        "name": "板橋樹林店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台星-長榮店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台星-中央店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "土城學府店",
+      "蘆洲長安店",
+      "板橋樹林店",
+      "台星-長榮店",
+      "台星-中央店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_立亞_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 250,
+    "company_name": "飛龍",
+    "branches_info": [
+      {
+        "name": "飛龍通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250802010001"
+      }
+    ],
+    "branches": [
+      "飛龍通訊"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_飛龍_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 253,
+    "company_name": "金竑",
+    "branches_info": [
+      {
+        "name": "永和3",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      },
+      {
+        "name": "深坑-文化店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030008"
+      }
+    ],
+    "branches": [
+      "永和3",
+      "深坑-文化店"
+    ],
+    "license_count": 2,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_金竑_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 259,
+    "company_name": "同興",
+    "branches_info": [
+      {
+        "name": "中華智慧館-五股西雲店",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "P250812000002"
+      },
+      {
+        "name": "中華智慧館-龜山中興店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811010004"
+      },
+      {
+        "name": "中華智慧館-南崁旗艦店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811020001"
+      },
+      {
+        "name": "中華智慧館-龍潭東龍店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-南崁南昌店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-內壢莊敬店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-五股旗艦店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813070011"
+      },
+      {
+        "name": "中華智慧館-桃園大業店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-內壢忠孝店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812100002"
+      },
+      {
+        "name": "中華智慧館-中壢龍東店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-龍潭北龍店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-泰山明志店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813130002"
+      },
+      {
+        "name": "中華智慧館-平鎮新富店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-內壢成章店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-龍潭旗艦店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811160003"
+      },
+      {
+        "name": "中華智慧館-板橋仁化店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-龜山文青店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中華智慧館-內壢莊榮店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "五股西雲店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中壢中原店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812230004"
+      }
+    ],
+    "branches": [
+      "中華智慧館-龜山中興店",
+      "中華智慧館-南崁旗艦店",
+      "中華智慧館-龍潭東龍店",
+      "中華智慧館-南崁南昌店",
+      "中華智慧館-內壢莊敬店",
+      "中華智慧館-五股旗艦店",
+      "中華智慧館-桃園大業店",
+      "中華智慧館-內壢忠孝店",
+      "中華智慧館-中壢龍東店",
+      "中華智慧館-龍潭北龍店",
+      "中華智慧館-泰山明志店",
+      "中華智慧館-平鎮新富店",
+      "中華智慧館-內壢成章店",
+      "中華智慧館-龍潭旗艦店",
+      "中華智慧館-板橋仁化店",
+      "中華智慧館-龜山文青店",
+      "中華智慧館-內壢莊榮店",
+      "五股西雲店",
+      "",
+      "中壢中原店"
+    ],
+    "license_count": 0,
+    "active_count": 7,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_同興_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 261,
+    "company_name": "睿閎",
+    "branches_info": [
+      {
+        "name": "總部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "P250812000034"
+      },
+      {
+        "name": "頭盔先生",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "頭盔先生"
+    ],
+    "license_count": 1,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 1,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_睿閎_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 263,
+    "company_name": "新錩",
+    "branches_info": [
+      {
+        "name": "光華二",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010004"
+      }
+    ],
+    "branches": [
+      "光華二"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_新錩_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 266,
+    "company_name": "乙希",
+    "branches_info": [
+      {
+        "name": "竹南-光復店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010012"
+      },
+      {
+        "name": "竹南-自由店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020002"
+      },
+      {
+        "name": "頭份-中正店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813040010"
+      },
+      {
+        "name": "竹南-遠傳店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813050004"
+      },
+      {
+        "name": "頭份-信東店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813060001"
+      }
+    ],
+    "branches": [
+      "竹南-光復店",
+      "竹南-自由店",
+      "頭份-中正店",
+      "竹南-遠傳店",
+      "頭份-信東店"
+    ],
+    "license_count": 25,
+    "active_count": 5,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_乙希_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 268,
+    "company_name": "有支手機",
+    "branches_info": [
+      {
+        "name": "ABC",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "P250807000004"
+      },
+      {
+        "name": "HAS",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812010015"
+      },
+      {
+        "name": "XYZ",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "HAS",
+      "XYZ"
+    ],
+    "license_count": 2,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 1,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_有支手機_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 277,
+    "company_name": "曄成",
+    "branches_info": [
+      {
+        "name": "中正-4",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812050004"
+      }
+    ],
+    "branches": [
+      "中正-4"
+    ],
+    "license_count": 3,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_曄成_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 280,
+    "company_name": "JH手機快修",
+    "branches_info": [
+      {
+        "name": "JH手機快修",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250810010012"
+      }
+    ],
+    "branches": [
+      "JH手機快修"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_JH手機快修_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 282,
+    "company_name": "宏記",
+    "branches_info": [
+      {
+        "name": "宏記",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250806050003"
+      }
+    ],
+    "branches": [
+      "宏記"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_宏記_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 293,
+    "company_name": "永騰",
+    "branches_info": [
+      {
+        "name": "永騰3C",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250810030002"
+      },
+      {
+        "name": "台哥通霄",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070004"
+      },
+      {
+        "name": "遠傳苑裡",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250807080001"
+      }
+    ],
+    "branches": [
+      "永騰3C",
+      "台哥通霄",
+      "遠傳苑裡"
+    ],
+    "license_count": 16,
+    "active_count": 3,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_永騰_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 302,
+    "company_name": "鈞凱勝",
+    "branches_info": [
+      {
+        "name": "王建鈞3C配件",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      },
+      {
+        "name": "王建鈞通信鶯歌店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020009"
+      }
+    ],
+    "branches": [
+      "王建鈞3C配件",
+      "王建鈞通信鶯歌店"
+    ],
+    "license_count": 6,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_鈞凱勝_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 304,
+    "company_name": "妡球",
+    "branches_info": [
+      {
+        "name": "總管理部",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250812000005"
+      },
+      {
+        "name": "台哥大大同門市",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010007"
+      }
+    ],
+    "branches": [
+      "台哥大大同門市"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_妡球_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 305,
+    "company_name": "首麗",
+    "branches_info": [
+      {
+        "name": "北投光明",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010011"
+      },
+      {
+        "name": "三重中正北",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020002"
+      },
+      {
+        "name": "瑞芳明燈",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813030001"
+      },
+      {
+        "name": "新基隆安一",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813040007"
+      },
+      {
+        "name": "淡水竹圍",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813080003"
+      },
+      {
+        "name": "冬山義成",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813090005"
+      },
+      {
+        "name": "蘇澳中山",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813100002"
+      },
+      {
+        "name": "三重幸福",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813110003"
+      },
+      {
+        "name": "宜蘭舊城東",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812120010"
+      },
+      {
+        "name": "淡水中山北",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813130007"
+      }
+    ],
+    "branches": [
+      "北投光明",
+      "三重中正北",
+      "瑞芳明燈",
+      "新基隆安一",
+      "淡水竹圍",
+      "冬山義成",
+      "蘇澳中山",
+      "三重幸福",
+      "宜蘭舊城東",
+      "淡水中山北"
+    ],
+    "license_count": 40,
+    "active_count": 10,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_首麗_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 306,
+    "company_name": "森昱",
+    "branches_info": [
+      {
+        "name": "森昱通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010007"
+      }
+    ],
+    "branches": [
+      "森昱通訊"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_森昱_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 307,
+    "company_name": "浩瀚",
+    "branches_info": [
+      {
+        "name": "遠傳中正店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "遠傳中正店"
+    ],
+    "license_count": 1,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_浩瀚_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 311,
+    "company_name": "雲端",
+    "branches_info": [
+      {
+        "name": "雲端數位館",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010003"
+      }
+    ],
+    "branches": [
+      "雲端數位館"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_雲端_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 312,
+    "company_name": "水里遠傳",
+    "branches_info": [
+      {
+        "name": "全家電信專賣店",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "遠傳水里民生",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813010001"
+      }
+    ],
+    "branches": [
+      "遠傳水里民生"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_水里遠傳_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 313,
+    "company_name": "法博",
+    "branches_info": [
+      {
+        "name": "斗六民生店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010002"
+      },
+      {
+        "name": "斗六成功店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020002"
+      },
+      {
+        "name": "嘉義民雄店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030001"
+      }
+    ],
+    "branches": [
+      "斗六民生店",
+      "斗六成功店",
+      "嘉義民雄店"
+    ],
+    "license_count": 21,
+    "active_count": 3,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_法博_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 315,
+    "company_name": "敦富",
+    "branches_info": [
+      {
+        "name": "敦富通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010003"
+      }
+    ],
+    "branches": [
+      "敦富通訊"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_敦富_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 318,
+    "company_name": "久旺",
+    "branches_info": [
+      {
+        "name": "久旺通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813010001"
+      }
+    ],
+    "branches": [
+      "久旺通訊"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_久旺_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 325,
+    "company_name": "杉杉",
+    "branches_info": [
+      {
+        "name": "遠傳竹南博愛店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010002"
+      }
+    ],
+    "branches": [
+      "遠傳竹南博愛店"
+    ],
+    "license_count": 5,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_杉杉_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 328,
+    "company_name": "冠均",
+    "branches_info": [
+      {
+        "name": "大展通信",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811010001"
+      }
+    ],
+    "branches": [
+      "大展通信"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_冠均_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 334,
+    "company_name": "布魯斯",
+    "branches_info": [
+      {
+        "name": "布魯斯通訊-頭份尚順",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010003"
+      },
+      {
+        "name": "布魯斯通訊-竹南立達",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813020001"
+      }
+    ],
+    "branches": [
+      "布魯斯通訊-頭份尚順",
+      "布魯斯通訊-竹南立達"
+    ],
+    "license_count": 2,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 1,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_布魯斯_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 336,
+    "company_name": "丞澤",
+    "branches_info": [
+      {
+        "name": "遠傳頭份信東二",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010003"
+      },
+      {
+        "name": "遠傳後龍中山",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020019"
+      },
+      {
+        "name": "遠傳平鎮復旦",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030013"
+      },
+      {
+        "name": "遠傳苗栗府前",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813040005"
+      },
+      {
+        "name": "遠傳頭份中華",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812050006"
+      }
+    ],
+    "branches": [
+      "遠傳頭份信東二",
+      "遠傳後龍中山",
+      "遠傳平鎮復旦",
+      "遠傳苗栗府前",
+      "遠傳頭份中華"
+    ],
+    "license_count": 39,
+    "active_count": 5,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_丞澤_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 337,
+    "company_name": "靈思",
+    "branches_info": [
+      {
+        "name": "靈思有限公司",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "泉湧科技有限公司",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "總倉+MOMO寄倉",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "門市",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "泉湧科技有限公司",
+      "總倉+MOMO寄倉",
+      "門市"
+    ],
+    "license_count": 3,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_靈思_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 338,
+    "company_name": "膜匠",
+    "branches_info": [
+      {
+        "name": "膜匠總倉",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "P250813000001"
+      },
+      {
+        "name": "膜匠通訊-大竹店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813010006"
+      },
+      {
+        "name": "墨爾科技有限公司-板橋倉",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "膜匠通訊-大竹店",
+      "墨爾科技有限公司-板橋倉"
+    ],
+    "license_count": 2,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_膜匠_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 341,
+    "company_name": "坤和",
+    "branches_info": [
+      {
+        "name": "玩手機-竹南店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813150001"
+      }
+    ],
+    "branches": [
+      "玩手機-竹南店"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 3,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_坤和_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 342,
+    "company_name": "翔翔",
+    "branches_info": [
+      {
+        "name": "翔翔通訊-竹南博愛店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250808010005"
+      },
+      {
+        "name": "翔翔通訊-竹南光復店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020003"
+      }
+    ],
+    "branches": [
+      "翔翔通訊-竹南博愛店",
+      "翔翔通訊-竹南光復店"
+    ],
+    "license_count": 2,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_翔翔_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 348,
+    "company_name": "合盈",
+    "branches_info": [
+      {
+        "name": "遠傳員山店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813010001"
+      }
+    ],
+    "branches": [
+      "遠傳員山店"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 3,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_合盈_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 352,
+    "company_name": "鑫譽",
+    "branches_info": [
+      {
+        "name": "手機方程式",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010005"
+      }
+    ],
+    "branches": [
+      "手機方程式"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_鑫譽_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 353,
+    "company_name": "希佴",
+    "branches_info": [
+      {
+        "name": "遠傳林口麗林店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250801010001"
+      },
+      {
+        "name": "遠傳泰山明志2",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250804020002"
+      }
+    ],
+    "branches": [
+      "遠傳林口麗林店",
+      "遠傳泰山明志2"
+    ],
+    "license_count": 4,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_希佴_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 355,
+    "company_name": "欣沅",
+    "branches_info": [
+      {
+        "name": "遠傳大園中華店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010003"
+      }
+    ],
+    "branches": [
+      "遠傳大園中華店"
+    ],
+    "license_count": 3,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_欣沅_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 356,
+    "company_name": "零壹通訊行",
+    "branches_info": [
+      {
+        "name": "豐原總店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010003"
+      },
+      {
+        "name": "西屯大墩店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020007"
+      },
+      {
+        "name": "潭子勝利店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813030008"
+      },
+      {
+        "name": "大雅民生店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812040008"
+      },
+      {
+        "name": "北屯昌平店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "零壹3c電商部",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台中太平店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070001"
+      }
+    ],
+    "branches": [
+      "豐原總店",
+      "西屯大墩店",
+      "潭子勝利店",
+      "大雅民生店",
+      "北屯昌平店",
+      "零壹3c電商部",
+      "台中太平店"
+    ],
+    "license_count": 62,
+    "active_count": 5,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_零壹通訊行_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 359,
+    "company_name": "銘小向",
+    "branches_info": [
+      {
+        "name": "全家-三峽文化店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070005"
+      }
+    ],
+    "branches": [
+      "全家-三峽文化店"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_銘小向_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 360,
+    "company_name": "誠恩",
+    "branches_info": [
+      {
+        "name": "誠恩通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010001"
+      }
+    ],
+    "branches": [
+      "誠恩通訊"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_誠恩_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 361,
+    "company_name": "飛騰",
+    "branches_info": [
+      {
+        "name": "遠傳中原店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010003"
+      },
+      {
+        "name": "修竿-中原店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250810020001"
+      },
+      {
+        "name": "遠傳永美",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030024"
+      }
+    ],
+    "branches": [
+      "遠傳中原店",
+      "修竿-中原店",
+      "遠傳永美"
+    ],
+    "license_count": 6,
+    "active_count": 3,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_飛騰_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 362,
+    "company_name": "千訊",
+    "branches_info": [
+      {
+        "name": "新莊",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250813000033"
+      },
+      {
+        "name": "銘喆",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "銘喆"
+    ],
+    "license_count": 1,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_千訊_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 363,
+    "company_name": "大欣",
+    "branches_info": [
+      {
+        "name": "總倉後勤",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大新宜蘭員山店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812010001"
+      },
+      {
+        "name": "台灣大哥大-宜蘭五結",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812020001"
+      }
+    ],
+    "branches": [
+      "台哥大新宜蘭員山店",
+      "台灣大哥大-宜蘭五結"
+    ],
+    "license_count": 6,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_大欣_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 364,
+    "company_name": "圓圈",
+    "branches_info": [
+      {
+        "name": "A7文青店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812180011"
+      },
+      {
+        "name": "林口忠孝店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812200001"
+      },
+      {
+        "name": "蘆竹南崁店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "中路旗艦店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812220006"
+      },
+      {
+        "name": "青埔旗鑑店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813230004"
+      },
+      {
+        "name": "桃園藝文店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250811240006"
+      },
+      {
+        "name": "青埔站前店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813250001"
+      },
+      {
+        "name": "中壢幸福店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812260004"
+      }
+    ],
+    "branches": [
+      "A7文青店",
+      "林口忠孝店",
+      "蘆竹南崁店",
+      "中路旗艦店",
+      "青埔旗鑑店",
+      "桃園藝文店",
+      "青埔站前店",
+      "中壢幸福店"
+    ],
+    "license_count": 7,
+    "active_count": 7,
+    "online_pay": 0,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_圓圈_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 365,
+    "company_name": "樂瘋玩",
+    "branches_info": [
+      {
+        "name": "樂瘋玩",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010003"
+      }
+    ],
+    "branches": [
+      "樂瘋玩"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_樂瘋玩_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 367,
+    "company_name": "霓德",
+    "branches_info": [
+      {
+        "name": "霓德母嬰用品",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813010001"
+      }
+    ],
+    "branches": [
+      "霓德母嬰用品"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_霓德_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 370,
+    "company_name": "馬尼",
+    "branches_info": [
+      {
+        "name": "網拍",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "E250811000189"
+      },
+      {
+        "name": "哈蜜用",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "馬尼文賢店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020007"
+      },
+      {
+        "name": "馬尼西門店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "馬尼東門店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812040007"
+      },
+      {
+        "name": "馬尼歸仁店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812050005"
+      },
+      {
+        "name": "馬尼小西門店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812060007"
+      },
+      {
+        "name": "馬尼永康店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812070005"
+      },
+      {
+        "name": "馬尼五甲店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812080010"
+      },
+      {
+        "name": "馬尼鳳山店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "馬尼安中店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812100006"
+      },
+      {
+        "name": "馬尼鹽行店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812110002"
+      }
+    ],
+    "branches": [
+      "哈蜜用",
+      "馬尼文賢店",
+      "馬尼西門店",
+      "馬尼東門店",
+      "馬尼歸仁店",
+      "馬尼小西門店",
+      "馬尼永康店",
+      "馬尼五甲店",
+      "馬尼鳳山店",
+      "馬尼安中店",
+      "馬尼鹽行店"
+    ],
+    "license_count": 9,
+    "active_count": 8,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_馬尼_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 371,
+    "company_name": "永立",
+    "branches_info": [
+      {
+        "name": "左營-聯強-永立通訊",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": "P250812000007"
+      },
+      {
+        "name": "鳳山-聯強-永宇通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812100002"
+      },
+      {
+        "name": "原立冠隆(勿使用)",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "鳳山-聯強-永宇通訊",
+      "原立冠隆(勿使用)"
+    ],
+    "license_count": 2,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_永立_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 375,
+    "company_name": "昇沅",
+    "branches_info": [
+      {
+        "name": "昇昇通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010004"
+      }
+    ],
+    "branches": [
+      "昇昇通訊"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_昇沅_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 379,
+    "company_name": "昱昇",
+    "branches_info": [
+      {
+        "name": "遠傳通霄中正店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010005"
+      }
+    ],
+    "branches": [
+      "遠傳通霄中正店"
+    ],
+    "license_count": 3,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_昱昇_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 380,
+    "company_name": "鉅銓",
+    "branches_info": [
+      {
+        "name": "DC壹壹陸",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010005"
+      }
+    ],
+    "branches": [
+      "DC壹壹陸"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_鉅銓_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 383,
+    "company_name": "健權",
+    "branches_info": [
+      {
+        "name": "新北板橋店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250809010009"
+      }
+    ],
+    "branches": [
+      "新北板橋店"
+    ],
+    "license_count": 2,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_健權_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 384,
+    "company_name": "光達",
+    "branches_info": [
+      {
+        "name": "光達國際通訊博愛店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020009"
+      }
+    ],
+    "branches": [
+      "光達國際通訊博愛店"
+    ],
+    "license_count": 2,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_光達_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 385,
+    "company_name": "巨易",
+    "branches_info": [
+      {
+        "name": "總部-管理",
+        "is_main": true,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "台哥大-佳里光復",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250808010004"
+      }
+    ],
+    "branches": [
+      "台哥大-佳里光復"
+    ],
+    "license_count": 3,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_巨易_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 386,
+    "company_name": "起點",
+    "branches_info": [
+      {
+        "name": "起點數位通訊",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010005"
+      }
+    ],
+    "branches": [
+      "起點數位通訊"
+    ],
+    "license_count": 3,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_起點_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 388,
+    "company_name": "柏叡2",
+    "branches_info": [
+      {
+        "name": "環球通信",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      }
+    ],
+    "branches": [
+      "環球通信"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_柏叡2_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 390,
+    "company_name": "綸",
+    "branches_info": [
+      {
+        "name": "阿綸",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "阿綸"
+    ],
+    "license_count": 0,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_綸_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 391,
+    "company_name": "澄虹",
+    "branches_info": [
+      {
+        "name": "樂瘋玩-桃園大業店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010004"
+      }
+    ],
+    "branches": [
+      "樂瘋玩-桃園大業店"
+    ],
+    "license_count": 5,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_澄虹_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 392,
+    "company_name": "極速",
+    "branches_info": [
+      {
+        "name": "遠傳秀水店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250805010028"
+      }
+    ],
+    "branches": [
+      "遠傳秀水店"
+    ],
+    "license_count": 5,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_極速_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 394,
+    "company_name": "灝瑞",
+    "branches_info": [
+      {
+        "name": "遠傳林口文化2店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250812010001"
+      }
+    ],
+    "branches": [
+      "遠傳林口文化2店"
+    ],
+    "license_count": 2,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_灝瑞_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 395,
+    "company_name": "鑫盛",
+    "branches_info": [
+      {
+        "name": "中豐",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813020002"
+      },
+      {
+        "name": "湖口",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250813030001"
+      },
+      {
+        "name": "水源-台哥大",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812040010"
+      }
+    ],
+    "branches": [
+      "中豐",
+      "湖口",
+      "水源-台哥大"
+    ],
+    "license_count": 28,
+    "active_count": 3,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_鑫盛_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 396,
+    "company_name": "儒億",
+    "branches_info": [
+      {
+        "name": "台灣數位館-平鎮山頂店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010007"
+      },
+      {
+        "name": "台灣數位館-龍潭旗艦店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020007"
+      },
+      {
+        "name": "台灣數位館-內壢環中店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030015"
+      }
+    ],
+    "branches": [
+      "台灣數位館-平鎮山頂店",
+      "台灣數位館-龍潭旗艦店",
+      "台灣數位館-內壢環中店"
+    ],
+    "license_count": 11,
+    "active_count": 3,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_儒億_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 397,
+    "company_name": "奇亞",
+    "branches_info": [
+      {
+        "name": "Mykia",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      },
+      {
+        "name": "電商",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "Mykia",
+      "電商"
+    ],
+    "license_count": 4,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_奇亞_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 398,
+    "company_name": "尚吟",
+    "branches_info": [
+      {
+        "name": "遠傳羅東中正",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010004"
+      },
+      {
+        "name": "遠傳七堵明德",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020005"
+      },
+      {
+        "name": "遠傳基隆聖心",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030008"
+      }
+    ],
+    "branches": [
+      "遠傳羅東中正",
+      "遠傳七堵明德",
+      "遠傳基隆聖心"
+    ],
+    "license_count": 26,
+    "active_count": 3,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_尚吟_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 399,
+    "company_name": "宇新",
+    "branches_info": [
+      {
+        "name": "宇新公益旗艦店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      },
+      {
+        "name": "宇新彰化二林店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020001"
+      },
+      {
+        "name": "宇新大里成功店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812030001"
+      },
+      {
+        "name": "宇新太平樹孝店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812040005"
+      },
+      {
+        "name": "宇新北區中清店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812050001"
+      },
+      {
+        "name": "宇新五權南屯店",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "宇新公益旗艦店",
+      "宇新彰化二林店",
+      "宇新大里成功店",
+      "宇新太平樹孝店",
+      "宇新北區中清店",
+      "宇新五權南屯店"
+    ],
+    "license_count": 78,
+    "active_count": 5,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 12,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_宇新_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 401,
+    "company_name": "恆穩",
+    "branches_info": [
+      {
+        "name": "手機專家",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "手機專家"
+    ],
+    "license_count": 3,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_恆穩_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 402,
+    "company_name": "瑞溪",
+    "branches_info": [
+      {
+        "name": "八德廣福",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250806050001"
+      },
+      {
+        "name": "楊梅瑞溪",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250810080001"
+      }
+    ],
+    "branches": [
+      "八德廣福",
+      "楊梅瑞溪"
+    ],
+    "license_count": 10,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_瑞溪_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 403,
+    "company_name": "巨聿",
+    "branches_info": [
+      {
+        "name": "遠傳鳳山青年",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250809010001"
+      }
+    ],
+    "branches": [
+      "遠傳鳳山青年"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_巨聿_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 404,
+    "company_name": "亞玖弟",
+    "branches_info": [
+      {
+        "name": "手機電信家",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010004"
+      }
+    ],
+    "branches": [
+      "手機電信家"
+    ],
+    "license_count": 2,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_亞玖弟_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 405,
+    "company_name": "佳遠",
+    "branches_info": [
+      {
+        "name": "遠傳延平店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250805010001"
+      }
+    ],
+    "branches": [
+      "遠傳延平店"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_佳遠_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 406,
+    "company_name": "放鑫",
+    "branches_info": [
+      {
+        "name": "愛瘋客技術流",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812010001"
+      }
+    ],
+    "branches": [
+      "愛瘋客技術流"
+    ],
+    "license_count": 1,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_放鑫_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 413,
+    "company_name": "拾易",
+    "branches_info": [
+      {
+        "name": "太平-精武(台哥大)",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010003"
+      }
+    ],
+    "branches": [
+      "太平-精武(台哥大)"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_拾易_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 414,
+    "company_name": "胡思可",
+    "branches_info": [
+      {
+        "name": "遠傳松竹店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010011"
+      }
+    ],
+    "branches": [
+      "遠傳松竹店"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_胡思可_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 415,
+    "company_name": "葳遠",
+    "branches_info": [
+      {
+        "name": "葳遠通訊行",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      }
+    ],
+    "branches": [
+      "葳遠通訊行"
+    ],
+    "license_count": 4,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_葳遠_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 416,
+    "company_name": "祺升",
+    "branches_info": [
+      {
+        "name": "Hero數位通訊-楊梅金山店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      },
+      {
+        "name": "中壢晉元店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250812020002"
+      }
+    ],
+    "branches": [
+      "Hero數位通訊-楊梅金山店",
+      "中壢晉元店"
+    ],
+    "license_count": 3,
+    "active_count": 2,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_祺升_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 418,
+    "company_name": "艾比",
+    "branches_info": [
+      {
+        "name": "翔翔通訊-台中昌平店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      }
+    ],
+    "branches": [
+      "翔翔通訊-台中昌平店"
+    ],
+    "license_count": 11,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_艾比_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 419,
+    "company_name": "柏瑜",
+    "branches_info": [
+      {
+        "name": "柏瑜企業社",
+        "is_main": false,
+        "is_charge": false,
+        "doc_num": null
+      }
+    ],
+    "branches": [
+      "柏瑜企業社"
+    ],
+    "license_count": 1,
+    "active_count": 0,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_柏瑜_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 421,
+    "company_name": "昶詠",
+    "branches_info": [
+      {
+        "name": "遠傳民生二店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "E250808010001"
+      }
+    ],
+    "branches": [
+      "遠傳民生二店"
+    ],
+    "license_count": 5,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_昶詠_20250813_含稅.pdf"
+  },
+  {
+    "primary_key": 422,
+    "company_name": "遠聲",
+    "branches_info": [
+      {
+        "name": "遠傳新莊幸福店",
+        "is_main": false,
+        "is_charge": true,
+        "doc_num": "P250813010001"
+      }
+    ],
+    "branches": [
+      "遠傳新莊幸福店"
+    ],
+    "license_count": 0,
+    "active_count": 1,
+    "online_pay": 1,
+    "quote_required": 1,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "quote_path": "output_quotes/quote_遠聲_20250813_含稅.pdf"
+  }
+]

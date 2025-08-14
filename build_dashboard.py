@@ -4,6 +4,7 @@ from datetime import date
 import pyodbc
 import re
 import sys
+import json
 
 # 讓 Python 能匯入 quote_generator.py
 sys.path.append(".")
@@ -83,6 +84,13 @@ def get_companies_data():
         close_idx = columns3.index("是否已收店")
         onlinepay_disable_idx = columns3.index("線上付款_停用")
 
+        cursor3.execute("SELECT 名稱, 設定值 FROM 基本設定 WHERE 名稱='總倉編號'")
+        rows5=cursor3.fetchall()
+        main_warehouse_id=rows5[0][1] # 總倉編號
+
+
+
+
         active_count = 0
         branches_info = []
         active_branch_names=[]
@@ -101,9 +109,12 @@ def get_companies_data():
             # 初始化分店資訊
             branch_info = {
                 "name": branch_name,
+                "is_main": False, # 紀錄是否為總倉
                 "is_charge": False, # 預設為未活躍 不收費
                 "doc_num": None
             }
+
+
             
             # [檢索兩種單據]
             current_date = date.today()
@@ -134,9 +145,17 @@ def get_companies_data():
                         branch_info["doc_num"] = document_number
                         break
 
-            if branch_info["is_charge"]: 
-                active_count+=1
+            # 總倉不收費
+            if int(main_warehouse_id) == row3[0] :
+                print(branch_name,'是總倉')
+                branch_info["is_main"] = True
+                branch_info["is_charge"] = False
+            else :
+                # 非總倉店家，用於收費
                 active_branch_names.append(branch_name)
+
+            if branch_info["is_charge"]: 
+                active_count+=1  # 活躍店家數，用於扣點
 
             branches_info.append(branch_info)
 
@@ -173,7 +192,7 @@ if __name__ == "__main__":
         # if company["company_name"] == "艾瑪":
         #     unit_price = 1300
 
-        pdf_path = generate_quote(
+        quote_path = generate_quote(
             company_data=company,
             period_months=company["charge_months"],
             price_includes_tax=True,
@@ -181,7 +200,13 @@ if __name__ == "__main__":
             template_name="quote_template2.html",  # 或改成 quote_template.html
             output_dir="output_quotes"
         )
-        company["pdf_path"] = str(pdf_path).replace("\\", "/")
+        company["quote_path"] = str(quote_path).replace("\\", "/")
+
+        # 2) 輸出 JSON —— 作為 SoT 給前端與 API 使用
+        Path("companies_data.json").write_text(
+            json.dumps(companies_data, ensure_ascii=False, indent=2),
+            encoding="utf-8"
+        )
 
     # 產出 HTML 儀表板
     env = Environment(loader=FileSystemLoader("."))
