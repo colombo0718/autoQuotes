@@ -13,7 +13,7 @@
         "name": "蘆洲長安店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814070003"
+        "doc_num": "P250817070003"
       }
     ],
     "branches": [
@@ -65,7 +65,7 @@
         "name": "百發仁三店",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "P250815000001"
+        "doc_num": "P250816000013"
       }
     ],
     "branches": [],
@@ -86,13 +86,13 @@
         "name": "八德店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250812010003"
+        "doc_num": "P250815010001"
       },
       {
         "name": "永康店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815070001"
+        "doc_num": "P250817070015"
       }
     ],
     "branches": [
@@ -153,19 +153,19 @@
         "name": "總部",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250814000001"
+        "doc_num": "E250815000001"
       },
       {
         "name": "Apple",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815010005"
+        "doc_num": "E250817010013"
       },
       {
         "name": "SONY",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815020001"
+        "doc_num": "E250817020008"
       },
       {
         "name": "Vass1",
@@ -177,13 +177,13 @@
         "name": "龍潭業代",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250814040005"
+        "doc_num": "E250816040006"
       },
       {
         "name": "ASUS",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815050002"
+        "doc_num": "E250817050005"
       },
       {
         "name": "Vass4",
@@ -195,7 +195,7 @@
         "name": "SAM",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815070001"
+        "doc_num": "E250817070002"
       },
       {
         "name": "Vass2",
@@ -213,7 +213,7 @@
         "name": "湖口業代",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815100002"
+        "doc_num": "E250817100002"
       },
       {
         "name": "外倉在途中",
@@ -231,31 +231,31 @@
         "name": "中壢業代",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815130001"
+        "doc_num": "E250817130003"
       },
       {
         "name": "總部出貨",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250813140001"
+        "doc_num": "E250815140001"
       },
       {
         "name": "竹北業代",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815150003"
+        "doc_num": "E250817150003"
       },
       {
         "name": "新竹業代",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250814160005"
+        "doc_num": "E250817160004"
       },
       {
         "name": "八德業代",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815170001"
+        "doc_num": "E250817170005"
       },
       {
         "name": "林口業代",
@@ -301,25 +301,25 @@
         "name": "台釱總倉",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250811000001"
+        "doc_num": "E250815000001"
       },
       {
         "name": "溪湖TWM",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813020009"
+        "doc_num": "P250817020012"
       },
       {
         "name": "二林TWM",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813030004"
+        "doc_num": "P250817030007"
       },
       {
         "name": "田中TWM",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814040019"
+        "doc_num": "P250817040017"
       },
       {
         "name": "田中T-STAR",
@@ -331,7 +331,7 @@
         "name": "北斗TWM",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815070002"
+        "doc_num": "P250817070005"
       }
     ],
     "branches": [
@@ -364,7 +364,7 @@
         "name": "環球中正店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010002"
+        "doc_num": "P250817010006"
       }
     ],
     "branches": [
@@ -377,7 +377,7 @@
     "charge_months": 12,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_環球_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_環球_20250818_含稅.pdf"
   },
   {
     "primary_key": 31,
@@ -399,7 +399,7 @@
         "name": "傳遠電信行",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020007"
+        "doc_num": "P250816020013"
       },
       {
         "name": "林森二樓倉庫",
@@ -449,7 +449,7 @@
         "name": "成功店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020001"
+        "doc_num": "P250817020009"
       },
       {
         "name": "台南特約總倉",
@@ -467,19 +467,19 @@
         "name": "興南店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814050012"
+        "doc_num": "P250817050010"
       },
       {
         "name": "景平店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814060006"
+        "doc_num": "P250817060005"
       },
       {
         "name": "員山店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814070009"
+        "doc_num": "P250817070023"
       },
       {
         "name": "幸福店",
@@ -491,13 +491,13 @@
         "name": "仁愛店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814090010"
+        "doc_num": "P250817090012"
       },
       {
         "name": "容生倉",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815100002"
+        "doc_num": "E250815100003"
       },
       {
         "name": "大摩倉",
@@ -527,7 +527,7 @@
         "name": "高雄茄萣",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814150011"
+        "doc_num": "P250817150004"
       },
       {
         "name": "佳里光復",
@@ -539,7 +539,7 @@
         "name": "麻豆中山",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814170010"
+        "doc_num": "P250817170009"
       },
       {
         "name": "善化站前",
@@ -585,43 +585,43 @@
         "name": "六六屋",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250817010009"
       },
       {
         "name": "新機地",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020001"
+        "doc_num": "P250817020010"
       },
       {
         "name": "新豐店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814030010"
+        "doc_num": "P250817030009"
       },
       {
         "name": "暖暖店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815040001"
+        "doc_num": "P250817040003"
       },
       {
         "name": "網路",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815050002"
+        "doc_num": "E250816050003"
       },
       {
         "name": "遠傳店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814080010"
+        "doc_num": "P250817080007"
       },
       {
         "name": "暖暖遠傳",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814100005"
+        "doc_num": "P250817100007"
       }
     ],
     "branches": [
@@ -650,25 +650,25 @@
         "name": "頂尖大本營",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010011"
+        "doc_num": "P250815010021"
       },
       {
         "name": "沙田遠傳",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020003"
+        "doc_num": "P250817020006"
       },
       {
         "name": "SONY專賣店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814040003"
+        "doc_num": "P250817040003"
       },
       {
         "name": "台灣大哥大",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815050001"
+        "doc_num": "P250817050005"
       },
       {
         "name": "靜宜遠傳",
@@ -732,7 +732,7 @@
         "name": "苑裡中山",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813050001"
+        "doc_num": "P250817050002"
       },
       {
         "name": "大甲中山",
@@ -766,19 +766,19 @@
         "name": "總管理處",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250814000003"
+        "doc_num": "E250815000001"
       },
       {
         "name": "台哥大-嘉義興業西",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010002"
+        "doc_num": "P250817010009"
       },
       {
         "name": "台灣大哥大-麻豆中山",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815030002"
+        "doc_num": "P250817030004"
       },
       {
         "name": "1300電通",
@@ -816,19 +816,19 @@
         "name": "台哥大-民雄店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010010"
+        "doc_num": "P250817010008"
       },
       {
         "name": "中華-民族店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020001"
+        "doc_num": "P250815020002"
       },
       {
         "name": "神腦-民權店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815030001"
+        "doc_num": "P250817030003"
       },
       {
         "name": "中華-東榮店",
@@ -852,7 +852,7 @@
         "name": "台哥大-水上中興",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815070001"
+        "doc_num": "P250817070015"
       },
       {
         "name": "遠傳-建國店",
@@ -894,7 +894,7 @@
         "name": "建國",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020007"
+        "doc_num": "P250817020011"
       },
       {
         "name": "迴龍",
@@ -924,13 +924,13 @@
         "name": "羅東中正",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815070002"
+        "doc_num": "P250817070005"
       },
       {
         "name": "羅東興東",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815080007"
+        "doc_num": "P250817080007"
       },
       {
         "name": "羅東中正南",
@@ -973,7 +973,7 @@
         "name": "左營Ⅱ",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020001"
+        "doc_num": "P250817020010"
       },
       {
         "name": "華榮",
@@ -1024,7 +1024,7 @@
         "name": "鶯歌南昌",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010008"
+        "doc_num": "P250817010003"
       },
       {
         "name": "鶯歌中正",
@@ -1054,7 +1054,7 @@
         "name": "龍安店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250815010007"
       },
       {
         "name": "桃鶯店",
@@ -1127,25 +1127,25 @@
         "name": "總部",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250815000005"
+        "doc_num": "E250815000014"
       },
       {
         "name": "台灣桃鶯",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010018"
+        "doc_num": "P250817010020"
       },
       {
         "name": "台灣更寮腳",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814040014"
+        "doc_num": "P250817040010"
       },
       {
         "name": "遠傳巨展",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814100013"
+        "doc_num": "P250817100017"
       },
       {
         "name": "介壽888",
@@ -1175,7 +1175,7 @@
         "name": "遠傳介壽(更寮腳)",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815160004"
+        "doc_num": "P250817160017"
       }
     ],
     "branches": [
@@ -1223,7 +1223,7 @@
         "name": "天亞南崁",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814040002"
+        "doc_num": "P250816040003"
       }
     ],
     "branches": [
@@ -1286,19 +1286,19 @@
         "name": "美麗華產品展示中心",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250810010001"
+        "doc_num": "P250816010001"
       },
       {
         "name": "三創產品展示中心",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250812030002"
+        "doc_num": "P250816030003"
       },
       {
         "name": "產品序號管理倉",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815040004"
+        "doc_num": "E250815040006"
       },
       {
         "name": "巨城快閃店",
@@ -1337,7 +1337,7 @@
         "name": "果林店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813030002"
+        "doc_num": "P250817030004"
       },
       {
         "name": "南崁店",
@@ -1373,7 +1373,7 @@
         "name": "文山景美",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020003"
+        "doc_num": "P250817020008"
       },
       {
         "name": "新店民族",
@@ -1403,7 +1403,7 @@
         "name": "鶯歌建國",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815070001"
+        "doc_num": "P250817070002"
       }
     ],
     "branches": [
@@ -1438,7 +1438,7 @@
         "name": "奕大",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815030003"
+        "doc_num": "P250817030032"
       }
     ],
     "branches": [
@@ -1462,13 +1462,13 @@
         "name": "航聯",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010004"
+        "doc_num": "P250816010002"
       },
       {
         "name": "大翔",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020002"
+        "doc_num": "P250817020010"
       }
     ],
     "branches": [
@@ -1492,7 +1492,7 @@
         "name": "平鎮中豐店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250812020004"
+        "doc_num": "P250817020003"
       }
     ],
     "branches": [
@@ -1756,7 +1756,7 @@
         "name": "HB",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250815000001"
+        "doc_num": "E250815000004"
       },
       {
         "name": "經銷商(寄賣)",
@@ -1797,7 +1797,7 @@
         "name": "台哥大-嘉義垂楊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250814020001"
+        "doc_num": "E250817020001"
       },
       {
         "name": "台哥大-中埔中山",
@@ -1835,13 +1835,13 @@
         "name": "金馬講-慈文(原旗艦)",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010001"
+        "doc_num": "P250817010007"
       },
       {
         "name": "金馬講-南平",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020007"
+        "doc_num": "P250817020007"
       },
       {
         "name": "金馬講-南崁",
@@ -1859,7 +1859,7 @@
         "name": "遠傳-龍安",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815050002"
+        "doc_num": "P250817050010"
       },
       {
         "name": "金馬講-藝文(撤店)",
@@ -1871,7 +1871,7 @@
         "name": "金馬講-大竹",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813070008"
+        "doc_num": "P250817070004"
       },
       {
         "name": "亞太-南平(撤店)",
@@ -1943,19 +1943,19 @@
         "name": "大里-成功(台哥大)",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010007"
+        "doc_num": "P250817010015"
       },
       {
         "name": "大里-內新(台哥大)",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020003"
+        "doc_num": "P250817020007"
       },
       {
         "name": "潭子-中山(台哥大)",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815040005"
+        "doc_num": "P250816040013"
       }
     ],
     "branches": [
@@ -2100,7 +2100,7 @@
         "name": "新生店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814210011"
+        "doc_num": "P250817210011"
       },
       {
         "name": "REALME",
@@ -2225,7 +2225,7 @@
         "name": "星威-文七店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250812020003"
+        "doc_num": "P250816020004"
       },
       {
         "name": "星威-文二店",
@@ -2308,7 +2308,7 @@
         "name": "鑫瑞總倉",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250814000006"
+        "doc_num": "E250816000001"
       },
       {
         "name": "鑫瑞(網路)",
@@ -2360,7 +2360,7 @@
         "name": "家智通訊行",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250816010006"
       },
       {
         "name": "前進通訊",
@@ -2390,7 +2390,7 @@
         "name": "祐祐通訊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010002"
+        "doc_num": "P250817010002"
       }
     ],
     "branches": [
@@ -2436,7 +2436,7 @@
         "name": "捷迅",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250816010009"
       }
     ],
     "branches": [
@@ -2609,7 +2609,7 @@
     "charge_months": 6,
     "discount": 50,
     "unit_price": 1300,
-    "quote_path": "output_quotes/quote_翰諾_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_翰諾_20250818_含稅.pdf"
   },
   {
     "primary_key": 181,
@@ -2708,7 +2708,7 @@
         "name": "海悅",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250815000004"
+        "doc_num": "E250818000003"
       },
       {
         "name": "晉榮",
@@ -2737,7 +2737,7 @@
         "name": "台哥大-白河",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010006"
+        "doc_num": "P250817010008"
       }
     ],
     "branches": [
@@ -2766,7 +2766,7 @@
         "name": "高強-大業店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813040002"
+        "doc_num": "P250816040003"
       },
       {
         "name": "寶山店",
@@ -2797,13 +2797,13 @@
         "name": "君品通訊行",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010003"
+        "doc_num": "P250817010002"
       },
       {
         "name": "君品南崁店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814030004"
+        "doc_num": "P250817030001"
       }
     ],
     "branches": [
@@ -2827,7 +2827,7 @@
         "name": "同音通訊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815010001"
+        "doc_num": "E250817010013"
       },
       {
         "name": "南崁倉",
@@ -2906,7 +2906,7 @@
         "name": "五股成泰店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814070004"
+        "doc_num": "P250817070002"
       }
     ],
     "branches": [
@@ -2992,7 +2992,7 @@
         "name": "蘆洲長安店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813060003"
+        "doc_num": "P250815060002"
       },
       {
         "name": "板橋樹林店",
@@ -3037,7 +3037,7 @@
         "name": "飛龍通訊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813010001"
+        "doc_num": "P250802010001"
       }
     ],
     "branches": [
@@ -3050,7 +3050,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_飛龍_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_飛龍_20250818_含稅.pdf"
   },
   {
     "primary_key": 253,
@@ -3060,13 +3060,13 @@
         "name": "永和3",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010005"
+        "doc_num": "P250817010011"
       },
       {
         "name": "深坑-文化店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814030008"
+        "doc_num": "P250817030006"
       }
     ],
     "branches": [
@@ -3080,7 +3080,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_金竑_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_金竑_20250818_含稅.pdf"
   },
   {
     "primary_key": 259,
@@ -3090,19 +3090,19 @@
         "name": "中華智慧館-五股西雲店",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "P250814000002"
+        "doc_num": "P250817000005"
       },
       {
         "name": "中華智慧館-龜山中興店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250811010004"
+        "doc_num": "P250816010002"
       },
       {
         "name": "中華智慧館-南崁旗艦店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250811020001"
+        "doc_num": "P250817020001"
       },
       {
         "name": "中華智慧館-龍潭東龍店",
@@ -3126,7 +3126,7 @@
         "name": "中華智慧館-五股旗艦店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813070038"
+        "doc_num": "P250817070001"
       },
       {
         "name": "中華智慧館-桃園大業店",
@@ -3138,7 +3138,7 @@
         "name": "中華智慧館-內壢忠孝店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814100004"
+        "doc_num": "P250817100006"
       },
       {
         "name": "中華智慧館-中壢龍東店",
@@ -3156,7 +3156,7 @@
         "name": "中華智慧館-泰山明志店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815130001"
+        "doc_num": "P250817130001"
       },
       {
         "name": "中華智慧館-平鎮新富店",
@@ -3174,7 +3174,7 @@
         "name": "中華智慧館-龍潭旗艦店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250813160002"
+        "doc_num": "P250815160002"
       },
       {
         "name": "中華智慧館-板橋仁化店",
@@ -3210,7 +3210,7 @@
         "name": "中壢中原店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250812230004"
+        "doc_num": "P250815230001"
       }
     ],
     "branches": [
@@ -3252,7 +3252,7 @@
         "name": "總部",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "P250814000095"
+        "doc_num": "P250817000080"
       },
       {
         "name": "頭盔先生",
@@ -3281,7 +3281,7 @@
         "name": "光華二",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010014"
+        "doc_num": "P250817010009"
       }
     ],
     "branches": [
@@ -3304,31 +3304,31 @@
         "name": "竹南-光復店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010002"
+        "doc_num": "P250817010001"
       },
       {
         "name": "竹南-自由店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020006"
+        "doc_num": "P250817020016"
       },
       {
         "name": "頭份-中正店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815040011"
+        "doc_num": "P250817040011"
       },
       {
         "name": "竹南-遠傳店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815050003"
+        "doc_num": "P250817050001"
       },
       {
         "name": "頭份-信東店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815060001"
+        "doc_num": "P250817060003"
       }
     ],
     "branches": [
@@ -3355,13 +3355,13 @@
         "name": "ABC",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "P250807000004"
+        "doc_num": "P250817000003"
       },
       {
         "name": "HAS",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815010005"
+        "doc_num": "E250817010005"
       },
       {
         "name": "XYZ",
@@ -3414,7 +3414,7 @@
         "name": "JH手機快修",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010006"
+        "doc_num": "P250817010006"
       }
     ],
     "branches": [
@@ -3427,7 +3427,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_JH手機快修_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_JH手機快修_20250818_含稅.pdf"
   },
   {
     "primary_key": 282,
@@ -3450,7 +3450,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_宏記_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_宏記_20250818_含稅.pdf"
   },
   {
     "primary_key": 293,
@@ -3466,7 +3466,7 @@
         "name": "台哥通霄",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814070005"
+        "doc_num": "P250817070014"
       },
       {
         "name": "遠傳苑裡",
@@ -3503,7 +3503,7 @@
         "name": "王建鈞通信鶯歌店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020008"
+        "doc_num": "P250817020008"
       }
     ],
     "branches": [
@@ -3533,7 +3533,7 @@
         "name": "台哥大大同門市",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250817010001"
       }
     ],
     "branches": [
@@ -3556,61 +3556,61 @@
         "name": "北投光明",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010015"
+        "doc_num": "P250817010008"
       },
       {
         "name": "三重中正北",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020003"
+        "doc_num": "P250817020014"
       },
       {
         "name": "瑞芳明燈",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815030002"
+        "doc_num": "P250817030009"
       },
       {
         "name": "新基隆安一",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815040001"
+        "doc_num": "P250817040004"
       },
       {
         "name": "淡水竹圍",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814080006"
+        "doc_num": "P250817080010"
       },
       {
         "name": "冬山義成",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815090002"
+        "doc_num": "P250817090004"
       },
       {
         "name": "蘇澳中山",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815100001"
+        "doc_num": "P250816100004"
       },
       {
         "name": "三重幸福",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814110012"
+        "doc_num": "P250817110010"
       },
       {
         "name": "宜蘭舊城東",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814120009"
+        "doc_num": "P250817120009"
       },
       {
         "name": "淡水中山北",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815130001"
+        "doc_num": "P250817130008"
       }
     ],
     "branches": [
@@ -3642,7 +3642,7 @@
         "name": "森昱通訊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010006"
+        "doc_num": "P250817010002"
       }
     ],
     "branches": [
@@ -3655,7 +3655,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_森昱_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_森昱_20250818_含稅.pdf"
   },
   {
     "primary_key": 307,
@@ -3688,7 +3688,7 @@
         "name": "雲端數位館",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010002"
+        "doc_num": "P250817010002"
       }
     ],
     "branches": [
@@ -3717,7 +3717,7 @@
         "name": "遠傳水里民生",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815010002"
+        "doc_num": "E250817010003"
       }
     ],
     "branches": [
@@ -3777,7 +3777,7 @@
         "name": "敦富通訊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010001"
+        "doc_num": "P250811010001"
       }
     ],
     "branches": [
@@ -3790,7 +3790,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_敦富_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_敦富_20250818_含稅.pdf"
   },
   {
     "primary_key": 318,
@@ -3813,7 +3813,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_久旺_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_久旺_20250818_含稅.pdf"
   },
   {
     "primary_key": 325,
@@ -3823,7 +3823,7 @@
         "name": "遠傳竹南博愛店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010003"
+        "doc_num": "P250817010005"
       }
     ],
     "branches": [
@@ -3846,7 +3846,7 @@
         "name": "大展通信",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010001"
+        "doc_num": "P250816010001"
       }
     ],
     "branches": [
@@ -3859,7 +3859,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_冠均_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_冠均_20250818_含稅.pdf"
   },
   {
     "primary_key": 334,
@@ -3869,13 +3869,13 @@
         "name": "布魯斯通訊-頭份尚順",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010002"
+        "doc_num": "P250816010003"
       },
       {
         "name": "布魯斯通訊-竹南立達",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020003"
+        "doc_num": "P250816020006"
       }
     ],
     "branches": [
@@ -3889,7 +3889,7 @@
     "charge_months": 1,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_布魯斯_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_布魯斯_20250818_含稅.pdf"
   },
   {
     "primary_key": 336,
@@ -3899,31 +3899,31 @@
         "name": "遠傳頭份信東二",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010007"
+        "doc_num": "P250817010009"
       },
       {
         "name": "遠傳後龍中山",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020004"
+        "doc_num": "P250817020014"
       },
       {
         "name": "遠傳平鎮復旦",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815030001"
+        "doc_num": "P250817030007"
       },
       {
         "name": "遠傳苗栗府前",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814040002"
+        "doc_num": "P250817040008"
       },
       {
         "name": "遠傳頭份中華",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814050003"
+        "doc_num": "P250817050010"
       }
     ],
     "branches": [
@@ -3993,13 +3993,13 @@
         "name": "膜匠總倉",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "P250814000006"
+        "doc_num": "P250817000002"
       },
       {
         "name": "膜匠通訊-大竹店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815010005"
+        "doc_num": "E250817010010"
       },
       {
         "name": "墨爾科技有限公司-板橋倉",
@@ -4029,7 +4029,7 @@
         "name": "玩手機-竹南店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815150001"
+        "doc_num": "P250817150010"
       }
     ],
     "branches": [
@@ -4042,7 +4042,7 @@
     "charge_months": 3,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_坤和_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_坤和_20250818_含稅.pdf"
   },
   {
     "primary_key": 342,
@@ -4058,7 +4058,7 @@
         "name": "翔翔通訊-竹南光復店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250812020003"
+        "doc_num": "P250814020001"
       }
     ],
     "branches": [
@@ -4072,7 +4072,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_翔翔_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_翔翔_20250818_含稅.pdf"
   },
   {
     "primary_key": 348,
@@ -4082,7 +4082,7 @@
         "name": "遠傳員山店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250813010001"
+        "doc_num": "E250815010002"
       }
     ],
     "branches": [
@@ -4095,7 +4095,7 @@
     "charge_months": 3,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_合盈_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_合盈_20250818_含稅.pdf"
   },
   {
     "primary_key": 352,
@@ -4105,7 +4105,7 @@
         "name": "手機方程式",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010004"
+        "doc_num": "P250816010003"
       }
     ],
     "branches": [
@@ -4118,7 +4118,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_鑫譽_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_鑫譽_20250818_含稅.pdf"
   },
   {
     "primary_key": 353,
@@ -4134,7 +4134,7 @@
         "name": "遠傳泰山明志2",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250814020010"
+        "doc_num": "E250817020027"
       }
     ],
     "branches": [
@@ -4158,7 +4158,7 @@
         "name": "遠傳大園中華店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010002"
+        "doc_num": "P250817010003"
       }
     ],
     "branches": [
@@ -4181,25 +4181,25 @@
         "name": "豐原總店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010009"
+        "doc_num": "P250817010007"
       },
       {
         "name": "西屯大墩店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020001"
+        "doc_num": "P250816020004"
       },
       {
         "name": "潭子勝利店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815030001"
+        "doc_num": "P250816030004"
       },
       {
         "name": "大雅民生店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815040002"
+        "doc_num": "P250817040001"
       },
       {
         "name": "北屯昌平店",
@@ -4217,7 +4217,7 @@
         "name": "台中太平店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815070001"
+        "doc_num": "P250816070001"
       }
     ],
     "branches": [
@@ -4246,7 +4246,7 @@
         "name": "全家-三峽文化店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814070010"
+        "doc_num": "P250817070003"
       }
     ],
     "branches": [
@@ -4259,7 +4259,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_銘小向_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_銘小向_20250818_含稅.pdf"
   },
   {
     "primary_key": 360,
@@ -4282,7 +4282,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_誠恩_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_誠恩_20250818_含稅.pdf"
   },
   {
     "primary_key": 361,
@@ -4292,7 +4292,7 @@
         "name": "遠傳中原店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010002"
+        "doc_num": "P250817010003"
       },
       {
         "name": "修竿-中原店",
@@ -4304,7 +4304,7 @@
         "name": "遠傳永美",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814030008"
+        "doc_num": "P250817030009"
       }
     ],
     "branches": [
@@ -4329,7 +4329,7 @@
         "name": "新莊",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250815000015"
+        "doc_num": "E250817000031"
       },
       {
         "name": "銘喆",
@@ -4394,13 +4394,13 @@
         "name": "A7文青店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814180003"
+        "doc_num": "P250817180008"
       },
       {
         "name": "林口忠孝店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814200001"
+        "doc_num": "P250816200001"
       },
       {
         "name": "蘆竹南崁店",
@@ -4412,31 +4412,31 @@
         "name": "中路旗艦店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815220001"
+        "doc_num": "P250817220002"
       },
       {
         "name": "青埔旗鑑店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814230006"
+        "doc_num": "P250817230002"
       },
       {
         "name": "桃園藝文店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814240001"
+        "doc_num": "P250811240006"
       },
       {
         "name": "青埔站前店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815250001"
+        "doc_num": "P250817250003"
       },
       {
         "name": "中壢幸福店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814260003"
+        "doc_num": "P250817260005"
       }
     ],
     "branches": [
@@ -4466,7 +4466,7 @@
         "name": "樂瘋玩",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250817010010"
       }
     ],
     "branches": [
@@ -4489,7 +4489,7 @@
         "name": "霓德母嬰用品",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815010001"
+        "doc_num": "E250816010002"
       }
     ],
     "branches": [
@@ -4502,7 +4502,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_霓德_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_霓德_20250818_含稅.pdf"
   },
   {
     "primary_key": 370,
@@ -4512,7 +4512,7 @@
         "name": "網拍",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "E250815000002"
+        "doc_num": "E250815000061"
       },
       {
         "name": "哈蜜用",
@@ -4524,7 +4524,7 @@
         "name": "馬尼文賢店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020004"
+        "doc_num": "P250817020005"
       },
       {
         "name": "馬尼西門店",
@@ -4536,31 +4536,31 @@
         "name": "馬尼東門店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815040003"
+        "doc_num": "P250817040003"
       },
       {
         "name": "馬尼歸仁店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815050001"
+        "doc_num": "P250817050002"
       },
       {
         "name": "馬尼小西門店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814060002"
+        "doc_num": "P250817060001"
       },
       {
         "name": "馬尼永康店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815070002"
+        "doc_num": "P250817070010"
       },
       {
         "name": "馬尼五甲店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814080006"
+        "doc_num": "P250817080001"
       },
       {
         "name": "馬尼鳳山店",
@@ -4572,13 +4572,13 @@
         "name": "馬尼安中店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815100004"
+        "doc_num": "P250817100008"
       },
       {
         "name": "馬尼鹽行店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814110005"
+        "doc_num": "P250817110005"
       }
     ],
     "branches": [
@@ -4611,13 +4611,13 @@
         "name": "左營-聯強-永立通訊",
         "is_main": true,
         "is_charge": false,
-        "doc_num": "P250814000001"
+        "doc_num": "P250817000005"
       },
       {
         "name": "鳳山-聯強-永宇通訊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250812100002"
+        "doc_num": "P250817100001"
       },
       {
         "name": "原立冠隆(勿使用)",
@@ -4647,7 +4647,7 @@
         "name": "昇昇通訊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250817010013"
       }
     ],
     "branches": [
@@ -4670,7 +4670,7 @@
         "name": "遠傳通霄中正店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010005"
+        "doc_num": "P250817010011"
       }
     ],
     "branches": [
@@ -4693,7 +4693,7 @@
         "name": "DC壹壹陸",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250817010004"
       }
     ],
     "branches": [
@@ -4706,7 +4706,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_鉅銓_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_鉅銓_20250818_含稅.pdf"
   },
   {
     "primary_key": 383,
@@ -4739,7 +4739,7 @@
         "name": "光達國際通訊博愛店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815020002"
+        "doc_num": "P250816020002"
       }
     ],
     "branches": [
@@ -4768,7 +4768,7 @@
         "name": "台哥大-佳里光復",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250814010001"
+        "doc_num": "E250816010001"
       }
     ],
     "branches": [
@@ -4791,7 +4791,7 @@
         "name": "起點數位通訊",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010002"
+        "doc_num": "P250817010003"
       }
     ],
     "branches": [
@@ -4814,7 +4814,7 @@
         "name": "環球通信",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010001"
+        "doc_num": "P250817010003"
       }
     ],
     "branches": [
@@ -4850,7 +4850,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_綸_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_綸_20250818_含稅.pdf"
   },
   {
     "primary_key": 391,
@@ -4860,7 +4860,7 @@
         "name": "樂瘋玩-桃園大業店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010004"
+        "doc_num": "P250817010001"
       }
     ],
     "branches": [
@@ -4883,7 +4883,7 @@
         "name": "遠傳秀水店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010013"
+        "doc_num": "P250817010060"
       }
     ],
     "branches": [
@@ -4906,7 +4906,7 @@
         "name": "遠傳林口文化2店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250813010001"
+        "doc_num": "E250817010001"
       }
     ],
     "branches": [
@@ -4929,19 +4929,19 @@
         "name": "中豐",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250813020002"
+        "doc_num": "E250815020001"
       },
       {
         "name": "湖口",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250813030002"
+        "doc_num": "E250817030001"
       },
       {
         "name": "水源-台哥大",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814040008"
+        "doc_num": "E250815040002"
       }
     ],
     "branches": [
@@ -4966,19 +4966,19 @@
         "name": "台灣數位館-平鎮山頂店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010003"
+        "doc_num": "P250817010002"
       },
       {
         "name": "台灣數位館-龍潭旗艦店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020015"
+        "doc_num": "P250816020009"
       },
       {
         "name": "台灣數位館-內壢環中店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815030001"
+        "doc_num": "P250816030005"
       }
     ],
     "branches": [
@@ -5033,19 +5033,19 @@
         "name": "遠傳羅東中正",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010010"
+        "doc_num": "P250817010002"
       },
       {
         "name": "遠傳七堵明德",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020003"
+        "doc_num": "P250817020004"
       },
       {
         "name": "遠傳基隆聖心",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814030010"
+        "doc_num": "P250817030005"
       }
     ],
     "branches": [
@@ -5070,7 +5070,7 @@
         "name": "宇新公益旗艦店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010008"
+        "doc_num": "P250817010004"
       },
       {
         "name": "宇新彰化二林店",
@@ -5082,19 +5082,19 @@
         "name": "宇新大里成功店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250812030001"
+        "doc_num": "P250806030001"
       },
       {
         "name": "宇新太平樹孝店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815040001"
+        "doc_num": "P250817040002"
       },
       {
         "name": "宇新北區中清店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814050002"
+        "doc_num": "P250815050001"
       },
       {
         "name": "宇新五權南屯店",
@@ -5181,7 +5181,7 @@
         "name": "遠傳鳳山青年",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250809010001"
+        "doc_num": "E250816010001"
       }
     ],
     "branches": [
@@ -5194,7 +5194,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_巨聿_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_巨聿_20250818_含稅.pdf"
   },
   {
     "primary_key": 404,
@@ -5204,7 +5204,7 @@
         "name": "手機電信家",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010005"
+        "doc_num": "P250816010002"
       }
     ],
     "branches": [
@@ -5240,7 +5240,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_佳遠_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_佳遠_20250818_含稅.pdf"
   },
   {
     "primary_key": 406,
@@ -5263,7 +5263,7 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_放鑫_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_放鑫_20250818_含稅.pdf"
   },
   {
     "primary_key": 413,
@@ -5273,7 +5273,7 @@
         "name": "太平-精武(台哥大)",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250815010004"
+        "doc_num": "P250817010006"
       }
     ],
     "branches": [
@@ -5319,7 +5319,7 @@
         "name": "葳遠通訊行",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010003"
+        "doc_num": "P250817010004"
       }
     ],
     "branches": [
@@ -5342,13 +5342,13 @@
         "name": "Hero數位通訊-楊梅金山店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010001"
+        "doc_num": "P250817010004"
       },
       {
         "name": "中壢晉元店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814020001"
+        "doc_num": "P250816020006"
       }
     ],
     "branches": [
@@ -5372,7 +5372,7 @@
         "name": "翔翔通訊-台中昌平店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010001"
+        "doc_num": "P250817010001"
       }
     ],
     "branches": [
@@ -5418,7 +5418,7 @@
         "name": "遠傳民生二店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "E250815010001"
+        "doc_num": "E250815010002"
       }
     ],
     "branches": [
@@ -5441,7 +5441,7 @@
         "name": "遠傳新莊幸福店",
         "is_main": false,
         "is_charge": true,
-        "doc_num": "P250814010004"
+        "doc_num": "P250817010005"
       }
     ],
     "branches": [
@@ -5454,6 +5454,6 @@
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
-    "quote_path": "output_quotes/quote_遠聲_20250815_含稅.pdf"
+    "quote_path": "output_quotes/quote_遠聲_20250818_含稅.pdf"
   }
 ]

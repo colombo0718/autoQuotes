@@ -17,8 +17,8 @@ def index():
 def quote_file(filename):
     return send_from_directory("output_quotes", filename)
 
-# ===== 新增：讀取 companies_data.json 並依公司名稱回傳一筆資料 =====
-DATA_FILE = Path("companies_data.json")
+# ===== 新增：讀取 companies_payment_data.json 並依公司名稱回傳一筆資料 =====
+DATA_FILE = Path("companies_payment_data.json")
 
 def load_companies():
     if not DATA_FILE.exists():
@@ -41,6 +41,10 @@ def parse_bool(val, default=True):
         return default
     s = str(val).strip().lower()
     return s in ("1", "true", "t", "yes", "y", "on")
+
+@app.get("/api/companies")
+def list_companies():
+    return jsonify(ok=True, data=load_companies())
 
 @app.get("/api/company")
 def get_company_by_name():
