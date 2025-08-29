@@ -13,7 +13,7 @@ app.config["JSONIFY_MIMETYPE"] = "application/json; charset=utf-8"
 # 首頁 → 顯示 dashboard.html
 @app.route("/")
 def index():
-    return send_from_directory(".", "dashboard.html")
+    return send_from_directory(".", "dashboard2.html")
 
 # 提供報價單 PDF 檔案
 @app.route("/output_quotes/<path:filename>")
@@ -101,7 +101,7 @@ def get_or_regenerate_quote():
         qp = c.get("quote_path")
         if qp:
             return jsonify(ok=True, quote_path=qp)
-        return jsonify(ok=False, error="no existing quote"), 404
+        # return jsonify(ok=False, error="no existing quote"), 404
 
     # 需要重產 → 參數（未提供就用 JSON 內預設）
     period_months     = int(request.args.get("charge_months",   c.get("charge_months", 6)))

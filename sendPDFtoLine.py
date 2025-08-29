@@ -3,11 +3,11 @@ import requests
 # === 基本設定 ===
 BASE_URL = "https://topposnas.synology.me"
 STORE_ID = "86E951CF"
-LINE_UIDS = ["U145660126c71f5f0d89d6f5c6aaccefc"]
+LINE_UIDS = ["Uf300bfeaecce2c1d350b30e3a933ce85"]
 
 # 你要上傳的檔案路徑與名稱
-LOCAL_FILE_PATH = "quote_乙希_20250815_含稅.pdf"
-FILE_NAME = "quote_乙希_20250815_含稅.pdf"
+LOCAL_FILE_PATH = "quote_xxx.pdf"
+FILE_NAME = "quote_xxx.pdf"
 
 
 # === Step 1. 上傳檔案 ===
@@ -26,7 +26,7 @@ def upload_file(file_path):
 
 # === Step 2. 寄送檔案 ===
 def send_file(file_name):
-    url = f"{BASE_URL}/send_file_bulk"
+    url = f"{BASE_URL}/send_file"
     payload = {
         "store_id": STORE_ID,
         "line_uids": LINE_UIDS,
