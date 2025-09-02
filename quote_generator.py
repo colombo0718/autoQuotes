@@ -176,7 +176,7 @@ def generate_quote(
     # template_name = "quote_template_含稅.html" if price_includes_tax else "quote_template_未稅.html"
     env = Environment(loader=FileSystemLoader("."))
     template = env.get_template(template_name)
-    quote_date = date.today().strftime("%Y/%m/%d")
+    quote_date = date.today().strftime("%Y/%m")
     quote_number = f"INV-{quote_date.replace('/', '')}-{re.sub(r'[^\w-]', '', company_name)}"
 
     html = template.render(

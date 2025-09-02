@@ -29,21 +29,63 @@
       pointer-events: auto;
       cursor: pointer;
     }
+    dialog.pdf-dialog {
+      width: min(980px, 95vw);
+      height: min(85vh, 900px);
+      border: 1px solid #ccc;
+      /* border-radius: 10px; */
+      padding: 0;
+      overflow: hidden;
+    }
+    .pdf-dialog::backdrop { background: rgba(0,0,0,.25); }
+
+.pdfd-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 12px; border-bottom: 1px solid #eee; background: #fafafa;
+  font-size: 14px; color: #444;
+}
+.pdfd-title { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.pdfd-actions { display: flex; gap: 8px; }
+.pdfd-btn {
+  font-size: 12px; padding: 6px 10px; border: 1px solid #bbb; background: #fff;
+  border-radius: 6px; cursor: pointer;
+}
+
+.pdfd-body { width: 100%; height: calc(100% - 44px); }
+#pdf-preview-frame { width: 100%; height: 100%; border: 0; background: #fff; }
   </style>
 </head>
 <body>
   <h1>會計帳務系統</h1>
+  <!-- 篩選控制列 -->
+<div style="margin: 12px 0;">
+  <label>
+    <input type="checkbox" id="filter-due" />
+    僅顯示
+    <select id="expire-month" name="expire-month">
+      <option value="2025/09">2025 年 09 月</option>
+      <option value="2025/10">2025 年 10 月</option>
+      <option value="2025/11">2025 年 11 月</option>
+      <option value="2025/12">2025 年 12 月</option>
+    </select>需報價公司
+  </label>
+    <label class="control">
+</div>
+
   <table>
     <thead>
       <tr>
         <th>#</th>
         <th>主索引</th>
         <th>公司名稱</th>
-        <th>授權點數</th>
-        <th>活躍分店</th>
         <th>分店資訊</th>
-        <th>線上收費</th>
-        <th>報價需求</th>
+        <th>授權<br>點數</th>
+        <th>活躍<br>分店</th>
+        <th>可用<br>月數</th>
+        <th>到期月份</th>
+        <th>線上<br>收費</th>
+        <th>報價<br>需求</th>
         <th>含稅未稅</th>
         <th>收費月數</th>
         <th>月租折扣(%off)</th>
@@ -59,34 +101,148 @@
   <!-- 動態插入對話框用的容器 -->
   <div id="dialogs-container"></div>
 
+  <dialog id="pdf-preview-dialog" class="pdf-dialog">
+    <div class="pdfd-header">
+      <div id="pdf-preview-title" class="pdfd-title">報價單預覽</div>
+      <div class="pdfd-actions">
+        <button id="pdf-open-newtab" class="pdfd-btn">新分頁開啟</button>
+        <button id="pdf-close" class="pdfd-btn">關閉</button>
+      </div>
+    </div>
+    <div class="pdfd-body">
+      <iframe id="pdf-preview-frame" title="報價單 PDF 預覽"></iframe>
+    </div>
+  </dialog>
+
     <script>
+
+
         data=''
         async function loadCompanies() {
             try {
-            const res = await fetch("https://edbd7362fe1e.ngrok-free.app/api/companies");
-            if (!res.ok) throw new Error("HTTP " + res.status);
-            data = await res.json();
-            console.log("取得的公司資料：", data.data);
+              const baseUrl = window.location.origin; // 取得自己當前網頁的網址
+              const res = await fetch(`${baseUrl}/api/companies`);
+              if (!res.ok) throw new Error("HTTP " + res.status);
+              companiesJson = await res.json();
+              console.log("取得的公司資料：", companiesJson.data);
 
-            // 範例：把每家公司名稱塞進表格
-            const tbody = document.getElementById("company-table-body");
-            tbody.innerHTML = ""; // 清空
+              // 範例：把每家公司名稱塞進表格
+              const tbody = document.getElementById("company-table-body");
+              tbody.innerHTML = ""; // 清空
+              const dialogsContainer = document.getElementById("dialogs-container");
+              dialogsContainer.innerHTML = ""; // 清空所有對話框
 
-            data.data.forEach((c, idx) => {
-                const tr = document.createElement("tr");
-                tr.innerHTML = `
-                <td>${idx + 1}</td>
-                <td>${c.primary_key}</td>
-                <td>${c.company_name}</td>
-                <td>${c.license_count}</td>
-                <td>${c.active_count}</td>
-                <td>${c.online_pay}</td>
-                <td>${c.quote_required}</td>
-                <td>${c.charge_months}</td>
-                <td>${c.discount}%</td>
-                <td><a href="${c.quote_path || '#'}" target="_blank">下載</a></td>
-                `;
-                tbody.appendChild(tr);
+              // 讀取目前 UI 狀態
+              const onlyDue = document.getElementById("filter-due").checked;
+              const selectedMonth = document.getElementById("expire-month").value;
+
+              // 篩選資料
+              let list = companiesJson.data;
+              if (onlyDue && selectedMonth) {
+                list = list.filter(c => c.due_month === selectedMonth);
+                list = list.filter(c => c.online_pay === 1);
+              }
+
+              list.forEach((c, idx) => {
+                  console.log(c)
+                  // 判斷顏色 class
+                  let statusClass = "";
+                  if (c.active_count > c.license_count) {
+                      statusClass = "status-error";     // 活躍數 > 授權數 → 異常
+                  } else if (c.active_count === c.license_count) {
+                      statusClass = "status-warning";   // 剛好相等 → 警告
+                  } else {
+                      statusClass = "status-ok";        // 授權數 > 活躍數 → 正常
+                  }
+
+                  const tr = document.createElement("tr");
+                  tr.innerHTML = `
+                  <td>${idx + 1}</td>
+                  <td>${c.primary_key}</td>
+                  <td>${c.company_name}</td>
+                  <td>
+                    <button onclick="document.getElementById('modal_${c.primary_key }').showModal()">查看</button>
+                  </td>
+                  <td class="${statusClass}">${c.license_count}</td>
+                  <td class="${statusClass}">${c.active_count}</td>
+                  <td class="${statusClass}">${c.remain_months}</td>
+                  <td class="${statusClass}">${c.due_month}</td>
+
+                  <td class="${c.online_pay === 0 ? 'off' : ''}">${c.online_pay}</td>
+                  <td class="${c.quote_required === 0 ? 'off' : ''}">${c.quote_required}</td>
+
+                  <td>
+                      <input type="checkbox" class="input-tax"  checked >
+                  </td>
+                  <td>
+                      <input type="range" class="input-months" min="1" max="12" step="1" value="${c.charge_months }"
+                          style="width: 100px;"
+                          oninput="this.nextElementSibling.innerText = this.value + ' 個月'">
+                      <span>${ c.charge_months } 個月</span>
+                  </td>
+                  <td>
+                      <input type="range" class="input-discount"  min="0" max="90" step="10" value="${ c.discount }" 
+                          style="width: 100px;"
+                          oninput="this.nextElementSibling.innerText = this.value + '%';">
+                      <span>${ c.discount }%</span>
+                  </td>
+                  <td>
+                    <button class="btn-micro" data-pk="${c.primary_key}" onclick="generateQuote(this)">生成</button>
+                  </td>
+                  <td>
+                    <button class="btn-micro preview-btn"
+                      ${c.quote_path ? "" : "disabled"}
+                      data-company="${(c.company_name || "").replace(/'/g, "\\'")}"
+                      data-path="${(c.quote_path || "").replace(/'/g, "\\'")}"
+                      onclick="previewQuoteInDialog(this.dataset.path, this.dataset.company)">
+                      預覽
+                    </button>
+                  </td>
+                  
+                  `;
+                  // <td><a href="${c.quote_path || '#'}" target="_blank">下載</a></td>
+                  // remainingMonths=Math.floor(c.license_count / (c.charge_count || 1))
+
+                  tbody.appendChild(tr);
+
+
+                  // === 對話框：依公司分店資訊動態建立並加入容器 ===
+                  const branches = Array.isArray(c.branches_info) ? c.branches_info : [];
+                  const rowsHtml = branches.map(b => `
+                    <tr>
+                      <td>${b?.name ?? ""}</td>
+                      <td>${(b?.is_main ? "是" : "否")}</td>
+                      <td><input type="checkbox" ${b?.is_active ? "checked" : ""}></td>
+                      <td>${b?.doc_num ?? "null"}</td>
+                    </tr>
+                  `).join("");
+
+                  const dialog = document.createElement("dialog");
+                  dialog.id = `modal_${c.primary_key}`;
+                  dialog.className = "branch-dialog"; // 有無樣式都不影響功能，僅供美化用
+                  dialog.innerHTML = `
+                    <h3>${c.company_name} - 分店資訊</h3>
+                    <div class="dialog-body">
+                      <table border="1" style="width:100%; border-collapse:collapse;">
+                        <thead>
+                          <tr>
+                            <th>分店名稱</th>
+                            <th>是否總倉</th>
+                            <th>是否收費</th>
+                            <th>近期單號</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          ${rowsHtml}
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="dialog-actions" style="margin-top:12px; text-align:right;">
+                      <button onclick="this.closest('dialog').close()">關閉</button>
+                    </div>
+                  `;
+
+                  dialogsContainer.appendChild(dialog);
             });
             } catch (err) {
             console.error("載入失敗：", err);
@@ -97,6 +253,113 @@
 
         // 載入頁面時執行
         loadCompanies();
+        // 勾選或下拉改變時，重新載入
+        document.getElementById("filter-due").addEventListener("change", loadCompanies);
+        document.getElementById("expire-month").addEventListener("change", loadCompanies);
+
+         // 開啟 PDF 預覽 dialog
+        function previewQuoteInDialog(url, companyName) {
+          if (!url || url === "#") {
+            alert("這筆資料暫無報價單檔案可預覽。");
+            return;
+          }
+          const dlg = document.getElementById("pdf-preview-dialog");
+          const frame = document.getElementById("pdf-preview-frame");
+          const title = document.getElementById("pdf-preview-title");
+          const openBtn = document.getElementById("pdf-open-newtab");
+          const closeBtn = document.getElementById("pdf-close");
+
+          // 設定內容
+          frame.src = url;
+          title.textContent = `${companyName} 的報價單`;
+          openBtn.onclick = () => window.open(url, "_blank");
+          closeBtn.onclick = () => dlg.close();
+
+          // backdrop 點擊關閉
+          dlg.addEventListener("click", (e) => {
+            const rect = dlg.getBoundingClientRect();
+            const inDialog = (
+              e.clientX >= rect.left && e.clientX <= rect.right &&
+              e.clientY >= rect.top && e.clientY <= rect.bottom
+            );
+            if (!inDialog) dlg.close();
+          }, { once: true });
+
+          // 開啟
+          if (typeof dlg.showModal === "function") dlg.showModal();
+          else dlg.show(); // fallback
+        }
+
+        async function generateQuote(btn) {
+          const baseUrl = window.location.origin;
+
+          // 同列元素
+          const tr = btn.closest('tr');
+          const pk = btn.dataset.pk;
+
+          const taxIncluded = tr.querySelector('.input-tax')?.checked ? 1 : 0;
+          const chargeMonths = Number(tr.querySelector('.input-months')?.value || 1);
+          const discount = Number(tr.querySelector('.input-discount')?.value || 0);
+
+            // 取值
+  const companyName = tr.children[2]?.textContent?.trim() || ''; // 第3欄是公司名稱
+  // const chargeMonths = Number(tr.querySelector('.input-months')?.value || 1);
+  const priceIncludesTax = tr.querySelector('.input-tax')?.checked ? 'true' : 'false';
+  const unitPrice = 2600*(100-discount)/100;
+
+  if (!companyName) return alert('找不到公司名稱');
+  // if (!unitPrice)   return alert('請輸入單價');
+
+          // UI：按鈕進度狀態
+          const oldLabel = btn.textContent;
+          btn.disabled = true;
+          btn.textContent = '生成中...';
+try {
+    // 組 query string 依你的 API 規格
+    const qs = new URLSearchParams({
+      name: companyName,
+      charge_months: String(chargeMonths),
+      price_includes_tax: priceIncludesTax,
+      unit_price: String(unitPrice)
+    });
+
+    const url = `${baseUrl}/api/quote?${qs.toString()}`;
+    console.log(url)
+    const res = await fetch(url, { method: 'GET' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const json = await res.json();
+
+    if (!json.ok) throw new Error(json.message || '生成失敗');
+    const newPath = json.quote_path;
+    if (!newPath) throw new Error('未取得 quote_path');
+
+    // 更新本列的預覽按鈕路徑
+    const previewBtn = tr.querySelector('.preview-btn');
+    if (previewBtn) {
+      previewBtn.disabled = false;
+      previewBtn.dataset.path = newPath;
+      previewBtn.dataset.company = companyName;
+    }
+
+    // 若 PDF 對話框已開且是同公司，立即刷新 iframe
+    const dlg = document.getElementById('pdf-preview-dialog');
+    if (dlg?.open) {
+      const title = document.getElementById('pdf-preview-title')?.textContent || '';
+      if (title.includes(companyName)) {
+        document.getElementById('pdf-preview-frame').src = newPath;
+      }
+    }
+
+    btn.textContent = '完成';
+    setTimeout(() => { btn.textContent = oldLabel; btn.disabled = false; }, 800);
+
+  } catch (err) {
+    console.error(err);
+    alert('生成失敗：' + err.message);
+    btn.textContent = oldLabel;
+    btn.disabled = false;
+  }
+        }
     </script>
 </body>
 </html>

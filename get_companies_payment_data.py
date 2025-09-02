@@ -5,6 +5,8 @@ import pyodbc
 import re
 import sys
 import json
+from dateutil.relativedelta import relativedelta  # 需要 pip install python-dateutil
+
 
 # 讓 Python 能匯入 quote_generator.py
 sys.path.append(".")
@@ -92,8 +94,10 @@ def get_companies_data():
 
 
         active_count = 0
+        charge_count = 0
         branches_info = []
         active_branch_names=[]
+        charge_branch_names=[]
 
         for row3 in rows3:
             onlinepay_disable = row3[onlinepay_disable_idx]
@@ -110,7 +114,7 @@ def get_companies_data():
             branch_info = {
                 "name": branch_name,
                 "is_main": False, # 紀錄是否為總倉
-                "is_charge": False, # 預設為未活躍 不收費
+                "is_active": False, # 預設為未活躍 不收費
                 "doc_num": None
             }
 
@@ -130,7 +134,7 @@ def get_companies_data():
                 if document_number[1:5]==yymm:
                     if document_number[7:9] == branch_numb :
                         print(document_number)
-                        branch_info["is_charge"] = True
+                        branch_info["is_active"] = True
                         branch_info["doc_num"] = document_number
                         break
 
@@ -141,7 +145,7 @@ def get_companies_data():
                 if document_number[1:5]==yymm:
                     if document_number[7:9] == branch_numb :
                         print(document_number)
-                        branch_info["is_charge"] = True
+                        branch_info["is_active"] = True
                         branch_info["doc_num"] = document_number
                         break
 
@@ -149,12 +153,14 @@ def get_companies_data():
             if int(main_warehouse_id) == row3[0] :
                 print(branch_name,'是總倉')
                 branch_info["is_main"] = True
-                branch_info["is_charge"] = False
+                branch_info["is_active"] = False
             else :
                 # 非總倉店家，用於收費
-                active_branch_names.append(branch_name)
+                charge_branch_names.append(branch_name)
+                charge_count+=1 # 收費店家數，用於推估到期月
 
-            if branch_info["is_charge"]: 
+            if branch_info["is_active"]: 
+                active_branch_names.append(branch_name)
                 active_count+=1  # 活躍店家數，用於扣點
 
             branches_info.append(branch_info)
@@ -164,7 +170,20 @@ def get_companies_data():
         if  active_count >= license_count and online_pay:
             quote_required=1
 
+        # 計算當前月份
+        remain_months = license_count // (charge_count or 1)
+        # 當前年月
+        now = date.today()
+        current_ym = now.strftime("%Y%m")
+        # 計算到期月份
+        due_date = now + relativedelta(months=remain_months)
+        due_month = due_date.strftime("%Y/%m")
+
+        print("remain_months =", remain_months)
+        print("due_month =", due_month)
+
         print(active_branch_names)
+        print(charge_branch_names)
         companies.append({
             "primary_key":primary_key,
             "company_name": db_name,
@@ -172,6 +191,9 @@ def get_companies_data():
             "branches": active_branch_names,  # 過度給generate_quote()的資料
             "license_count": license_count,
             "active_count": active_count,
+            "charge_count": charge_count,
+            "remain_months":remain_months,
+            "due_month":due_month,
             "online_pay":online_pay,
             "quote_required":quote_required,
             "charge_months": charge_months,
@@ -186,18 +208,18 @@ if __name__ == "__main__":
     companies_data = get_companies_data()
     for company in companies_data:
 
-        if company["quote_required"]==1 :
-            quote_path = generate_quote(
-                company_data=company,
-                period_months=company["charge_months"],
-                price_includes_tax=True,
-                unit_price=company["unit_price"],
-                template_name="quote_template2.html",  # 或改成 quote_template.html
-                output_dir="output_quotes"
-            )
-            company["quote_path"] = str(quote_path).replace("\\", "/")
-        else :
-            company["quote_path"] = ""
+        # if company["quote_required"]==1 :
+        quote_path = generate_quote(
+            company_data=company,
+            period_months=company["charge_months"],
+            price_includes_tax=True,
+            unit_price=company["unit_price"],
+            template_name="quote_template2.html",  # 或改成 quote_template.html
+            output_dir="output_quotes"
+        )
+        company["quote_path"] = str(quote_path).replace("\\", "/")
+        # else :
+        #     company["quote_path"] = ""
 
     # 2) 輸出 JSON —— 作為 SoT 給前端與 API 使用
     Path("companies_payment_data.json").write_text(
@@ -210,4 +232,4 @@ if __name__ == "__main__":
     # template = env.get_template("dashboard_template.html")
     # html_output = template.render(companies=companies_data)
     # Path("dashboard.html").write_text(html_output, encoding="utf-8")
-    # print("✅ 已完成 dashboard.html")
+    # print("✅ 已完成 dashboard.html") 

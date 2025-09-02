@@ -110,8 +110,8 @@ def get_or_regenerate_quote():
     template_name     = request.args.get("template_name", "quote_template2.html")
 
     branches = c.get("branches") or []
-    if not branches:
-        return jsonify(ok=False, error="no branches to bill"), 400
+    # if not branches:
+    #     return jsonify(ok=False, error="no branches to bill"), 400
 
     pdf_path = generate_quote(
         company_data={"company_name": c["company_name"], "branches": branches},
