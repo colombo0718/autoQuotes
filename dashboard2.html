@@ -63,12 +63,14 @@
   <label>
     <input type="checkbox" id="filter-due" />
     僅顯示
-    <select id="expire-month" name="expire-month">
+    <!-- <select id="expire-month" name="expire-month">
       <option value="2025/09">2025 年 09 月</option>
       <option value="2025/10">2025 年 10 月</option>
       <option value="2025/11">2025 年 11 月</option>
       <option value="2025/12">2025 年 12 月</option>
-    </select>需報價公司
+    </select> -->
+    <select id="expire-month" name="expire-month"></select>需報價公司
+    需報價公司
   </label>
     <label class="control">
 </div>
@@ -116,6 +118,36 @@
 
     <script>
 
+      function populateExpireMonthOptions(monthsAhead = 15) {
+        const sel = document.getElementById('expire-month');
+        if (!sel) return;
+
+        // 以「當月 1 號」為基準
+        const start = new Date();
+        console.log(start)
+        start.setDate(1);
+        
+
+        sel.innerHTML = '';
+        for (let i = 0; i < monthsAhead; i++) {
+          const d = new Date(start.getFullYear(), start.getMonth() + i, 1);
+          const yyyy = d.getFullYear();
+          const mm = String(d.getMonth() + 1).padStart(2, '0');
+          const value = `${yyyy}/${mm}`;
+          const label = `${yyyy} 年 ${mm} 月`;
+
+          const opt = new Option(label, value);
+          sel.add(opt);
+        }
+
+        // 永遠預設當月
+        const currentValue = `${start.getFullYear()}/${String(start.getMonth() + 1).padStart(2, '0')}`;
+        sel.value = currentValue;
+      }
+
+      // 先產生月份 → 再載入公司資料
+      populateExpireMonthOptions(15);
+
 
         data=''
         async function loadCompanies() {
@@ -124,7 +156,7 @@
               const res = await fetch(`${baseUrl}/api/companies`);
               if (!res.ok) throw new Error("HTTP " + res.status);
               companiesJson = await res.json();
-              console.log("取得的公司資料：", companiesJson.data);
+              // console.log("取得的公司資料：", companiesJson.data);
 
               // 範例：把每家公司名稱塞進表格
               const tbody = document.getElementById("company-table-body");
@@ -144,7 +176,7 @@
               }
 
               list.forEach((c, idx) => {
-                  console.log(c)
+                  // console.log(c)
                   // 判斷顏色 class
                   let statusClass = "";
                   if (c.active_count > c.license_count) {

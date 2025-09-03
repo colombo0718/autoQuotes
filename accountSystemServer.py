@@ -15,6 +15,11 @@ app.config["JSONIFY_MIMETYPE"] = "application/json; charset=utf-8"
 def index():
     return send_from_directory(".", "dashboard2.html")
 
+# 首頁 → 顯示 dashboard.html
+@app.route("/liff")
+def liff():
+    return send_from_directory(".", "liffPage.html")
+
 # 提供報價單 PDF 檔案
 @app.route("/output_quotes/<path:filename>")
 def quote_file(filename):

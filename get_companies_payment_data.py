@@ -26,7 +26,7 @@ def get_companies_data():
 
     # 連接 POSConfig 撈出公司設定
     query = """
-    SELECT 主索引, 資料庫名, 停用, 線上收費, 收費月數, 月租折扣
+    SELECT 主索引, 資料庫名, 停用, 線上收費, 收費月數, 月租折扣,贈送月數
     FROM 分店設定檔
     """
 
@@ -41,6 +41,7 @@ def get_companies_data():
     onlinepay_idx = columns1.index("線上收費")
     charge_month_idx = columns1.index("收費月數")
     discount_idx = columns1.index("月租折扣")
+    bonus_month_idx = columns1.index("贈送月數")
     cursor1.close()
     conn1.close()
 
@@ -68,6 +69,7 @@ def get_companies_data():
         primary_key=row1[0]
         online_pay= 1 if row1[onlinepay_idx] else 0
         charge_months = row1[charge_month_idx] or 6
+        bonus_months = row1[bonus_month_idx] or 0
         discount = row1[discount_idx] or 0
         unit_price = int(2600 * ((100-discount) / 100))
 
@@ -198,7 +200,8 @@ def get_companies_data():
             "quote_required":quote_required,
             "charge_months": charge_months,
             "discount": discount,
-            "unit_price":unit_price
+            "unit_price":unit_price,
+            "bonus_months": bonus_months,
         })
 
     return companies
@@ -212,6 +215,7 @@ if __name__ == "__main__":
         quote_path = generate_quote(
             company_data=company,
             period_months=company["charge_months"],
+            bonus_months=company["bonus_months"],
             price_includes_tax=True,
             unit_price=company["unit_price"],
             template_name="quote_template2.html",  # 或改成 quote_template.html

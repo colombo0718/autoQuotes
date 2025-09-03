@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LIFF 商品喜好測試</title>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif; margin: 0; background:#f7f7f8; }
+    .wrap { max-width: 520px; margin: 0 auto; padding: 20px; }
+    h1 { font-size: 20px; margin: 16px 0; }
+    .card { background:#fff; border-radius:16px; padding:16px; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+    .grid { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px; margin-top:12px; }
+    button { border:0; border-radius:12px; padding:12px; font-size:16px; cursor:pointer; background:#1e9bff; color:#fff; }
+    button[disabled] { opacity:.5; cursor:not-allowed; }
+    .muted { color:#666; font-size:13px; }
+    .status { margin-top:10px; font-size:14px; }
+    .ok { color:#0a7a32; }
+    .warn { color:#ab5c00; }
+    .err { color:#b00020; }
+    .footer { margin-top:18px; font-size:12px; color:#888; }
+    code { background:#eee; padding:2px 6px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>LIFF 商品喜好測試</h1>
+    <div class="card">
+      <div class="muted">點任一按鈕，會在目前聊天室送出：<code>「&lt;用戶名&gt; 喜歡 &lt;商品&gt; 商品」</code></div>
+      <div class="grid">
+        <button class="btn-like" data-product="A">我喜歡 A</button>
+        <button class="btn-like" data-product="B">我喜歡 B</button>
+        <button class="btn-like" data-product="C">我喜歡 C</button>
+      </div>
+      <div id="status" class="status muted">初始化中…</div>
+    </div>
+    <div class="footer">
+      提醒：此頁需在 LINE App 內開啟，且 LIFF 勾選 <code>openid</code>、<code>profile</code>、<code>chat_message.write</code>。
+    </div>
+  </div>
+
+  <script>
+    // 1) 替換成你的 LIFF ID
+    const LIFF_ID = "2008039127-p7We0QWm";
+
+    const statusEl = document.getElementById('status');
+    const btns = document.querySelectorAll('.btn-like');
+
+    function setStatus(msg, cls="muted") {
+      statusEl.className = `status ${cls}`;
+      statusEl.textContent = msg;
+    }
+
+    async function ensureLogin() {
+      if (!liff.isLoggedIn()) {
+        liff.login(); // 登入後會回到本頁
+        return false;
+      }
+      return true;
+    }
+
+    async function init() {
+      try {
+        await liff.init({ liffId: LIFF_ID });
+      } catch (e) {
+        setStatus("LIFF 初始化失敗：" + e.message, "err");
+        console.error(e);
+        disableAll();
+        return;
+      }
+
+      const loggedIn = await ensureLogin();
+      if (!loggedIn) return;
+
+      if (!liff.isInClient()) {
+        setStatus("目前不在 LINE App 內，將無法直接把訊息送回聊天室。", "warn");
+      } else {
+        setStatus("已就緒：可在目前聊天室送出訊息。", "ok");
+      }
+
+      // 綁定按鈕
+      btns.forEach(btn => {
+        btn.addEventListener('click', onLikeClick);
+      });
+    }
+
+    function disableAll(disabled=true) {
+      btns.forEach(b => b.disabled = disabled);
+    }
+
+    async function onLikeClick(e) {
+      const product = e.currentTarget.dataset.product || "?";
+      disableAll(true);
+
+      try {
+        // 2) 取得使用者暱稱
+        const profile = await liff.getProfile(); // 需 scope: profile
+        const name = profile?.displayName || "我";
+
+        // 3) 在 LINE App 內，以 Bot 身分把訊息送回 "目前聊天室"
+        if (liff.isInClient()) {
+          await liff.sendMessages([
+            { type: 'text', text: `${name} 喜歡 ${product} 商品` }
+          ]);
+          setStatus(`已送出：「${name} 喜歡 ${product} 商品」`, "ok");
+        } else {
+          // 如果不是在 LINE 內，可以改用 shareTargetPicker 作為替代
+          // await liff.shareTargetPicker([{ type:'text', text:`${name} 喜歡 ${product} 商品` }]);
+          setStatus("不在 LINE App 內，未送訊息。請從 LINE 中開啟此連結測試。", "warn");
+        }
+
+      } catch (err) {
+        console.error(err);
+        setStatus("送訊息失敗：" + (err.message || err), "err");
+      } finally {
+        disableAll(false);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

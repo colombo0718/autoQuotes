@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>通訊行推薦商品｜LIFF 模擬頁（卡片式）</title>
+  <meta name="description" content="模擬手機通訊行的推薦商品頁面（卡片式網格）。僅圖片與價格，未接 LIFF SDK。" />
+  <style>
+    :root{
+      --bg:#0b0c0f; --card:#111319; --muted:#8b93a7; --text:#e6e9ef; --primary:#4f8cff; --accent:#6ce4ff;
+      --chip-bg:#151927; --chip:#aab3c8; --price:#a7f3d0;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif; background:var(--bg-grad, linear-gradient(180deg,#0a0b10 0%, #10121a 100%)); color:var(--text)}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;backdrop-filter:blur(10px); background:rgba(10,12,18,.7); border-bottom:1px solid #1b2030; z-index:50}
+    header .bar{display:flex;align-items:center;gap:12px;padding:12px 20px}
+    .logo{width:36px;height:36px;border-radius:10px;background:radial-gradient(120% 120% at 20% 10%, var(--accent), transparent 40%), linear-gradient(135deg,#1e293b,#0b1220); box-shadow:0 8px 24px rgba(108,228,255,.2)}
+    h1{font-size:18px;margin:0}
+    .badge{margin-left:auto;font-size:12px;padding:6px 10px;border-radius:999px;background:var(--chip-bg);color:var(--chip);border:1px solid #1f2740}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+    .card{position:relative;background:var(--card);border:1px solid #1a2033;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    body[data-theme="2"] .card{border:1px solid #e5e7eb; box-shadow:0 10px 24px rgba(15,23,42,.08); border-radius:14px}
+    body[data-theme="3"] .card{border:1px solid rgba(255,255,255,.15); box-shadow:0 8px 30px rgba(124,58,237,.25)}
+    body[data-theme="4"] .card{display:grid; grid-template-columns:120px 1fr; gap:10px; border-radius:12px}
+    body[data-theme="5"] .card{border:1px solid #f59e0b; border-radius:18px; box-shadow:0 8px 20px rgba(245,158,11,.25)}
+    .media{aspect-ratio:1/1;display:block;width:100%;object-fit:cover;background:#0b0f18}
+    body[data-theme="4"] .media{height:100%; aspect-ratio:auto; border-right:1px solid #1f2937}
+    .content{padding:12px 14px 14px}
+    .title{font-size:14px;font-weight:700;line-height:1.3;margin:0 0 6px}
+    .meta{display:flex;gap:8px;align-items:center;justify-content:space-between}
+    .price{font-weight:800;font-size:16px;color:var(--price)}
+    body[data-theme="2"] .price{font-size:18px}
+    body[data-theme="4"] .price{font-size:18px}
+    body[data-theme="5"] .price{font-size:18px}
+    .tag{font-size:11px;padding:4px 8px;border-radius:999px;background:var(--chip-bg);color:var(--chip);border:1px solid #1c243a}
+    .actions{margin-top:10px;display:flex;gap:8px}
+    button{flex:1;padding:10px 12px;border-radius:10px;border:1px solid #1f2740;background:#121725;color:#cbd5e1;font-weight:600;cursor:pointer}
+    button.primary{background:linear-gradient(180deg,#2346ff,#1f2bb8); border-color:#2b3bb8; color:white}
+    button:active{transform:translateY(1px)}
+
+    .footer{color:var(--muted);font-size:12px;text-align:center;margin:22px 0 30px}
+  /* ===== Theme Switcher by storeID (1~5) ===== */
+    body{--bg:#0b0c0f; --card:#111319; --muted:#8b93a7; --text:#e6e9ef; --primary:#4f8cff; --accent:#6ce4ff; --chip-bg:#151927; --chip:#aab3c8; --price:#a7f3d0}
+    body[data-theme="1"]{ /* Dark Neon (原版) */
+      --bg-grad:linear-gradient(180deg,#0a0b10 0%, #10121a 100%);
+      --card:#111319; --text:#e6e9ef; --muted:#8b93a7; --chip-bg:#151927; --chip:#aab3c8; --price:#a7f3d0;
+    }
+    body[data-theme="2"]{ /* Minimal Light */
+      --bg-grad:linear-gradient(180deg,#ffffff 0%, #f8fafc 100%);
+      --card:#ffffff; --text:#0f172a; --muted:#6b7280; --chip-bg:#eef2ff; --chip:#334155; --price:#b91c1c;
+    }
+    body[data-theme="3"]{ /* Purple Glass */
+      --bg-grad:radial-gradient(60% 80% at 20% 10%, #3b0764 0%, transparent 60%), linear-gradient(180deg,#0b1020,#1b1030);
+      --card:rgba(255,255,255,0.06); --text:#f5f3ff; --muted:#c7bfff; --chip-bg:rgba(255,255,255,.08); --chip:#e9ddff; --price:#c4b5fd;
+      backdrop-filter: blur(8px);
+    }
+    body[data-theme="4"]{ /* Black Lime List（改成列表視覺） */
+      --bg-grad:linear-gradient(180deg,#0a0a0a,#111);
+      --card:#0f1115; --text:#e5fee5; --muted:#a3f3a3; --chip-bg:#0b1f12; --chip:#86efac; --price:#bbf7d0;
+    }
+    body[data-theme="5"]{ /* Warm Sand */
+      --bg-grad:linear-gradient(180deg,#faf3e7,#fff9f0);
+      --card:#fff7ed; --text:#4a3428; --muted:#8b6f5a; --chip-bg:#fde68a; --chip:#7c2d12; --price:#dc2626;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar container">
+      <div class="logo" aria-hidden="true"></div>
+      <h1>全葳通訊｜推薦商品</h1>
+      <div class="badge">LIFF 模擬頁（卡片式；未接 SDK）</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="productGrid" class="grid" aria-live="polite"></div>
+    <p class="footer">僅示意用：價格以新台幣 (TWD) 顯示。圖片請改成你的來源（可放地標網通圖片 URL）。</p>
+  </main>
+
+  <script>
+    // 依你的要求：保留卡片網格版型，商品名稱/價格參考地標網通
+    // 你可以把 img 換成對應的地標圖片網址
+    const products = [
+        { id:'p1', name:'Apple iPhone 14 (128GB)', price:18990, tag:'5G', img:'https://storage.googleapis.com/landtop_prod_cache/product/2110/product_image/89ed92488de65806a9fbf7975f40d2d1.png' },
+        { id:'p2', name:'Apple iPhone 16e',        price:18990, tag:'5G', img:'https://storage.googleapis.com/landtop_prod/productimage/3465/image/dd058cc04ffa06ec6450c0ab3778ddf8.png' },
+        { id:'p3', name:'Apple iPhone 16',         price:25690, tag:'5G', img:'https://storage.googleapis.com/landtop_prod/product/3059/product_image/5ded911850e3270bb7bb486ca7e44401.png' },
+        { id:'p4', name:'Apple iPhone 16 Plus',    price:28990, tag:'5G', img:'https://storage.googleapis.com/landtop_prod/productimage/2993/image/e064f201b15eb6f8a56b9696893ba655.png' },
+        { id:'p5', name:'Apple iPhone 16 Pro',     price:32490, tag:'5G', img:'https://storage.googleapis.com/landtop_prod_cache/product/3061/product_image/cdc6e1611d0475d4873e353f0d7afa45.png' },
+        { id:'p6', name:'Apple iPhone 16 Pro Max', price:39890, tag:'5G', img:'https://storage.googleapis.com/landtop_prod/productimage/3002/image/4e1f2419b34e3572d6bb90f4ecd841a8.png' }
+        ];
+
+    const NTD = new Intl.NumberFormat('zh-TW', { style: 'currency', currency: 'TWD', maximumFractionDigits: 0 });
+
+    function createCard(p){
+      const el = document.createElement('article');
+      el.className = 'card';
+      el.innerHTML = `
+        <img class="media" src="${p.img}" alt="商品圖：${p.name}" loading="lazy"/>
+        <div class="content">
+          <h2 class="title">${p.name}</h2>
+          <div class="meta">
+            <span class="price">${NTD.format(p.price)}</span>
+            <span class="tag">${p.tag || ''}</span>
+          </div>
+          <div class="actions">
+            <button onclick="alert('示意：加入收藏')">收藏</button>
+            <button class="primary" onclick="alert('示意：尚未接 LIFF SDK')">立即了解</button>
+          </div>
+        </div>`;
+      return el;
+    }
+
+    const grid = document.getElementById('productGrid');
+    products.forEach(p => grid.appendChild(createCard(p)));
+      // 依 URL 參數切換主題（storeID=1~5）
+    const params = new URLSearchParams(location.search);
+    const storeID = params.get('storeID') || '1';
+    document.body.setAttribute('data-theme', storeID);
+
+    // 可選：動態顯示目前套用的佈景名稱
+    const themeNames = { '1':'Dark Neon', '2':'Minimal Light', '3':'Purple Glass', '4':'Black Lime List', '5':'Warm Sand' };
+    document.querySelector('.badge').textContent = `LIFF 模擬頁（${themeNames[storeID] || '主題'}）`;
+  </script>
+</body>
+</html>
