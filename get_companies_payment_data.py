@@ -1,6 +1,6 @@
 from jinja2 import Environment, FileSystemLoader
 from pathlib import Path
-from datetime import date
+from datetime import date,timedelta
 import pyodbc
 import re
 import sys
@@ -115,9 +115,12 @@ def get_companies_data():
             # 初始化分店資訊
             branch_info = {
                 "name": branch_name,
-                "is_main": False, # 紀錄是否為總倉
-                "is_active": False, # 預設為未活躍 不收費
-                "doc_num": None
+                "is_main": False,   # 總倉標記
+                "is_active": False, # 預設未活躍
+                "doc_num": None,    # 最近一張單號
+                "sale_count": 0,
+                "ship_count": 0,
+                "repair_count": 0,
             }
 
 
@@ -125,31 +128,70 @@ def get_companies_data():
             # [檢索兩種單據]
             current_date = date.today()
             yymm = f"{str(current_date.year)[2:]}{current_date.month:02d}"  # 取年份後兩位，月補零
+            yymmdd = f"{str(current_date.year)[2:]}{current_date.month:02d}{current_date.day:02d}"  # 取年份後兩位，月補零
+            # print(yymmdd)
+
+
+            since_date = date.today() - timedelta(days=30)
+
+            def count_docs(table, date_col, branch_col="分店編號"):
+                sql = f"""
+                    SELECT COUNT(*)
+                    FROM {table}
+                    WHERE {branch_col} = ?
+                    AND {date_col} >= ?
+                """
+                # print(sql)
+                cursor3.execute(sql, (row3[0], since_date))  # row3[0] 是分店編號（整數）
+                return cursor3.fetchone()[0] or 0
+
+            sale_count   = count_docs("銷貨單", "單據日期")
+            ship_count   = count_docs("出貨單", "單據日期")
+            repair_count = count_docs("維修單", "單據日期")
+
+            branch_info["sale_count"]   = sale_count
+            branch_info["ship_count"]   = ship_count
+            branch_info["repair_count"] = repair_count
+
+            total_count = sale_count + ship_count + repair_count
+            branch_info["is_active"] = total_count > 0
 
             # print(driver,server,db_name,username,password)
             # conn3 = pyodbc.connect(f'DRIVER={{{driver}}};SERVER={server};DATABASE={db_name};UID={username};PWD={password}')
-            cursor3 = conn3.cursor()
-            cursor3.execute("SELECT 單據編號 FROM 銷貨單")
-            rows4 = cursor3.fetchall()
-            for row4 in reversed(rows4):
-                document_number=row4[0]
-                if document_number[1:5]==yymm:
-                    if document_number[7:9] == branch_numb :
-                        print(document_number)
-                        branch_info["is_active"] = True
-                        branch_info["doc_num"] = document_number
-                        break
 
-            cursor3.execute("SELECT 單據編號 FROM 出貨單")
-            rows4 = cursor3.fetchall()
-            for row4 in reversed(rows4):
-                document_number=row4[0]
-                if document_number[1:5]==yymm:
-                    if document_number[7:9] == branch_numb :
-                        print(document_number)
-                        branch_info["is_active"] = True
-                        branch_info["doc_num"] = document_number
-                        break
+            # cursor3 = conn3.cursor()
+            # cursor3.execute("SELECT 單據編號 FROM 銷貨單")
+            # rows4 = cursor3.fetchall()
+            # for row4 in reversed(rows4):
+            #     document_number=row4[0]
+            #     if document_number[1:5]==yymm:
+            #         if document_number[7:9] == branch_numb :
+            #             print(document_number)
+            #             branch_info["is_active"] = True
+            #             branch_info["doc_num"] = document_number
+            #             break
+
+            # cursor3.execute("SELECT 單據編號 FROM 出貨單")
+            # rows4 = cursor3.fetchall()
+            # for row4 in reversed(rows4):
+            #     document_number=row4[0]
+            #     if document_number[1:5]==yymm:
+            #         if document_number[7:9] == branch_numb :
+            #             print(document_number)
+            #             branch_info["is_active"] = True
+            #             branch_info["doc_num"] = document_number
+            #             break
+
+            # cursor3.execute("SELECT 單據編號 FROM 維修單")
+            # rows4 = cursor3.fetchall()
+            # for row4 in reversed(rows4):
+            #     document_number=row4[0]
+            #     if document_number[1:5]==yymm:
+            #         if document_number[7:9] == branch_numb :
+            #             print(document_number)
+            #             branch_info["is_active"] = True
+            #             branch_info["doc_num"] = document_number
+            #             break
 
             # 總倉不收費
             if int(main_warehouse_id) == row3[0] :
@@ -181,11 +223,12 @@ def get_companies_data():
         due_date = now + relativedelta(months=remain_months)
         due_month = due_date.strftime("%Y/%m")
 
-        print("remain_months =", remain_months)
-        print("due_month =", due_month)
+        receivable=unit_price*charge_months*active_count
+        # print("remain_months =", remain_months)
+        # print("due_month =", due_month)
 
-        print(active_branch_names)
-        print(charge_branch_names)
+        # print(active_branch_names)
+        # print(charge_branch_names)
         companies.append({
             "primary_key":primary_key,
             "company_name": db_name,
@@ -196,6 +239,7 @@ def get_companies_data():
             "charge_count": charge_count,
             "remain_months":remain_months,
             "due_month":due_month,
+            "receivable":receivable, 
             "online_pay":online_pay,
             "quote_required":quote_required,
             "charge_months": charge_months,
@@ -214,8 +258,9 @@ if __name__ == "__main__":
         # if company["quote_required"]==1 :
         quote_path = generate_quote(
             company_data=company,
-            period_months=company["charge_months"],
-            bonus_months=company["bonus_months"],
+            charge_months=company["charge_months"],
+            # bonus_months=company["bonus_months"],
+            due_month=company["due_month"],
             price_includes_tax=True,
             unit_price=company["unit_price"],
             template_name="quote_template2.html",  # 或改成 quote_template.html

@@ -82,15 +82,18 @@
         <th>主索引</th>
         <th>公司名稱</th>
         <th>分店資訊</th>
+        <th>線上<br>收費</th>
         <th>授權<br>點數</th>
         <th>活躍<br>分店</th>
+        <th>有效<br>分店</th>
         <th>可用<br>月數</th>
         <th>到期月份</th>
-        <th>線上<br>收費</th>
-        <th>報價<br>需求</th>
+        <th>應收帳款</th>
+        <!-- <th>報價<br>需求</th> -->
         <th>含稅未稅</th>
         <th>收費月數</th>
         <th>月租折扣(%off)</th>
+        <th>贈送月數</th>
         <th>產出單據</th>
         <th>檢視單據</th>
       </tr>
@@ -188,6 +191,7 @@
                   }
 
                   const tr = document.createElement("tr");
+                  // <td class="${c.quote_required === 0 ? 'off' : ''}">${c.quote_required}</td> // 報價需求欄位
                   tr.innerHTML = `
                   <td>${idx + 1}</td>
                   <td>${c.primary_key}</td>
@@ -195,13 +199,15 @@
                   <td>
                     <button onclick="document.getElementById('modal_${c.primary_key }').showModal()">查看</button>
                   </td>
+                  <td class="${c.online_pay === 0 ? 'off' : ''}">${c.online_pay}</td>
                   <td class="${statusClass}">${c.license_count}</td>
                   <td class="${statusClass}">${c.active_count}</td>
+                  <td class="${statusClass}">${c.charge_count}</td>
                   <td class="${statusClass}">${c.remain_months}</td>
                   <td class="${statusClass}">${c.due_month}</td>
-
-                  <td class="${c.online_pay === 0 ? 'off' : ''}">${c.online_pay}</td>
-                  <td class="${c.quote_required === 0 ? 'off' : ''}">${c.quote_required}</td>
+                  <td>${c.receivable}</td>
+                  
+                  
 
                   <td>
                       <input type="checkbox" class="input-tax"  checked >
@@ -217,6 +223,12 @@
                           style="width: 100px;"
                           oninput="this.nextElementSibling.innerText = this.value + '%';">
                       <span>${ c.discount }%</span>
+                  </td>
+                  <td >
+                      <input type="range" class="input-months" min="0" max="3" step="1" value="${c.bonus_months }"
+                          style="width: 100px;"
+                          oninput="this.nextElementSibling.innerText = this.value + ' 個月'">
+                      <span>${c.bonus_months} 個月</span>
                   </td>
                   <td>
                     <button class="btn-micro" data-pk="${c.primary_key}" onclick="generateQuote(this)">生成</button>
@@ -243,9 +255,11 @@
                   const rowsHtml = branches.map(b => `
                     <tr>
                       <td>${b?.name ?? ""}</td>
-                      <td>${(b?.is_main ? "是" : "否")}</td>
+                      <td>${(b?.is_main ? "👑" : "💵")}</td>
                       <td><input type="checkbox" ${b?.is_active ? "checked" : ""}></td>
-                      <td>${b?.doc_num ?? "null"}</td>
+                      <td>${b?.sale_count ?? "null"}</td>
+                      <td>${b?.ship_count ?? "null"}</td>
+                      <td>${b?.repair_count ?? "null"}</td>
                     </tr>
                   `).join("");
 
@@ -260,8 +274,10 @@
                           <tr>
                             <th>分店名稱</th>
                             <th>是否總倉</th>
-                            <th>是否收費</th>
-                            <th>近期單號</th>
+                            <th>是否扣點</th>
+                            <th>銷貨單數</th>
+                            <th>出貨單數</th>
+                            <th>維修單數</th>
                           </tr>
                         </thead>
                         <tbody>

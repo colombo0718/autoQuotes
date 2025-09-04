@@ -24,7 +24,7 @@
         company_data: dict,                   # 公司資料（見上）
         output_dir: str | pathlib.Path = "output_pdfs",
         unit_price: int = 2600,               # 每月單價（預設未稅）
-        period_months: int = 6,               # 期繳月數；6=半年、12=一年…
+        charge_months: int = 6,               # 期繳月數；6=半年、12=一年…
         price_includes_tax: bool = False,     # True 表示 unit_price 已含稅
         tax_rate: float = 0.05,               # 稅率；台灣營業稅 5%
         template_name: str = "quote_template.html",
@@ -42,7 +42,7 @@
     pdf_path = generate_quote(
         company_data=company,
         unit_price=2600,
-        period_months=6,
+        charge_months=6,
         price_includes_tax=False,
     )
 
@@ -82,7 +82,8 @@ def generate_quote(
     company_data: dict,
     output_dir: str | Path = "output_quotes",
     unit_price: int = 2600,
-    period_months: int = 6,
+    due_month: str | None = None,       # ← 新增參數
+    charge_months: int = 6,
     price_includes_tax: bool = False,
     tax_rate: float = 0.05,
     template_name: str = "quote_template2.html",
@@ -106,7 +107,7 @@ def generate_quote(
 
     # 4) 金額區
     # unit_price = 2600                                  # 未稅單價
-    subtotal    = unit_price * branch_qty * period_months   # 未稅小計
+    subtotal    = unit_price * branch_qty * charge_months   # 未稅小計
     tax_amount  = round0(subtotal * tax_rate)                 # 5% 稅額
     if price_includes_tax:
         # 含稅 
@@ -117,7 +118,7 @@ def generate_quote(
 
     show_unit = unit_price  # 說明欄仍顯示 2,600    
 
-    # 5) 期間文字（從當月起算 period_months）
+    # 5) 期間文字（從當月起算 charge_months）
     def add_months(d: date, n: int) -> date:
         """回傳 d 往後 n 個月『同一天』，若該月天數不足則退到月底。"""
         # 先算目標年月
@@ -131,24 +132,34 @@ def generate_quote(
             # 例如 3/31 +1 月 → 4/31 無效，改成 4/30
             return (date(y, m, 1) + timedelta(days=31)).replace(day=1) - timedelta(days=1)
 
-    # 5) 期間文字 —— 從「次月 1 號」起算 period_months
+    # 5) 期間文字 —— 從「次月 1 號」起算 charge_months
     today = date.today()
-    start_date = add_months(today.replace(day=1), 1)           # 下個月第一天
-    period_end = add_months(start_date, period_months) - timedelta(days=1)
-    period_text = f"{start_date:%Y/%m/%d}–{period_end:%Y/%m/%d}"
 
-    last_day = calendar.monthrange(today.year, today.month)[1]  # 本月天數
-    due_date = date(today.year, today.month, last_day).strftime("%Y/%m/%d")
+    # 如果有給 due_month，就解析它；否則用本月
+    if due_month:
+        base_year, base_month = map(int, due_month.split("/"))
+        base_date = date(base_year, base_month, 1)
+    else:
+        base_date = today.replace(day=1)
+
+    # 到期日 = 該月的最後一天
+    last_day = calendar.monthrange(base_date.year, base_date.month)[1]
+    due_date = date(base_date.year, base_date.month, last_day).strftime("%Y/%m/%d")
+
+    # 收費期間 = due_month 的次月開始 → 持續 charge_months
+    start_date = add_months(base_date, 1)  # 次月第一天
+    period_end = add_months(start_date, charge_months) - timedelta(days=1)
+    period_text = f"{start_date:%Y/%m/%d}–{period_end:%Y/%m/%d}"
 
     # 6) items 列表
     items = [
         {
             "item": f"POS 月租費 {company_name} {branch}",
             "unit_price":unit_price,
-            # "description": f"{thousands(show_unit)} 元 ×{period_months} 月 ({period_text})",
-            "description": f"{period_months} 個月 ({period_text})",
-            "quantity": period_months,
-            "amount": thousands(round0(show_unit * period_months)),
+            # "description": f"{thousands(show_unit)} 元 ×{charge_months} 月 ({period_text})",
+            "description": f"{charge_months} 個月 ({period_text})",
+            "quantity": charge_months,
+            "amount": thousands(round0(show_unit * charge_months)),
         }
         for branch in branches
     ]
@@ -208,10 +219,15 @@ def generate_quote(
         "margin-left": "20mm",
         "margin-right": "20mm",
     }
-
+    # 基準月份（用於檔名）
+    if due_month:
+        file_month = due_month.replace("/", "")
+    else:
+        file_month = today.strftime("%Y%m")
+        
     tax_flag = "含稅" if price_includes_tax else "未稅"
     safe_name = re.sub(r"[^\w-]", "_", company_name)
-    output_file = output_dir / f"quote_{safe_name}_{quote_date.replace('/', '')}_{tax_flag}.pdf"
+    output_file = output_dir / f"quote_{safe_name}_{file_month}_{tax_flag}.pdf"
     pdfkit.from_string(html, str(output_file), options=options, configuration=config)
 
     return output_file
@@ -233,7 +249,7 @@ if __name__ == "__main__":
     quote_path = generate_quote(
         company_data=sample_company,
         unit_price=2600,             # 每月單價（未稅）
-        period_months=6,              # 本次開立 1 個月
+        charge_months=6,              # 本次開立 1 個月
         price_includes_tax=False,     # 單價未含稅 → 之後加 5%
         tax_rate=0.05,                # 稅率（預設 5%）
         template_name="quote_template2.html",  # Jinja2 樣板
