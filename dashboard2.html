@@ -350,63 +350,65 @@
           const discount = Number(tr.querySelector('.input-discount')?.value || 0);
 
             // 取值
-  const companyName = tr.children[2]?.textContent?.trim() || ''; // 第3欄是公司名稱
-  // const chargeMonths = Number(tr.querySelector('.input-months')?.value || 1);
-  const priceIncludesTax = tr.querySelector('.input-tax')?.checked ? 'true' : 'false';
-  const unitPrice = 2600*(100-discount)/100;
+          const companyName = tr.children[2]?.textContent?.trim() || ''; // 第3欄是公司名稱
+          // const chargeMonths = Number(tr.querySelector('.input-months')?.value || 1);
+          const priceIncludesTax = tr.querySelector('.input-tax')?.checked ? 'true' : 'false';
+          const unitPrice = 2600*(100-discount)/100;
+          const dueMonth = tr.children[9]?.textContent?.trim() || "";
 
-  if (!companyName) return alert('找不到公司名稱');
-  // if (!unitPrice)   return alert('請輸入單價');
+          if (!companyName) return alert('找不到公司名稱');
+          // if (!unitPrice)   return alert('請輸入單價');
 
-          // UI：按鈕進度狀態
-          const oldLabel = btn.textContent;
-          btn.disabled = true;
-          btn.textContent = '生成中...';
-try {
-    // 組 query string 依你的 API 規格
-    const qs = new URLSearchParams({
-      name: companyName,
-      charge_months: String(chargeMonths),
-      price_includes_tax: priceIncludesTax,
-      unit_price: String(unitPrice)
-    });
+                  // UI：按鈕進度狀態
+                  const oldLabel = btn.textContent;
+                  btn.disabled = true;
+                  btn.textContent = '生成中...';
+        try {
+            // 組 query string 依你的 API 規格
+            const qs = new URLSearchParams({
+              name: companyName,
+              charge_months: String(chargeMonths),
+              price_includes_tax: priceIncludesTax,
+              unit_price: String(unitPrice),
+              due_month: dueMonth
+            });
 
-    const url = `${baseUrl}/api/quote?${qs.toString()}`;
-    console.log(url)
-    const res = await fetch(url, { method: 'GET' });
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const json = await res.json();
+            const url = `${baseUrl}/api/quote?${qs.toString()}`;
+            console.log(url)
+            const res = await fetch(url, { method: 'GET' });
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            const json = await res.json();
 
-    if (!json.ok) throw new Error(json.message || '生成失敗');
-    const newPath = json.quote_path;
-    if (!newPath) throw new Error('未取得 quote_path');
+            if (!json.ok) throw new Error(json.message || '生成失敗');
+            const newPath = json.quote_path;
+            if (!newPath) throw new Error('未取得 quote_path');
 
-    // 更新本列的預覽按鈕路徑
-    const previewBtn = tr.querySelector('.preview-btn');
-    if (previewBtn) {
-      previewBtn.disabled = false;
-      previewBtn.dataset.path = newPath;
-      previewBtn.dataset.company = companyName;
-    }
+            // 更新本列的預覽按鈕路徑
+            const previewBtn = tr.querySelector('.preview-btn');
+            if (previewBtn) {
+              previewBtn.disabled = false;
+              previewBtn.dataset.path = newPath;
+              previewBtn.dataset.company = companyName;
+            }
 
-    // 若 PDF 對話框已開且是同公司，立即刷新 iframe
-    const dlg = document.getElementById('pdf-preview-dialog');
-    if (dlg?.open) {
-      const title = document.getElementById('pdf-preview-title')?.textContent || '';
-      if (title.includes(companyName)) {
-        document.getElementById('pdf-preview-frame').src = newPath;
-      }
-    }
+            // 若 PDF 對話框已開且是同公司，立即刷新 iframe
+            const dlg = document.getElementById('pdf-preview-dialog');
+            if (dlg?.open) {
+              const title = document.getElementById('pdf-preview-title')?.textContent || '';
+              if (title.includes(companyName)) {
+                document.getElementById('pdf-preview-frame').src = newPath;
+              }
+            }
 
-    btn.textContent = '完成';
-    setTimeout(() => { btn.textContent = oldLabel; btn.disabled = false; }, 800);
+            btn.textContent = '完成';
+            setTimeout(() => { btn.textContent = oldLabel; btn.disabled = false; }, 800);
 
-  } catch (err) {
-    console.error(err);
-    alert('生成失敗：' + err.message);
-    btn.textContent = oldLabel;
-    btn.disabled = false;
-  }
+          } catch (err) {
+            console.error(err);
+            alert('生成失敗：' + err.message);
+            btn.textContent = oldLabel;
+            btn.disabled = false;
+          }
         }
     </script>
 </body>

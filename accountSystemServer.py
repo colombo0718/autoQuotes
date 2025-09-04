@@ -119,18 +119,19 @@ def get_or_regenerate_quote():
     price_includes_tx = parse_bool(request.args.get("price_includes_tax"), True)
     unit_price        = int(request.args.get("unit_price",      c.get("unit_price", 2600)))
     template_name     = request.args.get("template_name", "quote_template2.html")
-    due_month_raw     = request.args.get("due_month")  # 允許為 None
+    due_month     = request.args.get("due_month")  # 允許為 None
 
     # 正規化 due_month（如果有給）
-    due_month = None
-    if due_month_raw:
-        try:
-            y, m = map(int, due_month_raw.split("/"))
-            # 驗證年月
-            _ = date(y, m, 1)
-            due_month = f"{y:04d}/{m:02d}"
-        except Exception:
-            return jsonify(ok=False, error="invalid 'due_month', expected YYYY/MM"), 400
+    # due_month = None
+    # if due_month_raw:
+    #     print(due_month_raw)
+    #     try:
+    #         y, m = map(int, due_month_raw.split("/"))
+    #         # 驗證年月
+    #         _ = date(y, m, 1)
+    #         due_month = f"{y:04d}/{m:02d}"
+    #     except Exception:
+    #         return jsonify(ok=False, error="invalid 'due_month', expected YYYY/MM"), 400
 
     branches = c.get("branches") or []
     # if not branches:
@@ -138,7 +139,7 @@ def get_or_regenerate_quote():
 
     pdf_path = generate_quote(
         company_data={"company_name": c["company_name"], "branches": branches},
-        due_months=due_months,
+        due_month=due_month,
         charge_months=charge_months,
         price_includes_tax=price_includes_tx,
         unit_price=unit_price,
