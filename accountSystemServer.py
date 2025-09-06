@@ -6,7 +6,7 @@ import json
 
 app = Flask(__name__)
 app.config["JSON_AS_ASCII"] = False
-app = Flask(__name__)
+# app = Flask(__name__)
 app.json.ensure_ascii = False  # 關鍵：不要把中文轉成 \uXXXX
 app.config["JSONIFY_MIMETYPE"] = "application/json; charset=utf-8"
 

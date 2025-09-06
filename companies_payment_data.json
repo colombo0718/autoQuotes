@@ -9,7 +9,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 6,
+        "ship_count": 5,
         "repair_count": 0
       },
       {
@@ -17,7 +17,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 183,
+        "sale_count": 186,
         "ship_count": 0,
         "repair_count": 1
       }
@@ -49,7 +49,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 7,
+        "ship_count": 6,
         "repair_count": 0
       },
       {
@@ -57,9 +57,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 321,
+        "sale_count": 336,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 3
       }
     ],
     "branches": [
@@ -88,9 +88,9 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 290,
+        "sale_count": 295,
         "ship_count": 0,
-        "repair_count": 41
+        "repair_count": 40
       }
     ],
     "branches": [],
@@ -117,7 +117,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 14,
+        "sale_count": 17,
         "ship_count": 0,
         "repair_count": 2
       },
@@ -126,7 +126,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 365,
+        "sale_count": 377,
         "ship_count": 0,
         "repair_count": 7
       }
@@ -158,9 +158,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 101,
+        "sale_count": 109,
         "ship_count": 18,
-        "repair_count": 5
+        "repair_count": 6
       },
       {
         "name": "聯強寶山店",
@@ -208,7 +208,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 37,
+        "ship_count": 36,
         "repair_count": 1
       },
       {
@@ -216,17 +216,17 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 61,
-        "ship_count": 162,
-        "repair_count": 5
+        "sale_count": 63,
+        "ship_count": 155,
+        "repair_count": 3
       },
       {
         "name": "SONY",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 51,
-        "ship_count": 58,
+        "sale_count": 49,
+        "ship_count": 55,
         "repair_count": 9
       },
       {
@@ -234,7 +234,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 190,
+        "sale_count": 200,
         "ship_count": 6,
         "repair_count": 5
       },
@@ -244,7 +244,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 133,
+        "ship_count": 137,
         "repair_count": 0
       },
       {
@@ -252,9 +252,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 50,
-        "ship_count": 83,
-        "repair_count": 9
+        "sale_count": 49,
+        "ship_count": 81,
+        "repair_count": 11
       },
       {
         "name": "Vass4",
@@ -270,8 +270,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 332,
-        "ship_count": 26,
+        "sale_count": 342,
+        "ship_count": 28,
         "repair_count": 7
       },
       {
@@ -325,7 +325,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 203,
+        "ship_count": 205,
         "repair_count": 1
       },
       {
@@ -343,7 +343,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 171,
+        "ship_count": 176,
         "repair_count": 0
       },
       {
@@ -352,7 +352,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 243,
+        "ship_count": 238,
         "repair_count": 0
       },
       {
@@ -361,7 +361,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 77,
+        "ship_count": 75,
         "repair_count": 0
       },
       {
@@ -412,7 +412,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 13,
+        "ship_count": 14,
         "repair_count": 0
       },
       {
@@ -420,7 +420,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 326,
+        "sale_count": 330,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -429,7 +429,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 318,
+        "sale_count": 319,
         "ship_count": 0,
         "repair_count": 2
       },
@@ -438,9 +438,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 648,
+        "sale_count": 642,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 7
       },
       {
         "name": "田中T-STAR",
@@ -456,7 +456,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 259,
+        "sale_count": 265,
         "ship_count": 0,
         "repair_count": 1
       }
@@ -499,7 +499,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 239,
+        "sale_count": 251,
         "ship_count": 0,
         "repair_count": 130
       }
@@ -548,7 +548,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 362,
+        "sale_count": 370,
         "ship_count": 0,
         "repair_count": 21
       },
@@ -615,7 +615,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 289,
+        "sale_count": 306,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -642,7 +642,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 407,
+        "sale_count": 419,
         "ship_count": 0,
         "repair_count": 3
       },
@@ -651,7 +651,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 299,
+        "sale_count": 310,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -660,9 +660,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 394,
+        "sale_count": 407,
         "ship_count": 0,
-        "repair_count": 3
+        "repair_count": 4
       },
       {
         "name": "幸福店",
@@ -678,7 +678,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 324,
+        "sale_count": 330,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -688,7 +688,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 35,
+        "ship_count": 36,
         "repair_count": 0
       },
       {
@@ -732,9 +732,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 435,
+        "sale_count": 444,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 7
       },
       {
         "name": "佳里光復",
@@ -750,7 +750,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 276,
+        "sale_count": 274,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -798,34 +798,34 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 370,
+        "sale_count": 377,
         "ship_count": 0,
-        "repair_count": 16
+        "repair_count": 19
       },
       {
         "name": "新機地",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 307,
+        "sale_count": 316,
         "ship_count": 0,
-        "repair_count": 9
+        "repair_count": 10
       },
       {
         "name": "新豐店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 246,
+        "sale_count": 257,
         "ship_count": 0,
-        "repair_count": 14
+        "repair_count": 16
       },
       {
         "name": "暖暖店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 297,
+        "sale_count": 313,
         "ship_count": 0,
         "repair_count": 7
       },
@@ -843,7 +843,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 328,
+        "sale_count": 349,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -852,7 +852,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 203,
+        "sale_count": 219,
         "ship_count": 0,
         "repair_count": 4
       }
@@ -889,7 +889,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 59,
+        "sale_count": 60,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -898,7 +898,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 193,
+        "sale_count": 202,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -907,7 +907,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 81,
+        "sale_count": 83,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -916,7 +916,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 361,
+        "sale_count": 370,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -968,7 +968,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 65,
+        "sale_count": 72,
         "ship_count": 0,
         "repair_count": 3
       },
@@ -1004,7 +1004,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 171,
+        "sale_count": 167,
         "ship_count": 0,
         "repair_count": 3
       },
@@ -1046,7 +1046,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 500,
-        "ship_count": 31,
+        "ship_count": 36,
         "repair_count": 0
       },
       {
@@ -1054,7 +1054,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 272,
+        "sale_count": 275,
         "ship_count": 0,
         "repair_count": 6
       },
@@ -1063,7 +1063,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 179,
+        "sale_count": 194,
         "ship_count": 0,
         "repair_count": 2
       },
@@ -1113,7 +1113,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 212,
+        "sale_count": 222,
         "ship_count": 0,
         "repair_count": 3
       },
@@ -1122,18 +1122,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 12,
+        "sale_count": 14,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 0
       },
       {
         "name": "神腦-民權店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 90,
+        "sale_count": 97,
         "ship_count": 0,
-        "repair_count": 17
+        "repair_count": 16
       },
       {
         "name": "中華-東榮店",
@@ -1167,7 +1167,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 381,
+        "sale_count": 388,
         "ship_count": 0,
         "repair_count": 7
       },
@@ -1219,9 +1219,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 311,
+        "sale_count": 309,
         "ship_count": 1,
-        "repair_count": 4
+        "repair_count": 3
       },
       {
         "name": "迴龍",
@@ -1264,18 +1264,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 256,
+        "sale_count": 267,
         "ship_count": 0,
-        "repair_count": 10
+        "repair_count": 12
       },
       {
         "name": "羅東興東",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 294,
+        "sale_count": 305,
         "ship_count": 0,
-        "repair_count": 3
+        "repair_count": 4
       },
       {
         "name": "羅東中正南",
@@ -1324,7 +1324,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 330,
+        "sale_count": 334,
         "ship_count": 0,
         "repair_count": 5
       },
@@ -1391,7 +1391,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 275,
+        "sale_count": 282,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1433,7 +1433,7 @@
         "doc_num": null,
         "sale_count": 154,
         "ship_count": 0,
-        "repair_count": 24
+        "repair_count": 27
       },
       {
         "name": "桃鶯店",
@@ -1489,7 +1489,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 11,
+        "sale_count": 12,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1538,7 +1538,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 509,
+        "sale_count": 522,
         "ship_count": 0,
         "repair_count": 7
       },
@@ -1547,9 +1547,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 413,
+        "sale_count": 427,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 8
       },
       {
         "name": "遠傳巨展",
@@ -1558,7 +1558,7 @@
         "doc_num": null,
         "sale_count": 578,
         "ship_count": 0,
-        "repair_count": 12
+        "repair_count": 13
       },
       {
         "name": "介壽888",
@@ -1601,7 +1601,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 502,
+        "sale_count": 524,
         "ship_count": 0,
         "repair_count": 8
       }
@@ -1644,9 +1644,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 82,
+        "sale_count": 80,
         "ship_count": 0,
-        "repair_count": 5
+        "repair_count": 4
       },
       {
         "name": "天亞大興",
@@ -1662,7 +1662,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 105,
+        "sale_count": 109,
         "ship_count": 0,
         "repair_count": 8
       }
@@ -1694,7 +1694,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 49,
+        "sale_count": 48,
         "ship_count": 0,
         "repair_count": 13
       }
@@ -1744,7 +1744,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 16,
+        "sale_count": 18,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1753,7 +1753,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 37,
+        "sale_count": 39,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1763,7 +1763,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 158,
+        "ship_count": 170,
         "repair_count": 0
       },
       {
@@ -1813,7 +1813,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 270,
+        "sale_count": 283,
         "ship_count": 0,
         "repair_count": 34
       },
@@ -1822,7 +1822,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 93,
+        "sale_count": 96,
         "ship_count": 0,
         "repair_count": 316
       }
@@ -1863,7 +1863,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 286,
+        "sale_count": 294,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1908,7 +1908,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 206,
+        "sale_count": 217,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -1949,9 +1949,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 518,
+        "sale_count": 515,
         "ship_count": 0,
-        "repair_count": 47
+        "repair_count": 49
       }
     ],
     "branches": [
@@ -1980,7 +1980,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 95,
+        "sale_count": 97,
         "ship_count": 0,
         "repair_count": 6
       },
@@ -1989,9 +1989,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 275,
+        "sale_count": 271,
         "ship_count": 0,
-        "repair_count": 26
+        "repair_count": 27
       }
     ],
     "branches": [
@@ -2021,7 +2021,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 63,
+        "sale_count": 64,
         "ship_count": 0,
         "repair_count": 10
       }
@@ -2363,7 +2363,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 163,
+        "ship_count": 173,
         "repair_count": 0
       },
       {
@@ -2418,8 +2418,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 319,
-        "ship_count": 9,
+        "sale_count": 313,
+        "ship_count": 10,
         "repair_count": 3
       },
       {
@@ -2467,7 +2467,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 107,
+        "sale_count": 110,
         "ship_count": 0,
         "repair_count": 2
       },
@@ -2476,9 +2476,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 241,
+        "sale_count": 248,
         "ship_count": 0,
-        "repair_count": 28
+        "repair_count": 29
       },
       {
         "name": "金馬講-南崁",
@@ -2503,9 +2503,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 395,
+        "sale_count": 417,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 5
       },
       {
         "name": "金馬講-藝文(撤店)",
@@ -2521,9 +2521,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 255,
+        "sale_count": 262,
         "ship_count": 0,
-        "repair_count": 15
+        "repair_count": 14
       },
       {
         "name": "亞太-南平(撤店)",
@@ -2573,7 +2573,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 164,
+        "sale_count": 163,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -2613,7 +2613,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 401,
+        "sale_count": 409,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2622,7 +2622,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 244,
+        "sale_count": 254,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2631,7 +2631,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 316,
+        "sale_count": 313,
         "ship_count": 0,
         "repair_count": 1
       }
@@ -2673,7 +2673,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 155,
+        "sale_count": 125,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2844,7 +2844,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 150,
+        "sale_count": 156,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2984,9 +2984,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 111,
+        "sale_count": 114,
         "ship_count": 0,
-        "repair_count": 8
+        "repair_count": 11
       },
       {
         "name": "星威-文二店",
@@ -3092,7 +3092,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 87,
+        "ship_count": 90,
         "repair_count": 0
       },
       {
@@ -3101,7 +3101,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 4,
+        "ship_count": 6,
         "repair_count": 0
       }
     ],
@@ -3160,9 +3160,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 217,
+        "sale_count": 230,
         "ship_count": 0,
-        "repair_count": 49
+        "repair_count": 50
       },
       {
         "name": "前進通訊",
@@ -3200,7 +3200,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 107,
+        "sale_count": 108,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -3262,7 +3262,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 137,
+        "sale_count": 144,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -3302,9 +3302,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 73,
+        "sale_count": 74,
         "ship_count": 0,
-        "repair_count": 123
+        "repair_count": 121
       }
     ],
     "branches": [
@@ -3342,9 +3342,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 106,
+        "sale_count": 110,
         "ship_count": 3,
-        "repair_count": 13
+        "repair_count": 9
       }
     ],
     "branches": [
@@ -3475,7 +3475,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 43,
+        "sale_count": 44,
         "ship_count": 1,
         "repair_count": 1
       }
@@ -3515,7 +3515,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 40,
+        "sale_count": 37,
         "ship_count": 0,
         "repair_count": 5
       }
@@ -3546,8 +3546,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 230,
-        "ship_count": 7,
+        "sale_count": 235,
+        "ship_count": 6,
         "repair_count": 0
       },
       {
@@ -3595,7 +3595,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 20,
+        "sale_count": 21,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -3627,7 +3627,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 351,
+        "ship_count": 364,
         "repair_count": 0
       },
       {
@@ -3664,7 +3664,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 235,
+        "sale_count": 239,
         "ship_count": 1,
         "repair_count": 5
       }
@@ -3695,7 +3695,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 129,
+        "sale_count": 134,
         "ship_count": 0,
         "repair_count": 14
       },
@@ -3704,9 +3704,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 138,
+        "sale_count": 141,
         "ship_count": 0,
-        "repair_count": 9
+        "repair_count": 10
       },
       {
         "name": "寶山店",
@@ -3745,7 +3745,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 79,
+        "sale_count": 85,
         "ship_count": 0,
         "repair_count": 20
       },
@@ -3756,7 +3756,7 @@
         "doc_num": null,
         "sale_count": 66,
         "ship_count": 0,
-        "repair_count": 19
+        "repair_count": 18
       }
     ],
     "branches": [
@@ -3786,7 +3786,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 195,
+        "sale_count": 199,
         "ship_count": 218,
         "repair_count": 5
       }
@@ -3826,7 +3826,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 206,
+        "sale_count": 210,
         "ship_count": 6,
         "repair_count": 0
       },
@@ -3835,8 +3835,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 228,
-        "ship_count": 12,
+        "sale_count": 239,
+        "ship_count": 14,
         "repair_count": 0
       }
     ],
@@ -3876,7 +3876,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 348,
+        "sale_count": 362,
         "ship_count": 0,
         "repair_count": 3
       },
@@ -3885,7 +3885,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 143,
+        "sale_count": 142,
         "ship_count": 0,
         "repair_count": 15
       }
@@ -3926,7 +3926,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 86,
+        "sale_count": 94,
         "ship_count": 0,
         "repair_count": 8
       },
@@ -4002,9 +4002,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 53,
+        "sale_count": 52,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 10
       },
       {
         "name": "板橋樹林店",
@@ -4060,7 +4060,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 7,
+        "sale_count": 8,
         "ship_count": 0,
         "repair_count": 14
       }
@@ -4091,7 +4091,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 354,
+        "sale_count": 371,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4100,7 +4100,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 277,
+        "sale_count": 270,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -4132,7 +4132,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 85,
+        "sale_count": 90,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4141,7 +4141,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 93,
+        "sale_count": 94,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4150,7 +4150,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 30,
+        "sale_count": 27,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4204,7 +4204,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 116,
+        "sale_count": 123,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4231,7 +4231,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 160,
+        "sale_count": 157,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4258,7 +4258,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 94,
+        "sale_count": 95,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4312,7 +4312,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 62,
+        "sale_count": 63,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -4349,7 +4349,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 1244,
+        "sale_count": 1285,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -4378,7 +4378,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 321,
+        "sale_count": 327,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -4409,34 +4409,34 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 219,
+        "sale_count": 217,
         "ship_count": 0,
-        "repair_count": 13
+        "repair_count": 15
       },
       {
         "name": "竹南-自由店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 342,
+        "sale_count": 341,
         "ship_count": 0,
-        "repair_count": 49
+        "repair_count": 52
       },
       {
         "name": "頭份-中正店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 500,
+        "sale_count": 494,
         "ship_count": 0,
-        "repair_count": 38
+        "repair_count": 40
       },
       {
         "name": "竹南-遠傳店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 202,
+        "sale_count": 207,
         "ship_count": 0,
         "repair_count": 5
       },
@@ -4445,9 +4445,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 187,
+        "sale_count": 189,
         "ship_count": 0,
-        "repair_count": 44
+        "repair_count": 46
       }
     ],
     "branches": [
@@ -4480,7 +4480,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 63,
+        "sale_count": 64,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4489,8 +4489,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 65,
-        "ship_count": 203,
+        "sale_count": 69,
+        "ship_count": 210,
         "repair_count": 0
       },
       {
@@ -4529,7 +4529,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 83,
+        "sale_count": 84,
         "ship_count": 0,
         "repair_count": 7
       }
@@ -4560,9 +4560,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 384,
+        "sale_count": 391,
         "ship_count": 0,
-        "repair_count": 1362
+        "repair_count": 1382
       }
     ],
     "branches": [
@@ -4591,7 +4591,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 46,
+        "sale_count": 47,
         "ship_count": 0,
         "repair_count": 1
       }
@@ -4622,7 +4622,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 37,
+        "sale_count": 34,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4631,18 +4631,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 186,
+        "sale_count": 185,
         "ship_count": 0,
-        "repair_count": 5
+        "repair_count": 4
       },
       {
         "name": "遠傳苑裡",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 193,
+        "sale_count": 206,
         "ship_count": 1,
-        "repair_count": 9
+        "repair_count": 8
       }
     ],
     "branches": [
@@ -4673,7 +4673,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 283,
+        "sale_count": 282,
         "ship_count": 1,
         "repair_count": 0
       },
@@ -4715,7 +4715,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 92,
+        "ship_count": 91,
         "repair_count": 0
       },
       {
@@ -4723,7 +4723,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 273,
+        "sale_count": 276,
         "ship_count": 1,
         "repair_count": 0
       }
@@ -4754,7 +4754,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 289,
+        "sale_count": 294,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4763,7 +4763,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 431,
+        "sale_count": 443,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -4772,7 +4772,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 195,
+        "sale_count": 204,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4781,7 +4781,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 245,
+        "sale_count": 248,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4790,7 +4790,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 244,
+        "sale_count": 253,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4799,7 +4799,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 130,
+        "sale_count": 128,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4808,7 +4808,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 153,
+        "sale_count": 155,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -4817,7 +4817,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 408,
+        "sale_count": 420,
         "ship_count": 0,
         "repair_count": 2
       },
@@ -4826,7 +4826,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 236,
+        "sale_count": 238,
         "ship_count": 0,
         "repair_count": 2
       },
@@ -4835,16 +4835,16 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 335,
+        "sale_count": 348,
         "ship_count": 0,
         "repair_count": 0
       },
       {
         "name": "七堵明德",
         "is_main": false,
-        "is_active": false,
+        "is_active": true,
         "doc_num": null,
-        "sale_count": 0,
+        "sale_count": 29,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4868,14 +4868,15 @@
       "蘇澳中山",
       "三重幸福",
       "宜蘭舊城東",
-      "淡水中山北"
+      "淡水中山北",
+      "七堵明德"
     ],
     "license_count": 29,
-    "active_count": 10,
+    "active_count": 11,
     "charge_count": 12,
     "remain_months": 2,
     "due_month": "2025/11",
-    "receivable": 312000,
+    "receivable": 343200,
     "online_pay": 1,
     "quote_required": 0,
     "charge_months": 12,
@@ -4893,7 +4894,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 359,
+        "sale_count": 362,
         "ship_count": 0,
         "repair_count": 5
       }
@@ -4916,35 +4917,6 @@
     "quote_path": "output_quotes/quote_森昱_202602_含稅.pdf"
   },
   {
-    "primary_key": 307,
-    "company_name": "浩瀚",
-    "branches_info": [
-      {
-        "name": "遠傳中正店",
-        "is_main": false,
-        "is_active": false,
-        "doc_num": null,
-        "sale_count": 0,
-        "ship_count": 0,
-        "repair_count": 0
-      }
-    ],
-    "branches": [],
-    "license_count": 0,
-    "active_count": 0,
-    "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/09",
-    "receivable": 0,
-    "online_pay": 1,
-    "quote_required": 1,
-    "charge_months": 6,
-    "discount": 0,
-    "unit_price": 2600,
-    "bonus_months": 0,
-    "quote_path": "output_quotes/quote_浩瀚_202509_含稅.pdf"
-  },
-  {
     "primary_key": 311,
     "company_name": "雲端",
     "branches_info": [
@@ -4953,7 +4925,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 53,
+        "sale_count": 51,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -4993,8 +4965,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 280,
-        "ship_count": 71,
+        "sale_count": 288,
+        "ship_count": 72,
         "repair_count": 3
       }
     ],
@@ -5024,7 +4996,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 124,
+        "sale_count": 130,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -5033,7 +5005,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 156,
+        "sale_count": 155,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5042,9 +5014,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 88,
+        "sale_count": 90,
         "ship_count": 0,
-        "repair_count": 5
+        "repair_count": 8
       }
     ],
     "branches": [
@@ -5075,7 +5047,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 45,
+        "sale_count": 48,
         "ship_count": 0,
         "repair_count": 5
       }
@@ -5083,19 +5055,19 @@
     "branches": [
       "敦富通訊"
     ],
-    "license_count": 0,
+    "license_count": 6,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/09",
+    "remain_months": 6,
+    "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_敦富_202509_含稅.pdf"
+    "quote_path": "output_quotes/quote_敦富_202603_含稅.pdf"
   },
   {
     "primary_key": 318,
@@ -5106,7 +5078,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 72,
+        "sale_count": 73,
         "ship_count": 6,
         "repair_count": 0
       }
@@ -5137,7 +5109,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 309,
+        "sale_count": 312,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5208,7 +5180,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 108,
+        "sale_count": 105,
         "ship_count": 0,
         "repair_count": 3
       }
@@ -5240,7 +5212,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 331,
+        "sale_count": 337,
         "ship_count": 0,
         "repair_count": 3
       },
@@ -5249,16 +5221,16 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 341,
+        "sale_count": 348,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 7
       },
       {
         "name": "遠傳平鎮復旦",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 388,
+        "sale_count": 384,
         "ship_count": 0,
         "repair_count": 6
       },
@@ -5267,7 +5239,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 188,
+        "sale_count": 192,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5276,7 +5248,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 201,
+        "sale_count": 205,
         "ship_count": 0,
         "repair_count": 1
       }
@@ -5367,7 +5339,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 194,
+        "sale_count": 202,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5377,7 +5349,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 567,
+        "ship_count": 579,
         "repair_count": 0
       },
       {
@@ -5416,7 +5388,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 175,
+        "sale_count": 180,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5447,16 +5419,16 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 130,
+        "sale_count": 135,
         "ship_count": 0,
-        "repair_count": 3
+        "repair_count": 4
       },
       {
         "name": "翔翔通訊-竹南光復店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 80,
+        "sale_count": 84,
         "ship_count": 0,
         "repair_count": 7
       }
@@ -5488,27 +5460,27 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 323,
-        "ship_count": 20,
+        "sale_count": 329,
+        "ship_count": 19,
         "repair_count": 0
       }
     ],
     "branches": [
       "遠傳員山店"
     ],
-    "license_count": 0,
+    "license_count": 3,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/09",
+    "remain_months": 3,
+    "due_month": "2025/12",
     "receivable": 7800,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 3,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_合盈_202509_含稅.pdf"
+    "quote_path": "output_quotes/quote_合盈_202512_含稅.pdf"
   },
   {
     "primary_key": 352,
@@ -5521,7 +5493,7 @@
         "doc_num": null,
         "sale_count": 64,
         "ship_count": 0,
-        "repair_count": 12
+        "repair_count": 11
       }
     ],
     "branches": [
@@ -5550,7 +5522,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 179,
+        "sale_count": 175,
         "ship_count": 8,
         "repair_count": 0
       },
@@ -5559,7 +5531,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 297,
+        "sale_count": 296,
         "ship_count": 36,
         "repair_count": 0
       }
@@ -5591,7 +5563,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 177,
+        "sale_count": 174,
         "ship_count": 1,
         "repair_count": 1
       }
@@ -5622,7 +5594,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 269,
+        "sale_count": 275,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5631,7 +5603,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 132,
+        "sale_count": 134,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5640,7 +5612,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 72,
+        "sale_count": 73,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5649,7 +5621,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 193,
+        "sale_count": 195,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5676,7 +5648,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 94,
+        "sale_count": 95,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5711,7 +5683,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 190,
+        "sale_count": 188,
         "ship_count": 0,
         "repair_count": 3
       }
@@ -5742,7 +5714,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 63,
+        "sale_count": 64,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5773,7 +5745,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 349,
+        "sale_count": 346,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5782,7 +5754,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 25,
+        "sale_count": 26,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5791,7 +5763,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 340,
+        "sale_count": 339,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5825,23 +5797,14 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 1106,
-        "repair_count": 0
-      },
-      {
-        "name": "銘喆",
-        "is_main": false,
-        "is_active": false,
-        "doc_num": null,
-        "sale_count": 0,
-        "ship_count": 0,
+        "ship_count": 1115,
         "repair_count": 0
       }
     ],
     "branches": [],
     "license_count": 0,
     "active_count": 0,
-    "charge_count": 1,
+    "charge_count": 0,
     "remain_months": 0,
     "due_month": "2025/09",
     "receivable": 0,
@@ -5871,7 +5834,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 134,
+        "sale_count": 142,
         "ship_count": 11,
         "repair_count": 4
       },
@@ -5880,7 +5843,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 198,
+        "sale_count": 194,
         "ship_count": 6,
         "repair_count": 1
       }
@@ -5912,7 +5875,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 165,
+        "sale_count": 166,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5948,7 +5911,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 122,
+        "sale_count": 119,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5957,7 +5920,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 49,
+        "sale_count": 43,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5966,7 +5929,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 165,
+        "sale_count": 159,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5975,7 +5938,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 114,
+        "sale_count": 121,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6012,9 +5975,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 309,
+        "sale_count": 315,
         "ship_count": 0,
-        "repair_count": 30
+        "repair_count": 31
       }
     ],
     "branches": [
@@ -6044,7 +6007,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 166,
+        "ship_count": 159,
         "repair_count": 0
       }
     ],
@@ -6075,7 +6038,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 7,
-        "ship_count": 1731,
+        "ship_count": 1758,
         "repair_count": 0
       },
       {
@@ -6092,9 +6055,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 149,
+        "sale_count": 153,
         "ship_count": 0,
-        "repair_count": 18
+        "repair_count": 19
       },
       {
         "name": "馬尼西門店",
@@ -6112,23 +6075,23 @@
         "doc_num": null,
         "sale_count": 149,
         "ship_count": 0,
-        "repair_count": 17
+        "repair_count": 18
       },
       {
         "name": "馬尼歸仁店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 235,
+        "sale_count": 242,
         "ship_count": 0,
-        "repair_count": 40
+        "repair_count": 38
       },
       {
         "name": "馬尼小西門店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 163,
+        "sale_count": 167,
         "ship_count": 0,
         "repair_count": 11
       },
@@ -6137,7 +6100,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 305,
+        "sale_count": 312,
         "ship_count": 0,
         "repair_count": 12
       },
@@ -6146,7 +6109,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 109,
+        "sale_count": 115,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -6164,7 +6127,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 193,
+        "sale_count": 199,
         "ship_count": 0,
         "repair_count": 10
       },
@@ -6173,7 +6136,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 112,
+        "sale_count": 120,
         "ship_count": 0,
         "repair_count": 13
       }
@@ -6211,16 +6174,16 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 110,
+        "sale_count": 113,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 5
       },
       {
         "name": "鳳山-聯強-永宇通訊",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 89,
+        "sale_count": 90,
         "ship_count": 0,
         "repair_count": 10
       }
@@ -6251,7 +6214,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 409,
+        "sale_count": 434,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6282,9 +6245,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 212,
+        "sale_count": 222,
         "ship_count": 0,
-        "repair_count": 12
+        "repair_count": 11
       }
     ],
     "branches": [
@@ -6313,7 +6276,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 124,
+        "sale_count": 123,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6345,8 +6308,8 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 30,
-        "ship_count": 15,
-        "repair_count": 101
+        "ship_count": 16,
+        "repair_count": 110
       }
     ],
     "branches": [
@@ -6415,9 +6378,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 181,
-        "ship_count": 21,
-        "repair_count": 4
+        "sale_count": 182,
+        "ship_count": 22,
+        "repair_count": 5
       }
     ],
     "branches": [
@@ -6446,7 +6409,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 228,
+        "sale_count": 219,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6477,9 +6440,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 154,
+        "sale_count": 161,
         "ship_count": 0,
-        "repair_count": 10
+        "repair_count": 11
       }
     ],
     "branches": [
@@ -6568,7 +6531,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 247,
+        "sale_count": 252,
         "ship_count": 1,
         "repair_count": 0
       }
@@ -6630,7 +6593,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 227,
+        "sale_count": 233,
         "ship_count": 9,
         "repair_count": 0
       },
@@ -6639,7 +6602,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 427,
+        "sale_count": 443,
         "ship_count": 16,
         "repair_count": 0
       },
@@ -6681,7 +6644,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 176,
+        "sale_count": 179,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6690,7 +6653,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 259,
+        "sale_count": 270,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6699,7 +6662,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 188,
+        "sale_count": 191,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6770,7 +6733,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 304,
+        "sale_count": 310,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6779,7 +6742,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 224,
+        "sale_count": 227,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6788,7 +6751,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 236,
+        "sale_count": 251,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6830,18 +6793,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 160,
+        "sale_count": 166,
         "ship_count": 0,
-        "repair_count": 93
+        "repair_count": 91
       },
       {
         "name": "宇新彰化二林店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 24,
+        "sale_count": 26,
         "ship_count": 0,
-        "repair_count": 80
+        "repair_count": 78
       },
       {
         "name": "宇新大里成功店",
@@ -6850,14 +6813,14 @@
         "doc_num": null,
         "sale_count": 3,
         "ship_count": 0,
-        "repair_count": 12
+        "repair_count": 11
       },
       {
         "name": "宇新太平樹孝店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 69,
+        "sale_count": 75,
         "ship_count": 0,
         "repair_count": 40
       },
@@ -6868,7 +6831,7 @@
         "doc_num": null,
         "sale_count": 19,
         "ship_count": 0,
-        "repair_count": 28
+        "repair_count": 31
       },
       {
         "name": "宇新五權南屯店",
@@ -6941,7 +6904,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 246,
-        "ship_count": 1,
+        "ship_count": 2,
         "repair_count": 2
       },
       {
@@ -6949,7 +6912,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 291,
+        "sale_count": 299,
         "ship_count": 2,
         "repair_count": 2
       }
@@ -6981,8 +6944,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 367,
-        "ship_count": 8,
+        "sale_count": 364,
+        "ship_count": 7,
         "repair_count": 0
       }
     ],
@@ -7012,7 +6975,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 139,
+        "sale_count": 137,
         "ship_count": 0,
         "repair_count": 6
       }
@@ -7043,9 +7006,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 336,
-        "ship_count": 3,
-        "repair_count": 9
+        "sale_count": 349,
+        "ship_count": 2,
+        "repair_count": 8
       }
     ],
     "branches": [
@@ -7076,7 +7039,7 @@
         "doc_num": null,
         "sale_count": 2,
         "ship_count": 0,
-        "repair_count": 87
+        "repair_count": 85
       }
     ],
     "branches": [
@@ -7105,7 +7068,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 324,
+        "sale_count": 336,
         "ship_count": 0,
         "repair_count": 1
       }
@@ -7136,7 +7099,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 68,
+        "sale_count": 79,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7167,7 +7130,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 321,
+        "sale_count": 326,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7198,7 +7161,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 30,
+        "sale_count": 28,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -7207,7 +7170,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 52,
+        "sale_count": 49,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7239,7 +7202,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 34,
+        "sale_count": 35,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7299,8 +7262,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 231,
-        "ship_count": 11,
+        "sale_count": 239,
+        "ship_count": 15,
         "repair_count": 0
       }
     ],
@@ -7330,9 +7293,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 272,
+        "sale_count": 277,
         "ship_count": 0,
-        "repair_count": 0
+        "repair_count": 1
       }
     ],
     "branches": [
@@ -7390,7 +7353,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 15,
+        "sale_count": 21,
         "ship_count": 0,
         "repair_count": 0
       }

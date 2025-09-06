@@ -16,6 +16,7 @@
     .status-ok { background-color: #c8e6c9; }
     .status-warning { background-color: #fff9c4; }
     .status-error { background-color: #ffcdd2; }
+    .status-future { background-color: #bbdefb; }
     .off { background-color: #999999; }
     .disabled-link {
       color: #ccc;
@@ -69,7 +70,7 @@
       <option value="2025/11">2025 年 11 月</option>
       <option value="2025/12">2025 年 12 月</option>
     </select> -->
-    <select id="expire-month" name="expire-month"></select>需報價公司
+    <select id="expire-month" name="expire-month"></select>
     需報價公司
   </label>
     <label class="control">
@@ -140,6 +141,7 @@
           const label = `${yyyy} 年 ${mm} 月`;
 
           const opt = new Option(label, value);
+          opt.dataset.diffMonths = i;  // 👈 直接塞 diffMonths
           sel.add(opt);
         }
 
@@ -170,12 +172,17 @@
               // 讀取目前 UI 狀態
               const onlyDue = document.getElementById("filter-due").checked;
               const selectedMonth = document.getElementById("expire-month").value;
+              const sel = document.getElementById("expire-month");
+              const diffMonths = parseInt(sel.selectedOptions[0].dataset.diffMonths, 10);
+              console.log(selectedMonth, diffMonths);
 
               // 篩選資料
               let list = companiesJson.data;
               if (onlyDue && selectedMonth) {
-                list = list.filter(c => c.due_month === selectedMonth);
+                // list = list.filter(c => c.due_month === selectedMonth);
+                list = list.filter(c => (diffMonths - c.remain_months) % c.charge_months === 0 && diffMonths >= c.remain_months);
                 list = list.filter(c => c.online_pay === 1);
+                
               }
 
               list.forEach((c, idx) => {
@@ -188,6 +195,13 @@
                       statusClass = "status-warning";   // 剛好相等 → 警告
                   } else {
                       statusClass = "status-ok";        // 授權數 > 活躍數 → 正常
+                  }
+
+                  if (onlyDue){
+                    c.due_month=selectedMonth
+                    if (diffMonths > c.remain_months){
+                      statusClass = "status-future";
+                    }
                   }
 
                   const tr = document.createElement("tr");
