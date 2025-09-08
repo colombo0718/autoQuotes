@@ -6,13 +6,9 @@
   <title>通訊行推薦商品｜LIFF 模擬頁（卡片式）</title>
   <meta name="description" content="模擬手機通訊行的推薦商品頁面（卡片式網格）。僅圖片與價格，未接 LIFF SDK。" />
   <style>
-    :root{
-      --bg:#0b0c0f; --card:#111319; --muted:#8b93a7; --text:#e6e9ef; --primary:#4f8cff; --accent:#6ce4ff;
-      --chip-bg:#151927; --chip:#aab3c8; --price:#a7f3d0;
-    }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif; background:var(--bg-grad, linear-gradient(180deg,#0a0b10 0%, #10121a 100%)); color:var(--text)}
+    body{margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif; background:var(--bg-grad); color:var(--text)}
     .container{max-width:980px;margin:0 auto;padding:20px}
     header{position:sticky;top:0;backdrop-filter:blur(10px); background:rgba(10,12,18,.7); border-bottom:1px solid #1b2030; z-index:50}
     header .bar{display:flex;align-items:center;gap:12px;padding:12px 20px}
@@ -21,76 +17,57 @@
     .badge{margin-left:auto;font-size:12px;padding:6px 10px;border-radius:999px;background:var(--chip-bg);color:var(--chip);border:1px solid #1f2740}
 
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
-    /* 平板以上：3 欄；桌機大螢幕：4 欄 */
     @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
     @media(min-width:1024px){.grid{grid-template-columns:repeat(4,1fr)}}
 
-    /* === Theme-specific RWD === */
-    /* storeID=1（Dark Neon）手機改為 2 欄、桌機 4 欄，圖片方形 */
-    @media(max-width:640px){ body[data-theme="1"] .grid{grid-template-columns:repeat(2,1fr)} }
-
-    /* storeID=2（Minimal Light）手機單欄放大可讀性 */
-    @media(max-width:640px){ body[data-theme="2"] .grid{grid-template-columns:1fr} body[data-theme="2"] .title{font-size:16px} body[data-theme="2"] .price{font-size:20px} }
-
-    /* storeID=3（Purple Glass）手機維持 2 欄但拉高比例 4:5，桌機 3 欄 */
-    body[data-theme="3"] .media{aspect-ratio:4/5}
-    @media(min-width:1024px){ body[data-theme="3"] .grid{grid-template-columns:repeat(3,1fr)} }
-    @media(max-width:640px){ body[data-theme="3"] .grid{grid-template-columns:repeat(2,1fr)} }
-
-    /* storeID=4（Black Lime List）桌機維持列表（單欄，橫向卡片）；手機改為上下堆疊（圖在上） */
-    body[data-theme="4"] .grid{grid-template-columns:1fr}
-    body[data-theme="4"] .card{display:grid; grid-template-columns:160px 1fr}
-    body[data-theme="4"] .media{aspect-ratio:auto; height:100%}
-    @media(max-width:640px){ body[data-theme="4"] .card{grid-template-columns:1fr} body[data-theme="4"] .media{aspect-ratio:1/1; height:auto; border-right:none} }
-
-    /* storeID=5（Warm Sand）手機單欄＋價格浮在圖片上；桌機 3 欄 */
-    @media(min-width:1024px){ body[data-theme="5"] .grid{grid-template-columns:repeat(3,1fr)} }
-    @media(max-width:640px){ body[data-theme="5"] .grid{grid-template-columns:1fr} body[data-theme="5"] .content{position:relative} body[data-theme="5"] .price{position:absolute; right:10px; top:-42px; background:rgba(0,0,0,.25); padding:6px 10px; border-radius:10px} }
-
-    .card{position:relative;background:var(--card);border:1px solid #1a2033;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-    body[data-theme="2"] .card{border:1px solid #e5e7eb; box-shadow:0 10px 24px rgba(15,23,42,.08); border-radius:14px}
-    body[data-theme="3"] .card{border:1px solid rgba(255,255,255,.15); box-shadow:0 8px 30px rgba(124,58,237,.25)}
-    body[data-theme="4"] .card{display:grid; grid-template-columns:120px 1fr; gap:10px; border-radius:12px}
-    body[data-theme="5"] .card{border:1px solid #f59e0b; border-radius:18px; box-shadow:0 8px 20px rgba(245,158,11,.25)}
+    .card{position:relative;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.35)}
     .media{aspect-ratio:1/1;display:block;width:100%;object-fit:cover;background:#0b0f18}
-    body[data-theme="4"] .media{height:100%; aspect-ratio:auto; border-right:1px solid #1f2937}
     .content{padding:12px 14px 14px}
     .title{font-size:14px;font-weight:700;line-height:1.3;margin:0 0 6px}
     .meta{display:flex;gap:8px;align-items:center;justify-content:space-between}
     .price{font-weight:800;font-size:16px;color:var(--price)}
-    body[data-theme="2"] .price{font-size:18px}
-    body[data-theme="4"] .price{font-size:18px}
-    body[data-theme="5"] .price{font-size:18px}
     .tag{font-size:11px;padding:4px 8px;border-radius:999px;background:var(--chip-bg);color:var(--chip);border:1px solid #1c243a}
     .actions{margin-top:10px;display:flex;gap:8px}
     button{flex:1;padding:10px 12px;border-radius:10px;border:1px solid #1f2740;background:#121725;color:#cbd5e1;font-weight:600;cursor:pointer}
     button.primary{background:linear-gradient(180deg,#2346ff,#1f2bb8); border-color:#2b3bb8; color:white}
-    button:active{transform:translateY(1px)}
 
     .footer{color:var(--muted);font-size:12px;text-align:center;margin:22px 0 30px}
-  /* ===== Theme Switcher by storeID (1~5) ===== */
-    body{--bg:#0b0c0f; --card:#111319; --muted:#8b93a7; --text:#e6e9ef; --primary:#4f8cff; --accent:#6ce4ff; --chip-bg:#151927; --chip:#aab3c8; --price:#a7f3d0}
-    body[data-theme="1"]{ /* Dark Neon (原版) */
-      --bg-grad:linear-gradient(180deg,#0a0b10 0%, #10121a 100%);
-      --card:#111319; --text:#e6e9ef; --muted:#8b93a7; --chip-bg:#151927; --chip:#aab3c8; --price:#a7f3d0;
+
+    /* ===== 五大主題：色調差異更明顯 ===== */
+    body[data-theme="1"]{ /* Dark Neon Blue */
+      --bg-grad:linear-gradient(135deg,#000428,#004e92);
+      --card:#0f172a; --border:#1e293b; --text:#e0f2fe; --muted:#93c5fd; --chip-bg:#1e3a8a; --chip:#bfdbfe; --price:#38bdf8; --accent:#60a5fa;
     }
-    body[data-theme="2"]{ /* Minimal Light */
-      --bg-grad:linear-gradient(180deg,#ffffff 0%, #f8fafc 100%);
-      --card:#ffffff; --text:#0f172a; --muted:#6b7280; --chip-bg:#eef2ff; --chip:#334155; --price:#b91c1c;
+    body[data-theme="2"]{ /* Pure White & Red */
+      --bg-grad:linear-gradient(180deg,#ffffff,#fef2f2);
+      --card:#ffffff; --border:#fecaca; --text:#111827; --muted:#b91c1c; --chip-bg:#fee2e2; --chip:#991b1b; --price:#dc2626; --accent:#ef4444;
     }
-    body[data-theme="3"]{ /* Purple Glass */
-      --bg-grad:radial-gradient(60% 80% at 20% 10%, #3b0764 0%, transparent 60%), linear-gradient(180deg,#0b1020,#1b1030);
-      --card:rgba(255,255,255,0.06); --text:#f5f3ff; --muted:#c7bfff; --chip-bg:rgba(255,255,255,.08); --chip:#e9ddff; --price:#c4b5fd;
-      backdrop-filter: blur(8px);
+    body[data-theme="3"]{ /* Purple & Pink */
+      --bg-grad:linear-gradient(135deg,#8b5cf6,#ec4899);
+      --card:#fdf4ff; --border:#d946ef; --text:#3b0764; --muted:#db2777; --chip-bg:#fce7f3; --chip:#a21caf; --price:#e879f9; --accent:#c084fc;
     }
-    body[data-theme="4"]{ /* Black Lime List（改成列表視覺） */
-      --bg-grad:linear-gradient(180deg,#0a0a0a,#111);
-      --card:#0f1115; --text:#e5fee5; --muted:#a3f3a3; --chip-bg:#0b1f12; --chip:#86efac; --price:#bbf7d0;
+    body[data-theme="4"]{ /* Tropical Green */
+      --bg-grad:linear-gradient(135deg,#065f46,#16a34a);
+      --card:#052e16; --border:#047857; --text:#ecfccb; --muted:#bbf7d0; --chip-bg:#14532d; --chip:#bbf7d0; --price:#d9f99d; --accent:#22c55e;
     }
-    body[data-theme="5"]{ /* Warm Sand */
-      --bg-grad:linear-gradient(180deg,#faf3e7,#fff9f0);
-      --card:#fff7ed; --text:#4a3428; --muted:#8b6f5a; --chip-bg:#fde68a; --chip:#7c2d12; --price:#dc2626;
+    body[data-theme="5"]{ /* Sunset Orange */
+      --bg-grad:linear-gradient(135deg,#ff512f,#f97316);
+      --card:#fff7ed; --border:#fb923c; --text:#431407; --muted:#9a3412; --chip-bg:#fed7aa; --chip:#7c2d12; --price:#facc15; --accent:#ea580c;
     }
+
+    /* === RWD 差異 === */
+    @media(max-width:640px){ body[data-theme="1"] .grid{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:640px){ body[data-theme="2"] .grid{grid-template-columns:1fr} body[data-theme="2"] .title{font-size:16px} body[data-theme="2"] .price{font-size:20px} }
+    body[data-theme="3"] .media{aspect-ratio:4/5}
+    @media(min-width:1024px){ body[data-theme="3"] .grid{grid-template-columns:repeat(3,1fr)} }
+    @media(max-width:640px){ body[data-theme="3"] .grid{grid-template-columns:repeat(2,1fr)} }
+    body[data-theme="4"] .grid{grid-template-columns:1fr}
+    body[data-theme="4"] .card{display:grid; grid-template-columns:160px 1fr}
+    body[data-theme="4"] .media{aspect-ratio:auto; height:100%}
+    @media(max-width:640px){ body[data-theme="4"] .card{grid-template-columns:1fr} body[data-theme="4"] .media{aspect-ratio:1/1; height:auto; border-right:none} }
+    @media(min-width:1024px){ body[data-theme="5"] .grid{grid-template-columns:repeat(3,1fr)} }
+    @media(max-width:640px){ body[data-theme="5"] .grid{grid-template-columns:1fr} body[data-theme="5"] .content{position:relative} body[data-theme="5"] .price{position:absolute; right:10px; top:-42px; background:rgba(0,0,0,.25); padding:6px 10px; border-radius:10px} }
+
   </style>
 </head>
 <body>
@@ -108,8 +85,6 @@
   </main>
 
   <script>
-    // 依你的要求：保留卡片網格版型，商品名稱/價格參考地標網通
-    // 你可以把 img 換成對應的地標圖片網址
     const products = [
         { id:'p1', name:'Apple iPhone 14 (128GB)', price:18990, tag:'5G', img:'https://storage.googleapis.com/landtop_prod_cache/product/2110/product_image/89ed92488de65806a9fbf7975f40d2d1.png' },
         { id:'p2', name:'Apple iPhone 16e',        price:18990, tag:'5G', img:'https://storage.googleapis.com/landtop_prod/productimage/3465/image/dd058cc04ffa06ec6450c0ab3778ddf8.png' },
@@ -142,13 +117,11 @@
 
     const grid = document.getElementById('productGrid');
     products.forEach(p => grid.appendChild(createCard(p)));
-      // 依 URL 參數切換主題（storeID=1~5）
+
     const params = new URLSearchParams(location.search);
     const storeID = params.get('storeID') || '1';
     document.body.setAttribute('data-theme', storeID);
-
-    // 可選：動態顯示目前套用的佈景名稱
-    const themeNames = { '1':'Dark Neon', '2':'Minimal Light', '3':'Purple Glass', '4':'Black Lime List', '5':'Warm Sand' };
+    const themeNames = { '1':'Dark Neon Blue', '2':'White & Red', '3':'Purple & Pink', '4':'Tropical Green', '5':'Sunset Orange' };
     document.querySelector('.badge').textContent = `LIFF 模擬頁（${themeNames[storeID] || '主題'}）`;
   </script>
 </body>
