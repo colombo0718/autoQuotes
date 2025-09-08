@@ -21,7 +21,31 @@
     .badge{margin-left:auto;font-size:12px;padding:6px 10px;border-radius:999px;background:var(--chip-bg);color:var(--chip);border:1px solid #1f2740}
 
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+    /* 平板以上：3 欄；桌機大螢幕：4 欄 */
     @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+    @media(min-width:1024px){.grid{grid-template-columns:repeat(4,1fr)}}
+
+    /* === Theme-specific RWD === */
+    /* storeID=1（Dark Neon）手機改為 2 欄、桌機 4 欄，圖片方形 */
+    @media(max-width:640px){ body[data-theme="1"] .grid{grid-template-columns:repeat(2,1fr)} }
+
+    /* storeID=2（Minimal Light）手機單欄放大可讀性 */
+    @media(max-width:640px){ body[data-theme="2"] .grid{grid-template-columns:1fr} body[data-theme="2"] .title{font-size:16px} body[data-theme="2"] .price{font-size:20px} }
+
+    /* storeID=3（Purple Glass）手機維持 2 欄但拉高比例 4:5，桌機 3 欄 */
+    body[data-theme="3"] .media{aspect-ratio:4/5}
+    @media(min-width:1024px){ body[data-theme="3"] .grid{grid-template-columns:repeat(3,1fr)} }
+    @media(max-width:640px){ body[data-theme="3"] .grid{grid-template-columns:repeat(2,1fr)} }
+
+    /* storeID=4（Black Lime List）桌機維持列表（單欄，橫向卡片）；手機改為上下堆疊（圖在上） */
+    body[data-theme="4"] .grid{grid-template-columns:1fr}
+    body[data-theme="4"] .card{display:grid; grid-template-columns:160px 1fr}
+    body[data-theme="4"] .media{aspect-ratio:auto; height:100%}
+    @media(max-width:640px){ body[data-theme="4"] .card{grid-template-columns:1fr} body[data-theme="4"] .media{aspect-ratio:1/1; height:auto; border-right:none} }
+
+    /* storeID=5（Warm Sand）手機單欄＋價格浮在圖片上；桌機 3 欄 */
+    @media(min-width:1024px){ body[data-theme="5"] .grid{grid-template-columns:repeat(3,1fr)} }
+    @media(max-width:640px){ body[data-theme="5"] .grid{grid-template-columns:1fr} body[data-theme="5"] .content{position:relative} body[data-theme="5"] .price{position:absolute; right:10px; top:-42px; background:rgba(0,0,0,.25); padding:6px 10px; border-radius:10px} }
 
     .card{position:relative;background:var(--card);border:1px solid #1a2033;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.35)}
     body[data-theme="2"] .card{border:1px solid #e5e7eb; box-shadow:0 10px 24px rgba(15,23,42,.08); border-radius:14px}
