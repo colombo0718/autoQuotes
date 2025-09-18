@@ -3,6 +3,7 @@ from pathlib import Path
 from quote_generator import generate_quote
 import time
 import json
+import subprocess, sys
 
 app = Flask(__name__)
 app.config["JSON_AS_ASCII"] = False
@@ -24,6 +25,26 @@ def liff():
 @app.route("/output_quotes/<path:filename>")
 def quote_file(filename):
     return send_from_directory("output_quotes", filename)
+
+
+@app.route("/api/refresh_companies")
+def refresh_companies():
+    print('run get_companies_payment_data.py')
+    subprocess.Popen([sys.executable, "get_companies_payment_data.py"])
+    return jsonify(ok=True)
+    # try:
+    #     # 呼叫同目錄下的 get_companies_payment_data.py
+    #     res = subprocess.run(
+    #         [sys.executable, "get_companies_payment_data.py"],
+    #         capture_output=True,
+    #         text=True
+    #     )
+    #     if res.returncode == 0:
+    #         return jsonify(ok=True, message=res.stdout.strip())
+    #     else:
+    #         return jsonify(ok=False, error=res.stderr.strip()), 500
+    # except Exception as e:
+    #     return jsonify(ok=False, error=str(e)), 500
 
 # ===== 新增：讀取 companies_payment_data.json 並依公司名稱回傳一筆資料 =====
 DATA_FILE = Path("companies_payment_data.json")
@@ -82,6 +103,35 @@ def get_company_by_name():
     return jsonify(ok=False, error="not found"), 404
 
 
+def _is_empty_like(v):
+    if v is None: 
+        return True
+    if isinstance(v, str) and v.strip().lower() in ("", "null", "none", "undefined"):
+        return True
+    return False
+
+def _get_arg_or(default, key):
+    v = request.args.get(key)
+    return default if _is_empty_like(v) else v
+
+def _to_int_or(v, default):
+    if _is_empty_like(v):
+        return default
+    try:
+        return int(v)
+    except:
+        return default
+
+def _to_bool_or(v, default):
+    if _is_empty_like(v):
+        return default
+    s = str(v).strip().lower()
+    if s in ("1","true","t","yes","y","on"):  return True
+    if s in ("0","false","f","no","n","off"): return False
+    return default
+
+
+
 @app.get("/api/quote")
 def get_or_regenerate_quote():
     """
@@ -103,9 +153,9 @@ def get_or_regenerate_quote():
 
     # 是否帶了任何重產參數（多包含 due_month）
     wants_regen = any(
-        k in request.args
+        k in request.args 
         for k in ("charge_months", "price_includes_tax", "unit_price", "template_name", "due_month")
-    )
+    ) 
 
     # 若沒有帶重產參數，且 JSON 內已經有現成 quote_path，就直接回傳
     if not wants_regen:
@@ -114,12 +164,19 @@ def get_or_regenerate_quote():
             return jsonify(ok=True, quote_path=qp)
         # return jsonify(ok=False, error="no existing quote"), 404
 
-    # 需要重產 → 參數（未提供就用 JSON 內預設）
-    charge_months     = int(request.args.get("charge_months",   c.get("charge_months", 6)))
-    price_includes_tx = parse_bool(request.args.get("price_includes_tax"), True)
-    unit_price        = int(request.args.get("unit_price",      c.get("unit_price", 2600)))
-    template_name     = request.args.get("template_name", "quote_template2.html")
-    due_month     = request.args.get("due_month")  # 允許為 None
+    # # 需要重產 → 參數（未提供就用 JSON 內預設）
+    # charge_months     = int(request.args.get("charge_months",   c.get("charge_months", 6)))
+    # price_includes_tx = parse_bool(request.args.get("price_includes_tax"), True)
+    # unit_price        = int(request.args.get("unit_price",      c.get("unit_price", 2600)))
+    # template_name     = request.args.get("template_name", "quote_template2.html")
+    # due_month     = request.args.get("due_month")  # 允許為 None
+
+    # 需要重產 → 參數（null/"" 一律當未提供，回退到 JSON 內預設）
+    charge_months     = _to_int_or(_get_arg_or(c.get("charge_months", 6), "charge_months"), c.get("charge_months", 6))
+    price_includes_tx = _to_bool_or(_get_arg_or(c.get("price_includes_tax", True), "price_includes_tax"), c.get("price_includes_tax", True))
+    unit_price        = _to_int_or(_get_arg_or(c.get("unit_price", 2600), "unit_price"), c.get("unit_price", 2600))
+    template_name     = _get_arg_or("quote_template2.html", "template_name")
+    due_month         = _get_arg_or(None, "due_month")  # "null"→None
 
     # 正規化 due_month（如果有給）
     # due_month = None
