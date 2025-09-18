@@ -156,12 +156,12 @@ def get_or_regenerate_quote():
         k in request.args 
         for k in ("charge_months", "price_includes_tax", "unit_price", "template_name", "due_month")
     ) 
-
+    print(request.url_root)
     # 若沒有帶重產參數，且 JSON 內已經有現成 quote_path，就直接回傳
     if not wants_regen:
         qp = c.get("quote_path")
         if qp:
-            return jsonify(ok=True, quote_path=qp)
+            return jsonify(ok=True, quote_path=request.url_root +qp)
         # return jsonify(ok=False, error="no existing quote"), 404
 
     # # 需要重產 → 參數（未提供就用 JSON 內預設）
@@ -204,7 +204,7 @@ def get_or_regenerate_quote():
         output_dir="output_quotes",
     )
 
-    return jsonify(ok=True, quote_path=str(pdf_path).replace("\\","/"))    
+    return jsonify(ok=True, quote_path=request.url_root +str(pdf_path).replace("\\","/"))    
 
 if __name__ == "__main__":
     app.run(debug=True)
