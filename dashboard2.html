@@ -72,9 +72,16 @@
     </select> -->
     <select id="expire-month" name="expire-month"></select>
     需報價公司
+      <!-- 更新資料按鈕 -->
+      <button type="button" onclick="refresh_companies()" style="margin-left: 12px;">
+        更新資料
+      </button>
   </label>
-    <label class="control">
+  <label class="control">
+      
 </div>
+
+
 
   <table>
     <thead>
@@ -153,6 +160,10 @@
       // 先產生月份 → 再載入公司資料
       populateExpireMonthOptions(15);
 
+      async function refresh_companies(){
+        const baseUrl = window.location.origin; // 取得自己當前網頁的網址
+        const res = await fetch(`${baseUrl}/api/refresh_companies`);
+      }
 
         data=''
         async function loadCompanies() {
@@ -394,7 +405,13 @@
             const json = await res.json();
 
             if (!json.ok) throw new Error(json.message || '生成失敗');
-            const newPath = json.quote_path;
+            var newPath = json.quote_path;
+            
+            // 如果路徑以 http: 開頭，換成 https:
+            if (newPath.startsWith("http:")) {
+                newPath = newPath.replace("http:", "https:");
+            }
+            console.log(newPath)
             if (!newPath) throw new Error('未取得 quote_path');
 
             // 更新本列的預覽按鈕路徑
