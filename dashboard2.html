@@ -192,7 +192,7 @@
               if (onlyDue && selectedMonth) {
                 // list = list.filter(c => c.due_month === selectedMonth);
                 list = list.filter(c => (diffMonths - c.remain_months) % c.charge_months === 0 && diffMonths >= c.remain_months);
-                list = list.filter(c => c.online_pay === 1);
+                // list = list.filter(c => c.online_pay === 1);
                 
               }
 
