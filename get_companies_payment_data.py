@@ -107,7 +107,8 @@ def get_companies_data():
             branch_numb = f"{row3[0]:02d}" # 分店編號變兩位數
             branch_name = row3[1]
             # # 排除已停用、名稱為"總倉"或已收店的分店
-            if onlinepay_disable == 1  or is_closed == 1 or branch_name == "總倉":
+            # if onlinepay_disable == 1  or is_closed == 1 or branch_name == "總倉":
+            if onlinepay_disable == 1  or is_closed == 1:
                 continue
             # print(f"{branch_numb:02d}",branch_name)
             # print( branch_numb ,branch_name)
