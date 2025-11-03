@@ -206,5 +206,28 @@ def get_or_regenerate_quote():
 
     return jsonify(ok=True, quote_path=request.url_root +str(pdf_path).replace("\\","/"), link=request.url_root +str(pdf_path).replace("\\","/"))    
 
+# 綠界付款頁（ecpay_payment.html）
+@app.route("/ecpay")
+def serve_ecpay():
+    try:
+        result = subprocess.run(["python", "ecpay_test_order.py"], capture_output=True, text=True)
+        if result.returncode != 0:
+            return f"生成 ECPay 訂單失敗：{result.stderr}", 500
+        return send_from_directory(app.static_folder, "ecpay_payment.html")
+    except Exception as e:
+        return f"錯誤：{e}", 500
+
+# LINE Pay 付款頁（linepay_payment.html）
+@app.route("/linepay")
+def serve_linepay():
+    try:
+        result = subprocess.run(["python", "linepay_test_order.py"], capture_output=True, text=True)
+        if result.returncode != 0:
+            return f"生成 LINE Pay 訂單失敗：{result.stderr}", 500
+        return send_from_directory(app.static_folder, "linepay_payment.html")
+    except Exception as e:
+        return f"錯誤：{e}", 500
+
+
 if __name__ == "__main__":
     app.run(debug=True)

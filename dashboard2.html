@@ -54,7 +54,7 @@
 }
 
 .pdfd-body { width: 100%; height: calc(100% - 44px); }
-#pdf-preview-frame { width: 100%; height: 100%; border: 0; background: #fff; }
+#pdf-preview-frame, #payment-frame  { width: 100%; height: 100%; border: 0; background: #fff; }
   </style>
 </head>
 <body>
@@ -104,6 +104,7 @@
         <th>贈送月數</th>
         <th>產出單據</th>
         <th>檢視單據</th>
+        <th>線上付款</th>
       </tr>
     </thead>
     <tbody id="company-table-body">
@@ -124,6 +125,21 @@
     </div>
     <div class="pdfd-body">
       <iframe id="pdf-preview-frame" title="報價單 PDF 預覽"></iframe>
+    </div>
+  </dialog>
+
+  <!-- 線上付款 Dialog（新加） -->
+  <dialog id="payment-dialog" class="pdf-dialog">
+    <div class="pdfd-header">
+      <div id="payment-title" class="pdfd-title">線上付款</div>
+      <div class="pdfd-actions">
+        <button id="payment-open-newtab" class="pdfd-btn">新分頁開啟</button>
+        <button id="payment-close" class="pdfd-btn">關閉</button>
+      </div>
+    </div>
+    <div class="pdfd-body">
+      <!-- 先內嵌 index.html，之後會改成帶參數版本 -->
+      <iframe id="payment-frame" title="付款方式選擇"></iframe>
     </div>
   </dialog>
 
@@ -267,6 +283,13 @@
                       預覽
                     </button>
                   </td>
+                  <td>
+                    <button class="btn-micro pay-link-btn"
+                      data-company="${(c.company_name || "").replace(/'/g, "\\'")}"
+                      onclick="openPaymentDialogFromRow(this)">
+                      連結
+                    </button>
+                  </td>
                   
                   `;
                   // <td><a href="${c.quote_path || '#'}" target="_blank">下載</a></td>
@@ -362,6 +385,42 @@
           if (typeof dlg.showModal === "function") dlg.showModal();
           else dlg.show(); // fallback
         }
+
+
+    // 線上付款 Dialog（第一步：先嵌入 index.html）
+    function openPaymentDialogFromRow(btn) {
+      const tr = btn.closest('tr');
+      const companyName = tr.children[2]?.textContent?.trim() || '線上付款';
+      // console.log(companyName)
+      openPaymentDialog(companyName, "/static/index.html"); // 先用固定頁面，之後改成帶參數
+    }
+
+    function openPaymentDialog(titleText, url) {
+      const dlg = document.getElementById("payment-dialog");
+      const frame = document.getElementById("payment-frame");
+      const title = document.getElementById("payment-title");
+      const openBtn = document.getElementById("payment-open-newtab");
+      const closeBtn = document.getElementById("payment-close");
+
+      // console.log(title,titleText)
+      title.textContent = `${titleText} — 線上付款`;
+      frame.src = url;
+      openBtn.onclick = () => window.open(url, "_blank");
+      closeBtn.onclick = () => dlg.close();
+
+      dlg.addEventListener("click", (e) => {
+        const rect = dlg.getBoundingClientRect();
+        const inDialog = (
+          e.clientX >= rect.left && e.clientX <= rect.right &&
+          e.clientY >= rect.top && e.clientY <= rect.bottom
+        );
+        if (!inDialog) dlg.close();
+      }, { once: true });
+
+      if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.show();
+    }
+
+
 
         async function generateQuote(btn) {
           const baseUrl = window.location.origin;

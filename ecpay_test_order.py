@@ -18,6 +18,7 @@ order_params = {
     'ItemName': 'POS月租費',
     'ReturnURL': 'https://e616816c05f9.ngrok-free.app/callback',
     'ChoosePayment': 'Credit',
+    'IgnorePayment': 'ATM#CVS#BARCODE#WebATM#ApplePay#GooglePay#ECPay',
     'ClientBackURL': 'https://e616816c05f9.ngrok-free.app/confirm.html',
     'EncryptType': 1,
 }
