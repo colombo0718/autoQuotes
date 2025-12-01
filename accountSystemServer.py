@@ -1,6 +1,7 @@
 from flask import Flask, send_from_directory, request, jsonify
 from pathlib import Path
 from quote_generator import generate_quote
+from quote_peripheral import generate_peripheral_quote
 import time
 import json
 import subprocess, sys
@@ -205,6 +206,96 @@ def get_or_regenerate_quote():
     )
 
     return jsonify(ok=True, quote_path=request.url_root +str(pdf_path).replace("\\","/"), link=request.url_root +str(pdf_path).replace("\\","/"))    
+
+
+@app.get("/api/perip")
+def api_peripheral_quote():
+    """
+    周邊商品報價單 API
+
+    範例：
+    /api/perip?name=太子&paper=10&carbon=5&machine=0&price_includes_tax=true&month=202512
+    """
+
+    from datetime import date
+
+    # 1) 客戶 / 公司名稱
+    customer_name = request.args.get("name", "").strip()
+    if not customer_name:
+        return jsonify(ok=False, error="缺少 name（公司名稱）參數"), 400
+
+    # 2) 數量參數：紙捲 / 碳帶 / 條碼機
+    def _to_int(s, default=0):
+        try:
+            return int(s)
+        except (TypeError, ValueError):
+            return default
+
+    paper_qty   = _to_int(request.args.get("paper", "0"))
+    carbon_qty  = _to_int(request.args.get("carbon", "0"))
+    machine_qty = _to_int(request.args.get("machine", "0"))
+
+    if paper_qty <= 0 and carbon_qty <= 0 and machine_qty <= 0:
+        return jsonify(ok=False, error="請至少指定一種周邊商品的數量"), 400
+
+    # 3) 是否含稅（跟月費報價單一樣）
+    raw_tax = request.args.get("price_includes_tax", "false")
+    price_includes_tax = raw_tax.lower() in ("1", "true", "yes", "y")
+
+    # 4) 檔名用的月份
+    file_month = request.args.get("month") or date.today().strftime("%Y%m")
+
+    # 5) 價格表（記得換成你實際的）
+    PAPER_PRICE   = 130     # 紙捲單價
+    CARBON_PRICE  = 75      # 碳帶單價
+    MACHINE_PRICE = 7800    # 條碼機單價（跟你 main 範例對齊）
+
+    # 6) items：品名用你 main 裡的那幾個字串
+    items = []
+    if paper_qty > 0:
+        items.append({
+            "item": "橫一刀紙卷",
+            "unit_price": PAPER_PRICE,
+            "qty": paper_qty,
+        })
+    if carbon_qty > 0:
+        items.append({
+            "item": "碳帶",
+            "unit_price": CARBON_PRICE,
+            "qty": carbon_qty,
+        })
+    if machine_qty > 0:
+        items.append({
+            "item": "條碼機 TSC ttp-244ce",
+            "unit_price": MACHINE_PRICE,
+            "qty": machine_qty,
+        })
+
+    # 7) 呼叫 generate_peripheral_quote
+    pdf_path = generate_peripheral_quote(
+        customer_name=customer_name,
+        items=items,
+        price_includes_tax=price_includes_tax,
+        file_month=file_month,
+        output_dir="output_quotes",
+        template_name="quote_template_peri.html",
+    )
+
+    # 8) 回傳 URL
+    url_base = request.url_root.rstrip("/")
+    rel_path = str(pdf_path).replace("\\", "/")
+    file_url = f"{url_base}/{rel_path}"
+
+    return jsonify(
+        ok=True,
+        name=customer_name,
+        price_includes_tax=price_includes_tax,
+        month=file_month,
+        path=rel_path,
+        url=file_url,
+    )
+
+
 
 # 綠界付款頁（ecpay_payment.html）
 @app.route("/ecpay")
