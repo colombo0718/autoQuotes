@@ -292,7 +292,7 @@ def api_peripheral_quote():
         price_includes_tax=price_includes_tax,
         month=file_month,
         path=rel_path,
-        url=file_url,
+        link=file_url,
     )
 
 
