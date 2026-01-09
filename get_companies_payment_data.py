@@ -69,7 +69,7 @@ def get_companies_data():
         primary_key=row1[0]
         online_pay= 1 if row1[onlinepay_idx] else 0
         charge_months = row1[charge_month_idx] or 6
-        bonus_months = row1[bonus_month_idx] or 0
+        bonus_months = row1[bonus_month_idx] or 0 
         discount = row1[discount_idx] or 0
         unit_price = int(2600 * ((100-discount) / 100))
 
@@ -82,17 +82,21 @@ def get_companies_data():
         conn3 = pyodbc.connect(f'DRIVER={{{driver}}};SERVER={server};DATABASE={db_name};UID={username};PWD={password}')
         cursor3 = conn3.cursor()
         # cursor3.execute("SELECT * FROM 分店")
-        cursor3.execute("SELECT 分店編號, 店名, 是否已收店, 線上付款_停用 FROM 分店")
+        cursor3.execute("SELECT 分店編號, 店名, 是否已收店, 線上付款_停用, 建立日期 FROM 分店")
         rows3 = cursor3.fetchall()
+        # print(rows3)
         columns3 = [col[0] for col in cursor3.description]
+        # print(columns3)
         close_idx = columns3.index("是否已收店")
         onlinepay_disable_idx = columns3.index("線上付款_停用")
+        create_idx = columns3.index("建立日期")
 
         cursor3.execute("SELECT 名稱, 設定值 FROM 基本設定 WHERE 名稱='總倉編號'")
         rows5=cursor3.fetchall()
         main_warehouse_id=rows5[0][1] # 總倉編號
 
-
+        # 計算30天前的日期
+        since_date = date.today() - timedelta(days=30)
 
 
         active_count = 0
@@ -126,14 +130,12 @@ def get_companies_data():
 
 
             
-            # [檢索兩種單據]
+            
             current_date = date.today()
             yymm = f"{str(current_date.year)[2:]}{current_date.month:02d}"  # 取年份後兩位，月補零
             yymmdd = f"{str(current_date.year)[2:]}{current_date.month:02d}{current_date.day:02d}"  # 取年份後兩位，月補零
             # print(yymmdd)
 
-
-            since_date = date.today() - timedelta(days=30)
 
             def count_docs(table, date_col, branch_col="分店編號"):
                 sql = f"""
@@ -146,16 +148,30 @@ def get_companies_data():
                 cursor3.execute(sql, (row3[0], since_date))  # row3[0] 是分店編號（整數）
                 return cursor3.fetchone()[0] or 0
 
-            sale_count   = count_docs("銷貨單", "單據日期")
-            ship_count   = count_docs("出貨單", "單據日期")
-            repair_count = count_docs("維修單", "單據日期")
+            created_dt = row3[create_idx]  # SQL Server 通常回 datetime/datetime2
+            print(created_dt)
+            is_new_branch = False
+            if created_dt:
+                created_date = created_dt.date() if hasattr(created_dt, "date") else created_dt
+                is_new_branch = created_date >= since_date
+                print("新開店 : ",is_new_branch)
 
-            branch_info["sale_count"]   = sale_count
-            branch_info["ship_count"]   = ship_count
-            branch_info["repair_count"] = repair_count
+            if is_new_branch:
+                # 新店：直接視為活躍（即使 0 單據）
+                branch_info["is_active"] = True
+                # counts 維持 0，不用打 3 次 count_docs
+            else :
+                # [檢索三種單據]
+                sale_count   = count_docs("銷貨單", "單據日期")
+                ship_count   = count_docs("出貨單", "單據日期")
+                repair_count = count_docs("維修單", "單據日期")
 
-            total_count = sale_count + ship_count + repair_count
-            branch_info["is_active"] = total_count > 0
+                branch_info["sale_count"]   = sale_count
+                branch_info["ship_count"]   = ship_count
+                branch_info["repair_count"] = repair_count
+
+                total_count = sale_count + ship_count + repair_count
+                branch_info["is_active"] = total_count > 0
 
             # print(driver,server,db_name,username,password)
             # conn3 = pyodbc.connect(f'DRIVER={{{driver}}};SERVER={server};DATABASE={db_name};UID={username};PWD={password}')

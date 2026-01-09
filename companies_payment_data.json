@@ -9,7 +9,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 11,
+        "ship_count": 2,
         "repair_count": 0
       },
       {
@@ -17,7 +17,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 129,
+        "sale_count": 180,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -29,7 +29,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -37,7 +37,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_太子_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_太子_202601_含稅.pdf"
   },
   {
     "primary_key": 6,
@@ -49,7 +49,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 11,
+        "ship_count": 8,
         "repair_count": 0
       },
       {
@@ -57,9 +57,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 228,
-        "ship_count": 2,
-        "repair_count": 3
+        "sale_count": 237,
+        "ship_count": 1,
+        "repair_count": 4
       }
     ],
     "branches": [
@@ -69,7 +69,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -77,7 +77,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_成峰_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_成峰_202601_含稅.pdf"
   },
   {
     "primary_key": 7,
@@ -88,9 +88,9 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 305,
+        "sale_count": 256,
         "ship_count": 0,
-        "repair_count": 21
+        "repair_count": 23
       },
       {
         "name": "總倉",
@@ -107,7 +107,7 @@
     "active_count": 0,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -115,7 +115,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_百發_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_百發_202601_含稅.pdf"
   },
   {
     "primary_key": 10,
@@ -127,7 +127,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 130,
+        "ship_count": 122,
         "repair_count": 0
       },
       {
@@ -135,18 +135,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 4,
+        "sale_count": 5,
         "ship_count": 0,
-        "repair_count": 0
+        "repair_count": 10
       },
       {
         "name": "永康店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 417,
+        "sale_count": 390,
         "ship_count": 0,
-        "repair_count": 8
+        "repair_count": 5
       }
     ],
     "branches": [
@@ -157,7 +157,7 @@
     "active_count": 2,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 62400,
     "online_pay": 0,
     "quote_required": 0,
@@ -165,7 +165,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_保東_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_保東_202601_含稅.pdf"
   },
   {
     "primary_key": 17,
@@ -185,9 +185,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 124,
-        "ship_count": 21,
-        "repair_count": 6
+        "sale_count": 96,
+        "ship_count": 27,
+        "repair_count": 2
       },
       {
         "name": "聯強寶山店",
@@ -215,7 +215,7 @@
     "active_count": 1,
     "charge_count": 3,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -223,7 +223,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_義鋒_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_義鋒_202601_含稅.pdf"
   },
   {
     "primary_key": 18,
@@ -234,36 +234,36 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 1,
-        "ship_count": 35,
-        "repair_count": 2
+        "sale_count": 0,
+        "ship_count": 44,
+        "repair_count": 1
       },
       {
         "name": "Apple",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 69,
-        "ship_count": 152,
-        "repair_count": 3
+        "sale_count": 53,
+        "ship_count": 166,
+        "repair_count": 0
       },
       {
         "name": "SONY",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 74,
-        "ship_count": 79,
-        "repair_count": 7
+        "sale_count": 60,
+        "ship_count": 72,
+        "repair_count": 10
       },
       {
         "name": "Vass1",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 149,
-        "ship_count": 4,
-        "repair_count": 1
+        "sale_count": 165,
+        "ship_count": 3,
+        "repair_count": 3
       },
       {
         "name": "龍潭業代",
@@ -271,7 +271,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 177,
+        "ship_count": 111,
         "repair_count": 0
       },
       {
@@ -279,9 +279,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 55,
-        "ship_count": 96,
-        "repair_count": 7
+        "sale_count": 37,
+        "ship_count": 42,
+        "repair_count": 4
       },
       {
         "name": "Vass4",
@@ -297,9 +297,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 233,
-        "ship_count": 32,
-        "repair_count": 1
+        "sale_count": 212,
+        "ship_count": 19,
+        "repair_count": 7
       },
       {
         "name": "Vass2",
@@ -325,7 +325,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 187,
+        "ship_count": 143,
         "repair_count": 0
       },
       {
@@ -352,8 +352,8 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 279,
-        "repair_count": 2
+        "ship_count": 233,
+        "repair_count": 1
       },
       {
         "name": "總部出貨",
@@ -361,7 +361,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 16,
+        "ship_count": 33,
         "repair_count": 0
       },
       {
@@ -370,7 +370,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 188,
+        "ship_count": 163,
         "repair_count": 0
       },
       {
@@ -379,7 +379,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 198,
+        "ship_count": 146,
         "repair_count": 0
       },
       {
@@ -388,11 +388,11 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 72,
+        "ship_count": 46,
         "repair_count": 0
       },
       {
-        "name": "林口業代",
+        "name": "門市客訂暫存區",
         "is_main": false,
         "is_active": false,
         "doc_num": null,
@@ -419,7 +419,7 @@
     "active_count": 12,
     "charge_count": 18,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 374400,
     "online_pay": 0,
     "quote_required": 0,
@@ -427,7 +427,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_聯福_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_聯福_202601_含稅.pdf"
   },
   {
     "primary_key": 19,
@@ -439,7 +439,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 17,
+        "ship_count": 19,
         "repair_count": 0
       },
       {
@@ -447,36 +447,36 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 336,
+        "sale_count": 296,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 1
       },
       {
         "name": "二林TWM",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 334,
+        "sale_count": 329,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 1
       },
       {
         "name": "田中TWM",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 701,
+        "sale_count": 652,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 2
       },
       {
         "name": "北斗TWM",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 291,
+        "sale_count": 258,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 3
       }
     ],
     "branches": [
@@ -489,7 +489,7 @@
     "active_count": 4,
     "charge_count": 4,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 124800,
     "online_pay": 0,
     "quote_required": 0,
@@ -497,7 +497,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_台釱_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_台釱_202601_含稅.pdf"
   },
   {
     "primary_key": 30,
@@ -517,18 +517,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 238,
+        "sale_count": 225,
         "ship_count": 0,
-        "repair_count": 131
+        "repair_count": 127
       }
     ],
     "branches": [
       "環球中正店"
     ],
-    "license_count": 9,
+    "license_count": 8,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 9,
+    "remain_months": 8,
     "due_month": "2026/09",
     "receivable": 31200,
     "online_pay": 1,
@@ -566,9 +566,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 375,
+        "sale_count": 379,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 8
       },
       {
         "name": "林森二樓倉庫",
@@ -596,7 +596,7 @@
     "active_count": 1,
     "charge_count": 4,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -604,7 +604,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_聯合_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_聯合_202601_含稅.pdf"
   },
   {
     "primary_key": 35,
@@ -616,7 +616,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 80,
+        "ship_count": 82,
         "repair_count": 0
       },
       {
@@ -633,9 +633,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 331,
+        "sale_count": 279,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 3
       },
       {
         "name": "台南特約總倉",
@@ -643,7 +643,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 7,
+        "ship_count": 6,
         "repair_count": 0
       },
       {
@@ -660,7 +660,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 382,
+        "sale_count": 303,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -678,9 +678,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 493,
+        "sale_count": 382,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 0
       },
       {
         "name": "幸福店",
@@ -696,9 +696,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 331,
+        "sale_count": 295,
         "ship_count": 0,
-        "repair_count": 5
+        "repair_count": 2
       },
       {
         "name": "容生倉",
@@ -706,7 +706,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 12,
+        "ship_count": 14,
         "repair_count": 0
       },
       {
@@ -750,9 +750,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 369,
+        "sale_count": 471,
         "ship_count": 0,
-        "repair_count": 10
+        "repair_count": 7
       },
       {
         "name": "佳里光復",
@@ -768,9 +768,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 206,
+        "sale_count": 222,
         "ship_count": 0,
-        "repair_count": 7
+        "repair_count": 1
       },
       {
         "name": "善化站前",
@@ -796,7 +796,7 @@
     "active_count": 8,
     "charge_count": 18,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 249600,
     "online_pay": 0,
     "quote_required": 0,
@@ -804,7 +804,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_感動_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_感動_202601_含稅.pdf"
   },
   {
     "primary_key": 37,
@@ -816,52 +816,52 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 115,
-        "repair_count": 5
+        "ship_count": 89,
+        "repair_count": 24
       },
       {
         "name": "六六屋",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 376,
+        "sale_count": 317,
         "ship_count": 0,
-        "repair_count": 32
+        "repair_count": 7
       },
       {
         "name": "新機地",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 225,
+        "sale_count": 246,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 7
       },
       {
         "name": "新豐店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 255,
+        "sale_count": 225,
         "ship_count": 0,
-        "repair_count": 19
+        "repair_count": 9
       },
       {
         "name": "暖暖店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 298,
+        "sale_count": 279,
         "ship_count": 0,
-        "repair_count": 16
+        "repair_count": 8
       },
       {
         "name": "網路",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 133,
-        "ship_count": 174,
+        "sale_count": 63,
+        "ship_count": 151,
         "repair_count": 0
       },
       {
@@ -869,7 +869,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 272,
+        "sale_count": 308,
         "ship_count": 0,
         "repair_count": 1
       },
@@ -878,9 +878,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 283,
+        "sale_count": 263,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 3
       }
     ],
     "branches": [
@@ -896,7 +896,7 @@
     "active_count": 7,
     "charge_count": 7,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 218400,
     "online_pay": 0,
     "quote_required": 0,
@@ -904,7 +904,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_六六屋_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_六六屋_202601_含稅.pdf"
   },
   {
     "primary_key": 39,
@@ -924,7 +924,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 118,
+        "sale_count": 74,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -933,7 +933,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 157,
+        "sale_count": 143,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -942,7 +942,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 81,
+        "sale_count": 67,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -951,7 +951,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 348,
+        "sale_count": 328,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -984,7 +984,7 @@
     "active_count": 4,
     "charge_count": 6,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 124800,
     "online_pay": 0,
     "quote_required": 0,
@@ -992,7 +992,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_怡呈_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_怡呈_202601_含稅.pdf"
   },
   {
     "primary_key": 42,
@@ -1004,7 +1004,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 5,
+        "ship_count": 3,
         "repair_count": 0
       },
       {
@@ -1012,9 +1012,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 65,
+        "sale_count": 29,
         "ship_count": 0,
-        "repair_count": 9
+        "repair_count": 2
       },
       {
         "name": "神乎奇機",
@@ -1048,18 +1048,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 144,
-        "ship_count": 1,
-        "repair_count": 4
-      },
-      {
-        "name": "大甲中山",
-        "is_main": false,
-        "is_active": false,
-        "doc_num": null,
-        "sale_count": 0,
-        "ship_count": 0,
-        "repair_count": 0
+        "sale_count": 124,
+        "ship_count": 2,
+        "repair_count": 3
       }
     ],
     "branches": [
@@ -1068,9 +1059,9 @@
     ],
     "license_count": 0,
     "active_count": 2,
-    "charge_count": 6,
+    "charge_count": 5,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 62400,
     "online_pay": 0,
     "quote_required": 0,
@@ -1078,7 +1069,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_佳展_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_佳展_202601_含稅.pdf"
   },
   {
     "primary_key": 43,
@@ -1089,8 +1080,8 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 4,
-        "ship_count": 22,
+        "sale_count": 402,
+        "ship_count": 21,
         "repair_count": 0
       },
       {
@@ -1098,18 +1089,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 314,
+        "sale_count": 233,
         "ship_count": 0,
-        "repair_count": 8
+        "repair_count": 9
       },
       {
         "name": "台灣大哥大-麻豆中山",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 205,
+        "sale_count": 126,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 2
       },
       {
         "name": "1300電通",
@@ -1138,7 +1129,7 @@
     "active_count": 2,
     "charge_count": 4,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 62400,
     "online_pay": 0,
     "quote_required": 0,
@@ -1146,7 +1137,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_達文西_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_達文西_202601_含稅.pdf"
   },
   {
     "primary_key": 45,
@@ -1158,7 +1149,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 10,
+        "ship_count": 21,
         "repair_count": 0
       },
       {
@@ -1166,27 +1157,27 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 211,
+        "sale_count": 206,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 2
       },
       {
         "name": "中華-民族店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 8,
+        "sale_count": 62,
         "ship_count": 0,
-        "repair_count": 0
+        "repair_count": 4
       },
       {
         "name": "神腦-民權店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 89,
+        "sale_count": 23,
         "ship_count": 0,
-        "repair_count": 13
+        "repair_count": 4
       },
       {
         "name": "中華-東榮店",
@@ -1220,9 +1211,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 375,
+        "sale_count": 316,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 2
       },
       {
         "name": "遠傳-建國店",
@@ -1244,7 +1235,7 @@
     "active_count": 4,
     "charge_count": 8,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 124800,
     "online_pay": 0,
     "quote_required": 0,
@@ -1252,7 +1243,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_超訊_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_超訊_202601_含稅.pdf"
   },
   {
     "primary_key": 48,
@@ -1264,7 +1255,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 11,
+        "ship_count": 10,
         "repair_count": 0
       },
       {
@@ -1281,9 +1272,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 327,
+        "sale_count": 257,
         "ship_count": 0,
-        "repair_count": 9
+        "repair_count": 4
       },
       {
         "name": "迴龍",
@@ -1326,18 +1317,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 351,
+        "sale_count": 285,
         "ship_count": 0,
-        "repair_count": 14
+        "repair_count": 10
       },
       {
         "name": "羅東興東",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 265,
+        "sale_count": 299,
         "ship_count": 0,
-        "repair_count": 3
+        "repair_count": 6
       },
       {
         "name": "羅東中正南",
@@ -1358,7 +1349,7 @@
     "active_count": 3,
     "charge_count": 9,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 93600,
     "online_pay": 0,
     "quote_required": 0,
@@ -1366,7 +1357,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_誠訊_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_誠訊_202601_含稅.pdf"
   },
   {
     "primary_key": 51,
@@ -1377,8 +1368,8 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 13,
-        "ship_count": 11,
+        "sale_count": 17,
+        "ship_count": 15,
         "repair_count": 0
       },
       {
@@ -1395,9 +1386,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 339,
+        "sale_count": 352,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 4
       },
       {
         "name": "華榮",
@@ -1434,7 +1425,7 @@
     "active_count": 1,
     "charge_count": 5,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -1442,7 +1433,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_泛都_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_泛都_202601_含稅.pdf"
   },
   {
     "primary_key": 59,
@@ -1462,7 +1453,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 234,
+        "sale_count": 297,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1483,7 +1474,7 @@
     "active_count": 1,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -1491,7 +1482,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_辰銘_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_辰銘_202601_含稅.pdf"
   },
   {
     "primary_key": 60,
@@ -1511,9 +1502,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 167,
+        "sale_count": 146,
         "ship_count": 0,
-        "repair_count": 32
+        "repair_count": 25
       },
       {
         "name": "桃鶯店",
@@ -1550,7 +1541,7 @@
     "active_count": 1,
     "charge_count": 4,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -1558,7 +1549,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_韡碩_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_韡碩_202601_含稅.pdf"
   },
   {
     "primary_key": 67,
@@ -1569,7 +1560,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 13,
+        "sale_count": 3,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1586,10 +1577,10 @@
     "branches": [
       "A1-正欣"
     ],
-    "license_count": 4,
+    "license_count": 3,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 4,
+    "remain_months": 3,
     "due_month": "2026/04",
     "receivable": 31200,
     "online_pay": 1,
@@ -1610,7 +1601,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 55,
+        "ship_count": 68,
         "repair_count": 0
       },
       {
@@ -1618,16 +1609,16 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 493,
+        "sale_count": 467,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 2
       },
       {
         "name": "台灣更寮腳",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 453,
+        "sale_count": 401,
         "ship_count": 0,
         "repair_count": 5
       },
@@ -1636,9 +1627,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 532,
+        "sale_count": 530,
         "ship_count": 0,
-        "repair_count": 8
+        "repair_count": 4
       },
       {
         "name": "介壽888",
@@ -1681,9 +1672,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 472,
+        "sale_count": 437,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 12
       }
     ],
     "branches": [
@@ -1696,7 +1687,7 @@
     "active_count": 4,
     "charge_count": 8,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 124800,
     "online_pay": 0,
     "quote_required": 0,
@@ -1704,7 +1695,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_桃鶯_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_桃鶯_202601_含稅.pdf"
   },
   {
     "primary_key": 74,
@@ -1733,9 +1724,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 66,
+        "sale_count": 67,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 5
       },
       {
         "name": "天亞大興",
@@ -1751,9 +1742,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 89,
+        "sale_count": 93,
         "ship_count": 0,
-        "repair_count": 10
+        "repair_count": 4
       }
     ],
     "branches": [
@@ -1764,7 +1755,7 @@
     "active_count": 2,
     "charge_count": 4,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 62400,
     "online_pay": 0,
     "quote_required": 0,
@@ -1772,7 +1763,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_天亞_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_天亞_202601_含稅.pdf"
   },
   {
     "primary_key": 76,
@@ -1792,9 +1783,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 67,
+        "sale_count": 65,
         "ship_count": 0,
-        "repair_count": 5
+        "repair_count": 6
       }
     ],
     "branches": [
@@ -1804,7 +1795,7 @@
     "active_count": 1,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -1812,7 +1803,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_翔生_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_翔生_202601_含稅.pdf"
   },
   {
     "primary_key": 78,
@@ -1833,7 +1824,7 @@
     "active_count": 0,
     "charge_count": 0,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -1841,7 +1832,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_src2008_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_src2008_202601_含稅.pdf"
   },
   {
     "primary_key": 79,
@@ -1852,7 +1843,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 26,
+        "sale_count": 27,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1861,7 +1852,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 79,
+        "sale_count": 42,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1871,7 +1862,7 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 438,
+        "ship_count": 310,
         "repair_count": 0
       },
       {
@@ -1902,7 +1893,7 @@
     "active_count": 3,
     "charge_count": 5,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 46800,
     "online_pay": 0,
     "quote_required": 0,
@@ -1910,7 +1901,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_遠寬_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_遠寬_202601_含稅.pdf"
   },
   {
     "primary_key": 82,
@@ -1930,32 +1921,32 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 284,
+        "sale_count": 274,
         "ship_count": 0,
-        "repair_count": 37
+        "repair_count": 33
       },
       {
         "name": "南崁店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 95,
+        "sale_count": 90,
         "ship_count": 0,
-        "repair_count": 307
+        "repair_count": 252
       }
     ],
     "branches": [
       "果林店",
       "南崁店"
     ],
-    "license_count": 4,
+    "license_count": 2,
     "active_count": 2,
     "charge_count": 2,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 62400,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 12,
     "discount": 0,
     "unit_price": 2600,
@@ -1971,7 +1962,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 6,
+        "sale_count": 3,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -1989,7 +1980,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 263,
+        "sale_count": 276,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2034,9 +2025,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 144,
+        "sale_count": 167,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 0
       }
     ],
     "branches": [
@@ -2047,7 +2038,7 @@
     "active_count": 2,
     "charge_count": 7,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 62400,
     "online_pay": 0,
     "quote_required": 0,
@@ -2055,7 +2046,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_威勝_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_威勝_202601_含稅.pdf"
   },
   {
     "primary_key": 87,
@@ -2084,9 +2075,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 589,
+        "sale_count": 492,
         "ship_count": 0,
-        "repair_count": 39
+        "repair_count": 33
       }
     ],
     "branches": [
@@ -2096,7 +2087,7 @@
     "active_count": 1,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -2104,7 +2095,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_齊越_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_齊越_202601_含稅.pdf"
   },
   {
     "primary_key": 90,
@@ -2124,18 +2115,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 100,
+        "sale_count": 97,
         "ship_count": 0,
-        "repair_count": 8
+        "repair_count": 5
       },
       {
         "name": "大翔",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 296,
+        "sale_count": 259,
         "ship_count": 0,
-        "repair_count": 28
+        "repair_count": 26
       }
     ],
     "branches": [
@@ -2146,7 +2137,7 @@
     "active_count": 2,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 62400,
     "online_pay": 0,
     "quote_required": 0,
@@ -2154,7 +2145,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_航聯_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_航聯_202601_含稅.pdf"
   },
   {
     "primary_key": 95,
@@ -2165,7 +2156,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 1,
+        "sale_count": 0,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2183,18 +2174,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 102,
+        "sale_count": 74,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 6
       },
       {
         "name": "平鎮南豐店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 149,
+        "sale_count": 158,
         "ship_count": 0,
-        "repair_count": 10
+        "repair_count": 7
       }
     ],
     "branches": [
@@ -2202,10 +2193,10 @@
       "忠孝一店",
       "平鎮南豐店"
     ],
-    "license_count": 10,
+    "license_count": 7,
     "active_count": 3,
     "charge_count": 3,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 93600,
     "online_pay": 1,
@@ -2487,7 +2478,7 @@
     "active_count": 0,
     "charge_count": 28,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -2495,7 +2486,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_摩斯_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_摩斯_202601_含稅.pdf"
   },
   {
     "primary_key": 100,
@@ -2507,7 +2498,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 388,
+        "ship_count": 247,
         "repair_count": 0
       },
       {
@@ -2525,7 +2516,7 @@
     "active_count": 0,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -2533,7 +2524,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_富亞士_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_富亞士_202601_含稅.pdf"
   },
   {
     "primary_key": 104,
@@ -2553,19 +2544,19 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 339,
-        "ship_count": 15,
-        "repair_count": 0
+        "sale_count": 342,
+        "ship_count": 9,
+        "repair_count": 2
       }
     ],
     "branches": [
       "台哥大-嘉義垂楊"
     ],
-    "license_count": 3,
+    "license_count": 11,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
-    "due_month": "2026/03",
+    "remain_months": 11,
+    "due_month": "2026/12",
     "receivable": 31200,
     "online_pay": 1,
     "quote_required": 0,
@@ -2573,7 +2564,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_鉅廷_202603_含稅.pdf"
+    "quote_path": "output_quotes/quote_鉅廷_202612_含稅.pdf"
   },
   {
     "primary_key": 110,
@@ -2584,7 +2575,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 43,
+        "sale_count": 41,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2593,18 +2584,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 95,
+        "sale_count": 88,
         "ship_count": 0,
-        "repair_count": 3
+        "repair_count": 5
       },
       {
         "name": "金馬講-南平",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 252,
+        "sale_count": 259,
         "ship_count": 0,
-        "repair_count": 23
+        "repair_count": 27
       },
       {
         "name": "金馬講-南崁",
@@ -2629,9 +2620,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 361,
+        "sale_count": 446,
         "ship_count": 0,
-        "repair_count": 8
+        "repair_count": 3
       },
       {
         "name": "金馬講-藝文(撤店)",
@@ -2647,9 +2638,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 269,
+        "sale_count": 209,
         "ship_count": 0,
-        "repair_count": 12
+        "repair_count": 14
       },
       {
         "name": "亞太-南平(撤店)",
@@ -2680,7 +2671,7 @@
     "active_count": 4,
     "charge_count": 9,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 124800,
     "online_pay": 0,
     "quote_required": 0,
@@ -2688,7 +2679,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_金馬講_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_金馬講_202601_含稅.pdf"
   },
   {
     "primary_key": 116,
@@ -2708,7 +2699,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 198,
+        "sale_count": 122,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -2720,7 +2711,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -2728,7 +2719,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_遠輝_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_遠輝_202601_含稅.pdf"
   },
   {
     "primary_key": 123,
@@ -2748,7 +2739,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 325,
+        "sale_count": 306,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2757,7 +2748,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 245,
+        "sale_count": 242,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2766,7 +2757,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 342,
+        "sale_count": 359,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -2780,7 +2771,7 @@
     "active_count": 3,
     "charge_count": 3,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 93600,
     "online_pay": 0,
     "quote_required": 0,
@@ -2788,7 +2779,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_邦喬_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_邦喬_202601_含稅.pdf"
   },
   {
     "primary_key": 127,
@@ -2808,7 +2799,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 136,
+        "sale_count": 138,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -2979,7 +2970,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 154,
+        "sale_count": 123,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -3091,7 +3082,7 @@
     "active_count": 2,
     "charge_count": 31,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 0,
     "quote_required": 0,
@@ -3099,7 +3090,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_卓盛_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_卓盛_202601_含稅.pdf"
   },
   {
     "primary_key": 129,
@@ -3128,9 +3119,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 142,
+        "sale_count": 121,
         "ship_count": 0,
-        "repair_count": 8
+        "repair_count": 3
       },
       {
         "name": "星威-文二店",
@@ -3149,7 +3140,7 @@
     "active_count": 1,
     "charge_count": 3,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3157,7 +3148,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_星威_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_星威_202601_含稅.pdf"
   },
   {
     "primary_key": 136,
@@ -3196,7 +3187,7 @@
     "active_count": 0,
     "charge_count": 2,
     "remain_months": 2,
-    "due_month": "2026/02",
+    "due_month": "2026/03",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -3204,7 +3195,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_全葳_202602_含稅.pdf"
+    "quote_path": "output_quotes/quote_全葳_202603_含稅.pdf"
   },
   {
     "primary_key": 140,
@@ -3234,7 +3225,7 @@
     "active_count": 0,
     "charge_count": 1,
     "remain_months": 6,
-    "due_month": "2026/06",
+    "due_month": "2026/07",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -3242,7 +3233,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_光速_202606_含稅.pdf"
+    "quote_path": "output_quotes/quote_光速_202607_含稅.pdf"
   },
   {
     "primary_key": 141,
@@ -3254,7 +3245,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 158,
+        "ship_count": 162,
         "repair_count": 0
       },
       {
@@ -3263,26 +3254,26 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 8,
+        "ship_count": 29,
         "repair_count": 0
       }
     ],
     "branches": [
       "鑫瑞(網路)"
     ],
-    "license_count": 1,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 1,
-    "due_month": "2026/01",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 7800,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_艾瑪_202601_含稅.pdf"
+    "quote_path": "output_quotes/quote_艾瑪_202606_含稅.pdf"
   },
   {
     "primary_key": 142,
@@ -3312,7 +3303,7 @@
     "active_count": 0,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -3320,7 +3311,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_成翊_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_成翊_202601_含稅.pdf"
   },
   {
     "primary_key": 145,
@@ -3340,9 +3331,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 262,
+        "sale_count": 187,
         "ship_count": 0,
-        "repair_count": 35
+        "repair_count": 34
       },
       {
         "name": "前進通訊",
@@ -3357,11 +3348,11 @@
     "branches": [
       "家智通訊行"
     ],
-    "license_count": 0,
+    "license_count": 6,
     "active_count": 1,
     "charge_count": 2,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 3,
+    "due_month": "2026/04",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3369,7 +3360,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_家智_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_家智_202604_含稅.pdf"
   },
   {
     "primary_key": 148,
@@ -3389,7 +3380,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 103,
+        "sale_count": 80,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -3401,7 +3392,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3409,7 +3400,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_祐祐_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_祐祐_202601_含稅.pdf"
   },
   {
     "primary_key": 149,
@@ -3429,7 +3420,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 34,
+        "sale_count": 21,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -3441,7 +3432,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3449,7 +3440,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_丞品_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_丞品_202601_含稅.pdf"
   },
   {
     "primary_key": 155,
@@ -3469,7 +3460,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 127,
+        "sale_count": 124,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -3481,7 +3472,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3489,7 +3480,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_捷迅_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_捷迅_202601_含稅.pdf"
   },
   {
     "primary_key": 159,
@@ -3518,9 +3509,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 40,
+        "sale_count": 61,
         "ship_count": 0,
-        "repair_count": 85
+        "repair_count": 91
       }
     ],
     "branches": [
@@ -3530,7 +3521,7 @@
     "active_count": 1,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 1300,
     "online_pay": 0,
     "quote_required": 0,
@@ -3538,7 +3529,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_大不同_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_大不同_202601_含稅.pdf"
   },
   {
     "primary_key": 164,
@@ -3558,9 +3549,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 128,
-        "ship_count": 0,
-        "repair_count": 15
+        "sale_count": 118,
+        "ship_count": 1,
+        "repair_count": 12
       }
     ],
     "branches": [
@@ -3570,7 +3561,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3578,7 +3569,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_均威_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_均威_202601_含稅.pdf"
   },
   {
     "primary_key": 172,
@@ -3653,7 +3644,7 @@
     "active_count": 0,
     "charge_count": 6,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -3661,7 +3652,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_閎海_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_閎海_202601_含稅.pdf"
   },
   {
     "primary_key": 175,
@@ -3682,7 +3673,7 @@
     "active_count": 0,
     "charge_count": 0,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -3690,7 +3681,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_肝鐵仁_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_肝鐵仁_202601_含稅.pdf"
   },
   {
     "primary_key": 178,
@@ -3710,7 +3701,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 31,
+        "sale_count": 20,
         "ship_count": 0,
         "repair_count": 2
       }
@@ -3718,10 +3709,10 @@
     "branches": [
       "通訊世代"
     ],
-    "license_count": 4,
+    "license_count": 3,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 4,
+    "remain_months": 3,
     "due_month": "2026/04",
     "receivable": 7800,
     "online_pay": 1,
@@ -3759,9 +3750,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 27,
+        "sale_count": 44,
         "ship_count": 0,
-        "repair_count": 3
+        "repair_count": 4
       }
     ],
     "branches": [
@@ -3771,7 +3762,7 @@
     "active_count": 1,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3779,7 +3770,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_太和_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_太和_202601_含稅.pdf"
   },
   {
     "primary_key": 183,
@@ -3799,8 +3790,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 248,
-        "ship_count": 3,
+        "sale_count": 235,
+        "ship_count": 4,
         "repair_count": 0
       },
       {
@@ -3820,7 +3811,7 @@
     "active_count": 1,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3828,47 +3819,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_關廟_202512_含稅.pdf"
-  },
-  {
-    "primary_key": 185,
-    "company_name": "禾創",
-    "branches_info": [
-      {
-        "name": "凱威斯寵物洗劑-Kay Weiss",
-        "is_main": true,
-        "is_active": false,
-        "doc_num": null,
-        "sale_count": 0,
-        "ship_count": 0,
-        "repair_count": 0
-      },
-      {
-        "name": "基隆店-禾創",
-        "is_main": false,
-        "is_active": true,
-        "doc_num": null,
-        "sale_count": 10,
-        "ship_count": 0,
-        "repair_count": 0
-      }
-    ],
-    "branches": [
-      "基隆店-禾創"
-    ],
-    "license_count": 0,
-    "active_count": 1,
-    "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
-    "receivable": 7800,
-    "online_pay": 1,
-    "quote_required": 1,
-    "charge_months": 6,
-    "discount": 50,
-    "unit_price": 1300,
-    "bonus_months": 0,
-    "quote_path": "output_quotes/quote_禾創_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_關廟_202601_含稅.pdf"
   },
   {
     "primary_key": 190,
@@ -3880,7 +3831,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 339,
+        "ship_count": 324,
         "repair_count": 0
       },
       {
@@ -3898,7 +3849,7 @@
     "active_count": 0,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 0,
     "quote_required": 0,
@@ -3906,7 +3857,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_海悅_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_海悅_202601_含稅.pdf"
   },
   {
     "primary_key": 194,
@@ -3926,7 +3877,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 291,
+        "sale_count": 268,
         "ship_count": 1,
         "repair_count": 3
       }
@@ -3938,7 +3889,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 7800,
     "online_pay": 0,
     "quote_required": 0,
@@ -3946,7 +3897,7 @@
     "discount": 50,
     "unit_price": 1300,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_台哥大白河_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_台哥大白河_202601_含稅.pdf"
   },
   {
     "primary_key": 206,
@@ -3966,18 +3917,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 111,
+        "sale_count": 117,
         "ship_count": 0,
-        "repair_count": 9
+        "repair_count": 5
       },
       {
         "name": "高強-大業店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 161,
+        "sale_count": 146,
         "ship_count": 0,
-        "repair_count": 10
+        "repair_count": 2
       },
       {
         "name": "寶山店",
@@ -3997,7 +3948,7 @@
     "active_count": 2,
     "charge_count": 3,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -4005,7 +3956,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_昊星_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_昊星_202601_含稅.pdf"
   },
   {
     "primary_key": 209,
@@ -4025,18 +3976,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 140,
+        "sale_count": 82,
         "ship_count": 0,
-        "repair_count": 13
+        "repair_count": 11
       },
       {
         "name": "君品南崁店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 70,
+        "sale_count": 62,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 8
       }
     ],
     "branches": [
@@ -4047,7 +3998,7 @@
     "active_count": 2,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -4055,7 +4006,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_君品_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_君品_202601_含稅.pdf"
   },
   {
     "primary_key": 221,
@@ -4075,9 +4026,9 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 182,
-        "ship_count": 186,
-        "repair_count": 7
+        "sale_count": 245,
+        "ship_count": 156,
+        "repair_count": 3
       }
     ],
     "branches": [
@@ -4087,7 +4038,7 @@
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 0,
     "quote_required": 0,
@@ -4095,7 +4046,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_同音_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_同音_202601_含稅.pdf"
   },
   {
     "primary_key": 223,
@@ -4106,7 +4057,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 20,
+        "sale_count": 0,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4124,8 +4075,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 242,
-        "ship_count": 14,
+        "sale_count": 229,
+        "ship_count": 7,
         "repair_count": 0
       },
       {
@@ -4133,8 +4084,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 152,
-        "ship_count": 7,
+        "sale_count": 198,
+        "ship_count": 4,
         "repair_count": 0
       }
     ],
@@ -4146,7 +4097,7 @@
     "active_count": 2,
     "charge_count": 3,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -4154,7 +4105,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_兆洋_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_兆洋_202601_含稅.pdf"
   },
   {
     "primary_key": 241,
@@ -4174,18 +4125,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 315,
+        "sale_count": 273,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 5
       },
       {
         "name": "五股成泰店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 172,
+        "sale_count": 124,
         "ship_count": 0,
-        "repair_count": 26
+        "repair_count": 8
       }
     ],
     "branches": [
@@ -4196,7 +4147,7 @@
     "active_count": 2,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -4204,7 +4155,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_昌煜洋_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_昌煜洋_202601_含稅.pdf"
   },
   {
     "primary_key": 242,
@@ -4224,7 +4175,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 137,
+        "sale_count": 74,
         "ship_count": 0,
         "repair_count": 3
       },
@@ -4263,7 +4214,7 @@
     "active_count": 1,
     "charge_count": 4,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 0,
     "quote_required": 0,
@@ -4271,7 +4222,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_天成_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_天成_202601_含稅.pdf"
   },
   {
     "primary_key": 243,
@@ -4300,7 +4251,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 76,
+        "sale_count": 45,
         "ship_count": 0,
         "repair_count": 3
       },
@@ -4339,7 +4290,7 @@
     "active_count": 1,
     "charge_count": 5,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 0,
     "quote_required": 0,
@@ -4347,7 +4298,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_立亞_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_立亞_202601_含稅.pdf"
   },
   {
     "primary_key": 250,
@@ -4367,18 +4318,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 9,
+        "sale_count": 8,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 12
       }
     ],
     "branches": [
       "飛龍通訊"
     ],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
@@ -4399,7 +4350,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 5,
+        "ship_count": 9,
         "repair_count": 0
       },
       {
@@ -4407,8 +4358,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 401,
-        "ship_count": 1,
+        "sale_count": 355,
+        "ship_count": 0,
         "repair_count": 0
       },
       {
@@ -4416,7 +4367,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 278,
+        "sale_count": 266,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -4425,14 +4376,14 @@
       "永和3",
       "深坑-文化店"
     ],
-    "license_count": 4,
+    "license_count": 2,
     "active_count": 2,
     "charge_count": 2,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 31200,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -4448,7 +4399,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 99,
+        "sale_count": 88,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4457,16 +4408,16 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 85,
+        "sale_count": 81,
         "ship_count": 0,
         "repair_count": 0
       },
       {
         "name": "中華智慧館-南崁旗艦店",
         "is_main": false,
-        "is_active": true,
+        "is_active": false,
         "doc_num": null,
-        "sale_count": 1,
+        "sale_count": 0,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4502,7 +4453,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 103,
+        "sale_count": 86,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4520,7 +4471,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 125,
+        "sale_count": 100,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4547,7 +4498,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 220,
+        "sale_count": 184,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4574,7 +4525,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 72,
+        "sale_count": 69,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4610,14 +4561,13 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 67,
+        "sale_count": 44,
         "ship_count": 0,
         "repair_count": 0
       }
     ],
     "branches": [
       "中華智慧館-龜山中興店",
-      "中華智慧館-南崁旗艦店",
       "中華智慧館-五股旗艦店",
       "中華智慧館-內壢忠孝店",
       "中華智慧館-泰山明志店",
@@ -4625,18 +4575,18 @@
       "中壢中原店"
     ],
     "license_count": 0,
-    "active_count": 7,
+    "active_count": 6,
     "charge_count": 18,
     "remain_months": 0,
-    "due_month": "2025/12",
-    "receivable": 218400,
+    "due_month": "2026/01",
+    "receivable": 187200,
     "online_pay": 0,
     "quote_required": 0,
     "charge_months": 12,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 1,
-    "quote_path": "output_quotes/quote_同興_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_同興_202601_含稅.pdf"
   },
   {
     "primary_key": 261,
@@ -4647,7 +4597,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 1119,
+        "sale_count": 997,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -4657,7 +4607,7 @@
     "active_count": 0,
     "charge_count": 0,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 1,
     "quote_required": 1,
@@ -4665,7 +4615,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_睿閎_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_睿閎_202601_含稅.pdf"
   },
   {
     "primary_key": 263,
@@ -4685,7 +4635,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 348,
+        "sale_count": 300,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -4693,19 +4643,19 @@
     "branches": [
       "光華二"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_新錩_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_新錩_202606_含稅.pdf"
   },
   {
     "primary_key": 266,
@@ -4716,16 +4666,16 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 54,
+        "sale_count": 53,
         "ship_count": 0,
-        "repair_count": 0
+        "repair_count": 1
       },
       {
         "name": "竹南-光復店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 221,
+        "sale_count": 239,
         "ship_count": 0,
         "repair_count": 15
       },
@@ -4734,49 +4684,49 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 410,
+        "sale_count": 368,
         "ship_count": 0,
-        "repair_count": 36
+        "repair_count": 37
       },
       {
         "name": "頭份-中正店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 495,
+        "sale_count": 411,
         "ship_count": 0,
-        "repair_count": 42
+        "repair_count": 29
       },
       {
-        "name": "竹南-遠傳店",
+        "name": "竹南-旗艦店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 238,
+        "sale_count": 293,
         "ship_count": 0,
-        "repair_count": 10
+        "repair_count": 4
       },
       {
         "name": "頭份-信東店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 280,
+        "sale_count": 284,
         "ship_count": 0,
-        "repair_count": 40
+        "repair_count": 22
       }
     ],
     "branches": [
       "竹南-光復店",
       "竹南-自由店",
       "頭份-中正店",
-      "竹南-遠傳店",
+      "竹南-旗艦店",
       "頭份-信東店"
     ],
-    "license_count": 5,
+    "license_count": 0,
     "active_count": 5,
     "charge_count": 5,
-    "remain_months": 1,
+    "remain_months": 0,
     "due_month": "2026/01",
     "receivable": 156000,
     "online_pay": 1,
@@ -4796,7 +4746,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 88,
+        "sale_count": 40,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4805,8 +4755,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 65,
-        "ship_count": 213,
+        "sale_count": 87,
+        "ship_count": 232,
         "repair_count": 0
       },
       {
@@ -4826,7 +4776,7 @@
     "active_count": 1,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 2600,
     "online_pay": 1,
     "quote_required": 1,
@@ -4834,7 +4784,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_有支手機_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_有支手機_202601_含稅.pdf"
   },
   {
     "primary_key": 277,
@@ -4854,27 +4804,27 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 78,
+        "sale_count": 65,
         "ship_count": 0,
-        "repair_count": 13
+        "repair_count": 7
       }
     ],
     "branches": [
       "中正-4"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_曄成_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_曄成_202606_含稅.pdf"
   },
   {
     "primary_key": 280,
@@ -4894,22 +4844,22 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 350,
+        "sale_count": 343,
         "ship_count": 0,
-        "repair_count": 1279
+        "repair_count": 1092
       }
     ],
     "branches": [
       "JH手機快修"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -4934,18 +4884,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 60,
+        "sale_count": 54,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 5
       }
     ],
     "branches": [
       "宏記"
     ],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
@@ -4965,7 +4915,7 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 1,
+        "sale_count": 0,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4974,7 +4924,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 19,
+        "sale_count": 48,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -4983,18 +4933,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 211,
+        "sale_count": 166,
         "ship_count": 0,
-        "repair_count": 5
+        "repair_count": 2
       },
       {
         "name": "遠傳苑裡",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 182,
+        "sale_count": 167,
         "ship_count": 0,
-        "repair_count": 9
+        "repair_count": 2
       }
     ],
     "branches": [
@@ -5002,14 +4952,14 @@
       "台哥通霄",
       "遠傳苑裡"
     ],
-    "license_count": 4,
+    "license_count": 0,
     "active_count": 3,
     "charge_count": 3,
-    "remain_months": 1,
+    "remain_months": 0,
     "due_month": "2026/01",
     "receivable": 46800,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -5034,8 +4984,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 331,
-        "ship_count": 0,
+        "sale_count": 263,
+        "ship_count": 1,
         "repair_count": 0
       },
       {
@@ -5043,7 +4993,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 298,
+        "sale_count": 245,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5052,10 +5002,10 @@
       "王建鈞3C配件",
       "王建鈞通信鶯歌店"
     ],
-    "license_count": 10,
+    "license_count": 8,
     "active_count": 2,
     "charge_count": 2,
-    "remain_months": 5,
+    "remain_months": 4,
     "due_month": "2026/05",
     "receivable": 31200,
     "online_pay": 1,
@@ -5076,7 +5026,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 175,
+        "ship_count": 141,
         "repair_count": 0
       },
       {
@@ -5084,7 +5034,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 307,
+        "sale_count": 254,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5093,7 +5043,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 174,
+        "sale_count": 196,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5102,19 +5052,19 @@
       "台哥大大同總店",
       "台哥大三井門市"
     ],
-    "license_count": 2,
+    "license_count": 10,
     "active_count": 2,
     "charge_count": 2,
-    "remain_months": 1,
-    "due_month": "2026/01",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 31200,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_妡球_202601_含稅.pdf"
+    "quote_path": "output_quotes/quote_妡球_202606_含稅.pdf"
   },
   {
     "primary_key": 305,
@@ -5126,7 +5076,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 47,
+        "ship_count": 35,
         "repair_count": 0
       },
       {
@@ -5134,8 +5084,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 330,
-        "ship_count": 2,
+        "sale_count": 317,
+        "ship_count": 1,
         "repair_count": 0
       },
       {
@@ -5143,16 +5093,16 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 401,
+        "sale_count": 359,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 1
       },
       {
         "name": "瑞芳明燈",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 210,
+        "sale_count": 192,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5161,7 +5111,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 274,
+        "sale_count": 290,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5170,7 +5120,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 315,
+        "sale_count": 287,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5179,34 +5129,34 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 66,
+        "sale_count": 96,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 0
       },
       {
         "name": "三重幸福",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 455,
+        "sale_count": 403,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 0
       },
       {
         "name": "宜蘭舊城東",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 348,
+        "sale_count": 248,
         "ship_count": 0,
-        "repair_count": 3
+        "repair_count": 7
       },
       {
         "name": "淡水中山北",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 327,
+        "sale_count": 272,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5215,7 +5165,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 257,
+        "sale_count": 271,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5232,11 +5182,11 @@
       "淡水中山北",
       "七堵明德"
     ],
-    "license_count": 0,
+    "license_count": 10,
     "active_count": 10,
     "charge_count": 10,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 1,
+    "due_month": "2026/02",
     "receivable": 312000,
     "online_pay": 1,
     "quote_required": 1,
@@ -5244,7 +5194,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 3,
-    "quote_path": "output_quotes/quote_首麗_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_首麗_202602_含稅.pdf"
   },
   {
     "primary_key": 306,
@@ -5264,22 +5214,22 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 417,
+        "sale_count": 360,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 5
       }
     ],
     "branches": [
       "森昱通訊"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -5304,7 +5254,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 100,
+        "sale_count": 88,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5312,19 +5262,19 @@
     "branches": [
       "雲端數位館"
     ],
-    "license_count": 0,
+    "license_count": 4,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 4,
+    "due_month": "2026/05",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_雲端_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_雲端_202605_含稅.pdf"
   },
   {
     "primary_key": 312,
@@ -5344,27 +5294,27 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 180,
-        "ship_count": 79,
-        "repair_count": 2
+        "sale_count": 196,
+        "ship_count": 62,
+        "repair_count": 0
       }
     ],
     "branches": [
       "遠傳水里民生"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_水里遠傳_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_水里遠傳_202606_含稅.pdf"
   },
   {
     "primary_key": 313,
@@ -5384,16 +5334,16 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 134,
+        "sale_count": 106,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 12
       },
       {
         "name": "斗六成功店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 137,
+        "sale_count": 141,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -5402,7 +5352,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 93,
+        "sale_count": 85,
         "ship_count": 0,
         "repair_count": 4
       }
@@ -5412,10 +5362,10 @@
       "斗六成功店",
       "嘉義民雄店"
     ],
-    "license_count": 9,
+    "license_count": 6,
     "active_count": 3,
     "charge_count": 3,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 93600,
     "online_pay": 1,
@@ -5444,18 +5394,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 60,
-        "ship_count": 1,
-        "repair_count": 0
+        "sale_count": 67,
+        "ship_count": 0,
+        "repair_count": 2
       }
     ],
     "branches": [
       "敦富通訊"
     ],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
@@ -5484,18 +5434,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 95,
-        "ship_count": 19,
+        "sale_count": 73,
+        "ship_count": 10,
         "repair_count": 0
       }
     ],
     "branches": [
       "久旺通訊"
     ],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
@@ -5524,7 +5474,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 352,
+        "sale_count": 340,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5532,10 +5482,10 @@
     "branches": [
       "遠傳竹南博愛店"
     ],
-    "license_count": 1,
+    "license_count": 0,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 1,
+    "remain_months": 0,
     "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 1,
@@ -5564,18 +5514,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 65,
+        "sale_count": 42,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 0
       }
     ],
     "branches": [
       "大展通信"
     ],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
@@ -5600,41 +5550,31 @@
         "repair_count": 0
       },
       {
-        "name": "布魯斯通訊-頭份尚順",
-        "is_main": false,
-        "is_active": true,
-        "doc_num": null,
-        "sale_count": 56,
-        "ship_count": 0,
-        "repair_count": 6
-      },
-      {
         "name": "布魯斯通訊-竹南立達",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 102,
+        "sale_count": 120,
         "ship_count": 0,
         "repair_count": 10
       }
     ],
     "branches": [
-      "布魯斯通訊-頭份尚順",
       "布魯斯通訊-竹南立達"
     ],
     "license_count": 0,
-    "active_count": 2,
-    "charge_count": 2,
+    "active_count": 1,
+    "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
-    "receivable": 5200,
+    "due_month": "2026/01",
+    "receivable": 2600,
     "online_pay": 1,
     "quote_required": 1,
     "charge_months": 1,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_布魯斯_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_布魯斯_202601_含稅.pdf"
   },
   {
     "primary_key": 336,
@@ -5654,45 +5594,45 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 362,
+        "sale_count": 357,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 0
       },
       {
         "name": "遠傳後龍中山",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 344,
+        "sale_count": 372,
         "ship_count": 0,
-        "repair_count": 4
+        "repair_count": 3
       },
       {
         "name": "遠傳平鎮復旦",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 412,
+        "sale_count": 417,
         "ship_count": 0,
-        "repair_count": 3
+        "repair_count": 5
       },
       {
         "name": "遠傳苗栗府前",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 209,
+        "sale_count": 190,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 0
       },
       {
         "name": "遠傳頭份中華",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 144,
+        "sale_count": 160,
         "ship_count": 0,
-        "repair_count": 0
+        "repair_count": 1
       }
     ],
     "branches": [
@@ -5702,10 +5642,10 @@
       "遠傳苗栗府前",
       "遠傳頭份中華"
     ],
-    "license_count": 19,
+    "license_count": 14,
     "active_count": 5,
     "charge_count": 5,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 156000,
     "online_pay": 1,
@@ -5758,19 +5698,19 @@
       }
     ],
     "branches": [],
-    "license_count": 0,
+    "license_count": 2,
     "active_count": 0,
     "charge_count": 3,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 0,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_靈思_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_靈思_202601_含稅.pdf"
   },
   {
     "primary_key": 338,
@@ -5790,8 +5730,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 80,
-        "ship_count": 731,
+        "sale_count": 75,
+        "ship_count": 551,
         "repair_count": 0
       },
       {
@@ -5807,11 +5747,11 @@
     "branches": [
       "膜匠通訊-大竹店"
     ],
-    "license_count": 0,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 2,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 1,
     "quote_required": 1,
@@ -5819,7 +5759,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_膜匠_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_膜匠_202601_含稅.pdf"
   },
   {
     "primary_key": 341,
@@ -5839,7 +5779,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 262,
+        "sale_count": 197,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -5847,19 +5787,19 @@
     "branches": [
       "玩手機-竹南店"
     ],
-    "license_count": 0,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 2,
+    "due_month": "2026/03",
     "receivable": 7800,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 3,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_坤和_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_坤和_202603_含稅.pdf"
   },
   {
     "primary_key": 342,
@@ -5877,32 +5817,31 @@
       {
         "name": "翔翔通訊-竹南博愛店",
         "is_main": false,
-        "is_active": true,
+        "is_active": false,
         "doc_num": null,
-        "sale_count": 122,
+        "sale_count": 0,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 0
       },
       {
         "name": "翔翔通訊-竹南光復店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 89,
+        "sale_count": 115,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 5
       }
     ],
     "branches": [
-      "翔翔通訊-竹南博愛店",
       "翔翔通訊-竹南光復店"
     ],
-    "license_count": 6,
-    "active_count": 2,
+    "license_count": 4,
+    "active_count": 1,
     "charge_count": 2,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
-    "receivable": 31200,
+    "receivable": 15600,
     "online_pay": 1,
     "quote_required": 0,
     "charge_months": 6,
@@ -5929,19 +5868,19 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 381,
-        "ship_count": 35,
+        "sale_count": 359,
+        "ship_count": 26,
         "repair_count": 0
       }
     ],
     "branches": [
       "遠傳員山店"
     ],
-    "license_count": 0,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 1,
+    "due_month": "2026/02",
     "receivable": 7800,
     "online_pay": 1,
     "quote_required": 1,
@@ -5949,7 +5888,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_合盈_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_合盈_202602_含稅.pdf"
   },
   {
     "primary_key": 352,
@@ -5967,22 +5906,20 @@
       {
         "name": "手機方程式",
         "is_main": false,
-        "is_active": true,
+        "is_active": false,
         "doc_num": null,
-        "sale_count": 66,
+        "sale_count": 0,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 0
       }
     ],
-    "branches": [
-      "手機方程式"
-    ],
-    "license_count": 2,
-    "active_count": 1,
+    "branches": [],
+    "license_count": 1,
+    "active_count": 0,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
-    "receivable": 15600,
+    "receivable": 0,
     "online_pay": 1,
     "quote_required": 0,
     "charge_months": 6,
@@ -6009,8 +5946,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 173,
-        "ship_count": 6,
+        "sale_count": 188,
+        "ship_count": 0,
         "repair_count": 0
       },
       {
@@ -6018,8 +5955,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 264,
-        "ship_count": 22,
+        "sale_count": 281,
+        "ship_count": 18,
         "repair_count": 0
       }
     ],
@@ -6027,10 +5964,10 @@
       "遠傳林口麗林店",
       "遠傳泰山明志2"
     ],
-    "license_count": 8,
+    "license_count": 6,
     "active_count": 2,
     "charge_count": 2,
-    "remain_months": 4,
+    "remain_months": 3,
     "due_month": "2026/04",
     "receivable": 31200,
     "online_pay": 1,
@@ -6051,7 +5988,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 9,
+        "ship_count": 6,
         "repair_count": 0
       },
       {
@@ -6059,7 +5996,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 164,
+        "sale_count": 153,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6067,10 +6004,10 @@
     "branches": [
       "遠傳大園中華店"
     ],
-    "license_count": 5,
+    "license_count": 4,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 5,
+    "remain_months": 4,
     "due_month": "2026/05",
     "receivable": 15600,
     "online_pay": 1,
@@ -6099,7 +6036,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 328,
+        "sale_count": 206,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6108,7 +6045,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 191,
+        "sale_count": 101,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6117,7 +6054,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 83,
+        "sale_count": 55,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6126,7 +6063,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 230,
+        "sale_count": 166,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6153,7 +6090,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 77,
+        "sale_count": 45,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6165,10 +6102,10 @@
       "大雅民生店",
       "台中太平店"
     ],
-    "license_count": 34,
+    "license_count": 27,
     "active_count": 5,
     "charge_count": 7,
-    "remain_months": 4,
+    "remain_months": 3,
     "due_month": "2026/04",
     "receivable": 156000,
     "online_pay": 1,
@@ -6197,22 +6134,22 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 212,
+        "sale_count": 177,
         "ship_count": 0,
-        "repair_count": 0
+        "repair_count": 1
       }
     ],
     "branches": [
       "全家-三峽文化店"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -6237,7 +6174,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 81,
+        "sale_count": 65,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6245,10 +6182,10 @@
     "branches": [
       "誠恩通訊"
     ],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
@@ -6277,7 +6214,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 328,
+        "sale_count": 311,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6286,7 +6223,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 25,
+        "sale_count": 19,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6295,7 +6232,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 342,
+        "sale_count": 346,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6305,10 +6242,10 @@
       "修竿-中原店",
       "遠傳永美"
     ],
-    "license_count": 33,
+    "license_count": 30,
     "active_count": 3,
     "charge_count": 3,
-    "remain_months": 11,
+    "remain_months": 10,
     "due_month": "2026/11",
     "receivable": 93600,
     "online_pay": 1,
@@ -6329,15 +6266,15 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 1918,
+        "ship_count": 1619,
         "repair_count": 0
       }
     ],
     "branches": [],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 0,
     "charge_count": 0,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 0,
     "online_pay": 1,
@@ -6358,7 +6295,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 6,
+        "ship_count": 2,
         "repair_count": 0
       },
       {
@@ -6366,26 +6303,26 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 153,
-        "ship_count": 4,
-        "repair_count": 1
+        "sale_count": 128,
+        "ship_count": 0,
+        "repair_count": 0
       },
       {
         "name": "宜蘭五結(大欣2)",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 211,
-        "ship_count": 2,
-        "repair_count": 1
+        "sale_count": 185,
+        "ship_count": 0,
+        "repair_count": 0
       },
       {
         "name": "冬山義成(大欣3)",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 152,
-        "ship_count": 9,
+        "sale_count": 158,
+        "ship_count": 3,
         "repair_count": 0
       }
     ],
@@ -6394,10 +6331,10 @@
       "宜蘭五結(大欣2)",
       "冬山義成(大欣3)"
     ],
-    "license_count": 33,
+    "license_count": 30,
     "active_count": 3,
     "charge_count": 3,
-    "remain_months": 11,
+    "remain_months": 10,
     "due_month": "2026/11",
     "receivable": 46800,
     "online_pay": 1,
@@ -6426,7 +6363,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 171,
+        "sale_count": 142,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6435,7 +6372,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 93,
+        "sale_count": 78,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6453,7 +6390,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 186,
+        "sale_count": 162,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6462,7 +6399,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 129,
+        "sale_count": 106,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6471,7 +6408,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 64,
+        "sale_count": 35,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6480,7 +6417,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 170,
+        "sale_count": 137,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -6489,7 +6426,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 154,
+        "sale_count": 94,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6507,7 +6444,7 @@
     "active_count": 7,
     "charge_count": 8,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 218400,
     "online_pay": 0,
     "quote_required": 0,
@@ -6515,7 +6452,7 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 1,
-    "quote_path": "output_quotes/quote_圓圈_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_圓圈_202601_含稅.pdf"
   },
   {
     "primary_key": 365,
@@ -6535,27 +6472,27 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 336,
+        "sale_count": 252,
         "ship_count": 0,
-        "repair_count": 23
+        "repair_count": 14
       }
     ],
     "branches": [
       "樂瘋玩"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_樂瘋玩_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_樂瘋玩_202606_含稅.pdf"
   },
   {
     "primary_key": 367,
@@ -6567,7 +6504,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 0,
+        "ship_count": 1,
         "repair_count": 0
       },
       {
@@ -6576,21 +6513,21 @@
         "is_active": true,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 170,
+        "ship_count": 386,
         "repair_count": 0
       }
     ],
     "branches": [
       "霓德母嬰用品"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -6607,7 +6544,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 1773,
+        "ship_count": 1339,
         "repair_count": 0
       },
       {
@@ -6624,7 +6561,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 149,
+        "sale_count": 135,
         "ship_count": 0,
         "repair_count": 16
       },
@@ -6642,7 +6579,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 181,
+        "sale_count": 132,
         "ship_count": 0,
         "repair_count": 14
       },
@@ -6651,36 +6588,36 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 217,
+        "sale_count": 192,
         "ship_count": 0,
-        "repair_count": 24
+        "repair_count": 25
       },
       {
         "name": "馬尼小西門店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 208,
+        "sale_count": 158,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 4
       },
       {
         "name": "馬尼永康店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 373,
+        "sale_count": 282,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 8
       },
       {
         "name": "馬尼五甲店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 158,
+        "sale_count": 114,
         "ship_count": 0,
-        "repair_count": 0
+        "repair_count": 1
       },
       {
         "name": "馬尼鳳山店",
@@ -6696,18 +6633,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 239,
+        "sale_count": 223,
         "ship_count": 0,
-        "repair_count": 12
+        "repair_count": 9
       },
       {
         "name": "馬尼鹽行店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 147,
+        "sale_count": 154,
         "ship_count": 0,
-        "repair_count": 12
+        "repair_count": 6
       }
     ],
     "branches": [
@@ -6720,10 +6657,10 @@
       "馬尼安中店",
       "馬尼鹽行店"
     ],
-    "license_count": 91,
+    "license_count": 80,
     "active_count": 8,
     "charge_count": 11,
-    "remain_months": 8,
+    "remain_months": 7,
     "due_month": "2026/08",
     "receivable": 249600,
     "online_pay": 1,
@@ -6743,27 +6680,27 @@
         "is_main": true,
         "is_active": false,
         "doc_num": null,
-        "sale_count": 155,
+        "sale_count": 139,
         "ship_count": 0,
-        "repair_count": 10
+        "repair_count": 7
       },
       {
         "name": "鳳山-聯強-永宇通訊",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 120,
+        "sale_count": 111,
         "ship_count": 0,
-        "repair_count": 5
+        "repair_count": 4
       }
     ],
     "branches": [
       "鳳山-聯強-永宇通訊"
     ],
-    "license_count": 7,
+    "license_count": 6,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 7,
+    "remain_months": 6,
     "due_month": "2026/07",
     "receivable": 15600,
     "online_pay": 1,
@@ -6792,7 +6729,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 541,
+        "sale_count": 504,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6800,19 +6737,19 @@
     "branches": [
       "昇昇通訊"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_昇沅_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_昇沅_202606_含稅.pdf"
   },
   {
     "primary_key": 379,
@@ -6824,7 +6761,7 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 11,
+        "ship_count": 13,
         "repair_count": 0
       },
       {
@@ -6832,7 +6769,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 210,
+        "sale_count": 241,
         "ship_count": 0,
         "repair_count": 4
       },
@@ -6841,28 +6778,48 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 5,
+        "sale_count": 195,
+        "ship_count": 0,
+        "repair_count": 2
+      },
+      {
+        "name": "神乎奇機-通霄",
+        "is_main": false,
+        "is_active": true,
+        "doc_num": null,
+        "sale_count": 0,
+        "ship_count": 0,
+        "repair_count": 0
+      },
+      {
+        "name": "苑裡中山-遠傳",
+        "is_main": false,
+        "is_active": true,
+        "doc_num": null,
+        "sale_count": 0,
         "ship_count": 0,
         "repair_count": 0
       }
     ],
     "branches": [
       "通霄中正-遠傳",
-      "竹東中豐-遠傳"
+      "竹東中豐-遠傳",
+      "神乎奇機-通霄",
+      "苑裡中山-遠傳"
     ],
-    "license_count": 10,
-    "active_count": 2,
-    "charge_count": 2,
-    "remain_months": 5,
-    "due_month": "2026/05",
-    "receivable": 31200,
+    "license_count": 8,
+    "active_count": 4,
+    "charge_count": 4,
+    "remain_months": 2,
+    "due_month": "2026/03",
+    "receivable": 62400,
     "online_pay": 1,
     "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_昱昇_202605_含稅.pdf"
+    "quote_path": "output_quotes/quote_昱昇_202603_含稅.pdf"
   },
   {
     "primary_key": 380,
@@ -6882,7 +6839,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 117,
+        "sale_count": 121,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -6890,14 +6847,14 @@
     "branches": [
       "DC壹壹陸"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -6922,18 +6879,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 29,
-        "ship_count": 5,
-        "repair_count": 127
+        "sale_count": 39,
+        "ship_count": 4,
+        "repair_count": 121
       }
     ],
     "branches": [
       "新北板橋店"
     ],
-    "license_count": 4,
+    "license_count": 3,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 4,
+    "remain_months": 3,
     "due_month": "2026/04",
     "receivable": 15600,
     "online_pay": 1,
@@ -6962,18 +6919,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 280,
+        "sale_count": 258,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 2
       }
     ],
     "branches": [
       "光達國際通訊博愛店"
     ],
-    "license_count": 4,
+    "license_count": 3,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 4,
+    "remain_months": 3,
     "due_month": "2026/04",
     "receivable": 15600,
     "online_pay": 1,
@@ -7002,27 +6959,27 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 277,
-        "ship_count": 23,
-        "repair_count": 1
+        "sale_count": 225,
+        "ship_count": 12,
+        "repair_count": 4
       }
     ],
     "branches": [
       "台哥大-佳里光復"
     ],
-    "license_count": 0,
+    "license_count": 4,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 4,
+    "due_month": "2026/05",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_巨易_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_巨易_202605_含稅.pdf"
   },
   {
     "primary_key": 386,
@@ -7042,7 +6999,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 271,
+        "sale_count": 241,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7050,10 +7007,10 @@
     "branches": [
       "起點數位通訊"
     ],
-    "license_count": 5,
+    "license_count": 4,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 5,
+    "remain_months": 4,
     "due_month": "2026/05",
     "receivable": 15600,
     "online_pay": 1,
@@ -7082,27 +7039,27 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 173,
+        "sale_count": 159,
         "ship_count": 0,
-        "repair_count": 12
+        "repair_count": 5
       }
     ],
     "branches": [
       "環球通信"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_柏叡2_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_柏叡2_202606_含稅.pdf"
   },
   {
     "primary_key": 390,
@@ -7128,10 +7085,10 @@
       }
     ],
     "branches": [],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 0,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 0,
     "online_pay": 1,
@@ -7160,18 +7117,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 145,
+        "sale_count": 126,
         "ship_count": 0,
-        "repair_count": 2
+        "repair_count": 5
       }
     ],
     "branches": [
       "樂瘋玩-桃園大業店"
     ],
-    "license_count": 1,
+    "license_count": 0,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 1,
+    "remain_months": 0,
     "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 1,
@@ -7200,7 +7157,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 313,
+        "sale_count": 417,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7208,10 +7165,10 @@
     "branches": [
       "遠傳秀水店"
     ],
-    "license_count": 1,
+    "license_count": 0,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 1,
+    "remain_months": 0,
     "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 1,
@@ -7240,18 +7197,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 143,
-        "ship_count": 1,
+        "sale_count": 197,
+        "ship_count": 3,
         "repair_count": 0
       }
     ],
     "branches": [
       "遠傳林口文化2店"
     ],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
@@ -7272,16 +7229,16 @@
         "is_active": false,
         "doc_num": null,
         "sale_count": 0,
-        "ship_count": 1,
+        "ship_count": 2,
         "repair_count": 0
       },
       {
         "name": "中豐",
         "is_main": false,
-        "is_active": true,
+        "is_active": false,
         "doc_num": null,
-        "sale_count": 145,
-        "ship_count": 5,
+        "sale_count": 0,
+        "ship_count": 0,
         "repair_count": 0
       },
       {
@@ -7289,8 +7246,8 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 431,
-        "ship_count": 12,
+        "sale_count": 391,
+        "ship_count": 4,
         "repair_count": 0
       },
       {
@@ -7298,22 +7255,21 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 234,
+        "sale_count": 216,
         "ship_count": 3,
         "repair_count": 0
       }
     ],
     "branches": [
-      "中豐",
       "湖口",
       "水源-台哥大"
     ],
-    "license_count": 16,
-    "active_count": 3,
+    "license_count": 13,
+    "active_count": 2,
     "charge_count": 3,
-    "remain_months": 5,
+    "remain_months": 4,
     "due_month": "2026/05",
-    "receivable": 93600,
+    "receivable": 62400,
     "online_pay": 1,
     "quote_required": 0,
     "charge_months": 12,
@@ -7340,16 +7296,16 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 242,
-        "ship_count": 1,
+        "sale_count": 266,
+        "ship_count": 0,
         "repair_count": 0
       },
       {
         "name": "台灣數位館-龍潭旗艦店",
         "is_main": false,
-        "is_active": true,
+        "is_active": false,
         "doc_num": null,
-        "sale_count": 203,
+        "sale_count": 0,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -7358,29 +7314,28 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 183,
+        "sale_count": 161,
         "ship_count": 0,
         "repair_count": 0
       }
     ],
     "branches": [
       "台灣數位館-平鎮山頂店",
-      "台灣數位館-龍潭旗艦店",
       "台灣數位館-內壢環中店"
     ],
-    "license_count": 13,
-    "active_count": 3,
+    "license_count": 36,
+    "active_count": 2,
     "charge_count": 3,
-    "remain_months": 4,
-    "due_month": "2026/04",
-    "receivable": 93600,
+    "remain_months": 12,
+    "due_month": "2027/01",
+    "receivable": 62400,
     "online_pay": 1,
     "quote_required": 0,
     "charge_months": 12,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 1,
-    "quote_path": "output_quotes/quote_儒億_202604_含稅.pdf"
+    "quote_path": "output_quotes/quote_儒億_202701_含稅.pdf"
   },
   {
     "primary_key": 398,
@@ -7400,7 +7355,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 292,
+        "sale_count": 295,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -7409,7 +7364,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 170,
+        "sale_count": 217,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -7418,7 +7373,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 211,
+        "sale_count": 248,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -7427,7 +7382,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 37,
+        "sale_count": 44,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7438,10 +7393,10 @@
       "遠傳基隆聖心",
       "Top中正"
     ],
-    "license_count": 19,
+    "license_count": 15,
     "active_count": 4,
     "charge_count": 4,
-    "remain_months": 4,
+    "remain_months": 3,
     "due_month": "2026/04",
     "receivable": 124800,
     "online_pay": 1,
@@ -7470,45 +7425,45 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 505,
+        "sale_count": 206,
         "ship_count": 0,
-        "repair_count": 58
+        "repair_count": 48
       },
       {
         "name": "宇新彰化二林店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 34,
+        "sale_count": 74,
         "ship_count": 0,
-        "repair_count": 73
+        "repair_count": 31
       },
       {
         "name": "宇新大里成功店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 2,
+        "sale_count": 4,
         "ship_count": 0,
-        "repair_count": 0
+        "repair_count": 5
       },
       {
         "name": "宇新太平樹孝店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 127,
+        "sale_count": 153,
         "ship_count": 0,
-        "repair_count": 58
+        "repair_count": 38
       },
       {
         "name": "宇新北區中清店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 36,
+        "sale_count": 62,
         "ship_count": 0,
-        "repair_count": 22
+        "repair_count": 26
       },
       {
         "name": "宇新五權南屯店",
@@ -7517,16 +7472,16 @@
         "doc_num": null,
         "sale_count": 0,
         "ship_count": 0,
-        "repair_count": 28
+        "repair_count": 24
       },
       {
         "name": "宇新北斗店",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 5,
+        "sale_count": 20,
         "ship_count": 0,
-        "repair_count": 11
+        "repair_count": 42
       }
     ],
     "branches": [
@@ -7538,10 +7493,10 @@
       "宇新五權南屯店",
       "宇新北斗店"
     ],
-    "license_count": 53,
+    "license_count": 46,
     "active_count": 7,
     "charge_count": 7,
-    "remain_months": 7,
+    "remain_months": 6,
     "due_month": "2026/07",
     "receivable": 218400,
     "online_pay": 1,
@@ -7568,27 +7523,29 @@
       {
         "name": "手機專家",
         "is_main": false,
-        "is_active": false,
+        "is_active": true,
         "doc_num": null,
-        "sale_count": 0,
+        "sale_count": 8,
         "ship_count": 0,
         "repair_count": 0
       }
     ],
-    "branches": [],
-    "license_count": 0,
-    "active_count": 0,
+    "branches": [
+      "手機專家"
+    ],
+    "license_count": 5,
+    "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
-    "receivable": 0,
+    "remain_months": 5,
+    "due_month": "2026/06",
+    "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_恆穩_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_恆穩_202606_含稅.pdf"
   },
   {
     "primary_key": 402,
@@ -7608,37 +7565,37 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 250,
-        "ship_count": 1,
-        "repair_count": 5
+        "sale_count": 232,
+        "ship_count": 11,
+        "repair_count": 3
       },
       {
         "name": "楊梅瑞溪",
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 263,
-        "ship_count": 0,
-        "repair_count": 4
+        "sale_count": 285,
+        "ship_count": 4,
+        "repair_count": 6
       }
     ],
     "branches": [
       "八德廣福",
       "楊梅瑞溪"
     ],
-    "license_count": 2,
+    "license_count": 10,
     "active_count": 2,
     "charge_count": 2,
-    "remain_months": 1,
-    "due_month": "2026/01",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 31200,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_瑞溪_202601_含稅.pdf"
+    "quote_path": "output_quotes/quote_瑞溪_202606_含稅.pdf"
   },
   {
     "primary_key": 403,
@@ -7658,18 +7615,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 295,
-        "ship_count": 2,
+        "sale_count": 376,
+        "ship_count": 9,
         "repair_count": 0
       }
     ],
     "branches": [
       "遠傳鳳山青年"
     ],
-    "license_count": 3,
+    "license_count": 2,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 3,
+    "remain_months": 2,
     "due_month": "2026/03",
     "receivable": 15600,
     "online_pay": 1,
@@ -7698,18 +7655,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 142,
+        "sale_count": 108,
         "ship_count": 0,
-        "repair_count": 6
+        "repair_count": 7
       }
     ],
     "branches": [
       "手機電信家"
     ],
-    "license_count": 4,
+    "license_count": 3,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 4,
+    "remain_months": 3,
     "due_month": "2026/04",
     "receivable": 15600,
     "online_pay": 1,
@@ -7738,22 +7695,22 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 302,
-        "ship_count": 13,
-        "repair_count": 7
+        "sale_count": 318,
+        "ship_count": 14,
+        "repair_count": 4
       }
     ],
     "branches": [
       "遠傳延平店"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -7778,22 +7735,22 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 8,
+        "sale_count": 3,
         "ship_count": 0,
-        "repair_count": 111
+        "repair_count": 79
       }
     ],
     "branches": [
       "愛瘋客技術流"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -7818,7 +7775,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 395,
+        "sale_count": 339,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7826,19 +7783,19 @@
     "branches": [
       "太平-精武(台哥大)"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_拾易_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_拾易_202606_含稅.pdf"
   },
   {
     "primary_key": 414,
@@ -7858,7 +7815,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 294,
+        "sale_count": 244,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7866,19 +7823,19 @@
     "branches": [
       "遠傳松竹店"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_胡思可_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_胡思可_202606_含稅.pdf"
   },
   {
     "primary_key": 415,
@@ -7898,7 +7855,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 220,
+        "sale_count": 259,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7906,19 +7863,19 @@
     "branches": [
       "葳遠通訊行"
     ],
-    "license_count": 0,
+    "license_count": 5,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 5,
+    "due_month": "2026/06",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_葳遠_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_葳遠_202606_含稅.pdf"
   },
   {
     "primary_key": 416,
@@ -7938,7 +7895,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 42,
+        "sale_count": 1,
         "ship_count": 0,
         "repair_count": 0
       },
@@ -7947,7 +7904,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 53,
+        "sale_count": 25,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7956,10 +7913,10 @@
       "Hero數位通訊-楊梅金山店",
       "中壢晉元店"
     ],
-    "license_count": 2,
+    "license_count": 0,
     "active_count": 2,
     "charge_count": 2,
-    "remain_months": 1,
+    "remain_months": 0,
     "due_month": "2026/01",
     "receivable": 31200,
     "online_pay": 1,
@@ -7988,7 +7945,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 27,
+        "sale_count": 34,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -7996,10 +7953,10 @@
     "branches": [
       "翔翔通訊-台中昌平店"
     ],
-    "license_count": 7,
+    "license_count": 6,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 7,
+    "remain_months": 6,
     "due_month": "2026/07",
     "receivable": 15600,
     "online_pay": 1,
@@ -8028,18 +7985,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 232,
-        "ship_count": 8,
+        "sale_count": 209,
+        "ship_count": 11,
         "repair_count": 0
       }
     ],
     "branches": [
       "遠傳民生二店"
     ],
-    "license_count": 1,
+    "license_count": 0,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 1,
+    "remain_months": 0,
     "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 1,
@@ -8068,22 +8025,22 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 224,
+        "sale_count": 294,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 0
       }
     ],
     "branches": [
       "遠傳新莊幸福店"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -8114,10 +8071,10 @@
       }
     ],
     "branches": [],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 0,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 0,
     "online_pay": 1,
@@ -8146,7 +8103,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 100,
+        "sale_count": 81,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -8154,14 +8111,14 @@
     "branches": [
       "禾昇通訊"
     ],
-    "license_count": 2,
+    "license_count": 1,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 2,
+    "remain_months": 1,
     "due_month": "2026/02",
     "receivable": 15600,
     "online_pay": 1,
-    "quote_required": 0,
+    "quote_required": 1,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
@@ -8186,18 +8143,18 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 7,
+        "sale_count": 17,
         "ship_count": 0,
-        "repair_count": 1
+        "repair_count": 3
       }
     ],
     "branches": [
       "通通有訊"
     ],
-    "license_count": 5,
+    "license_count": 4,
     "active_count": 1,
     "charge_count": 1,
-    "remain_months": 5,
+    "remain_months": 4,
     "due_month": "2026/05",
     "receivable": 15600,
     "online_pay": 1,
@@ -8232,19 +8189,19 @@
       }
     ],
     "branches": [],
-    "license_count": 0,
+    "license_count": 4,
     "active_count": 0,
     "charge_count": 1,
-    "remain_months": 0,
-    "due_month": "2025/12",
+    "remain_months": 4,
+    "due_month": "2026/05",
     "receivable": 0,
     "online_pay": 1,
-    "quote_required": 1,
+    "quote_required": 0,
     "charge_months": 6,
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_新庄仔_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_新庄仔_202605_含稅.pdf"
   },
   {
     "primary_key": 428,
@@ -8264,7 +8221,7 @@
         "is_main": false,
         "is_active": true,
         "doc_num": null,
-        "sale_count": 1,
+        "sale_count": 76,
         "ship_count": 0,
         "repair_count": 0
       }
@@ -8272,11 +8229,91 @@
     "branches": [
       "翔翔通訊博愛店"
     ],
+    "license_count": 4,
+    "active_count": 1,
+    "charge_count": 1,
+    "remain_months": 4,
+    "due_month": "2026/05",
+    "receivable": 15600,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "bonus_months": 0,
+    "quote_path": "output_quotes/quote_華騏_202605_含稅.pdf"
+  },
+  {
+    "primary_key": 429,
+    "company_name": "鉑聯",
+    "branches_info": [
+      {
+        "name": "鉑聯通訊3c-總倉",
+        "is_main": true,
+        "is_active": false,
+        "doc_num": null,
+        "sale_count": 0,
+        "ship_count": 1,
+        "repair_count": 0
+      },
+      {
+        "name": "鉑聯通訊3c瑞豐店",
+        "is_main": false,
+        "is_active": true,
+        "doc_num": null,
+        "sale_count": 0,
+        "ship_count": 0,
+        "repair_count": 0
+      }
+    ],
+    "branches": [
+      "鉑聯通訊3c瑞豐店"
+    ],
+    "license_count": 5,
+    "active_count": 1,
+    "charge_count": 1,
+    "remain_months": 5,
+    "due_month": "2026/06",
+    "receivable": 15600,
+    "online_pay": 1,
+    "quote_required": 0,
+    "charge_months": 6,
+    "discount": 0,
+    "unit_price": 2600,
+    "bonus_months": 0,
+    "quote_path": "output_quotes/quote_鉑聯_202606_含稅.pdf"
+  },
+  {
+    "primary_key": 430,
+    "company_name": "前進",
+    "branches_info": [
+      {
+        "name": "總倉",
+        "is_main": true,
+        "is_active": false,
+        "doc_num": null,
+        "sale_count": 0,
+        "ship_count": 0,
+        "repair_count": 0
+      },
+      {
+        "name": "台哥大延平北",
+        "is_main": false,
+        "is_active": true,
+        "doc_num": null,
+        "sale_count": 0,
+        "ship_count": 0,
+        "repair_count": 0
+      }
+    ],
+    "branches": [
+      "台哥大延平北"
+    ],
     "license_count": 0,
     "active_count": 1,
     "charge_count": 1,
     "remain_months": 0,
-    "due_month": "2025/12",
+    "due_month": "2026/01",
     "receivable": 15600,
     "online_pay": 1,
     "quote_required": 1,
@@ -8284,6 +8321,6 @@
     "discount": 0,
     "unit_price": 2600,
     "bonus_months": 0,
-    "quote_path": "output_quotes/quote_華騏_202512_含稅.pdf"
+    "quote_path": "output_quotes/quote_前進_202601_含稅.pdf"
   }
 ]
