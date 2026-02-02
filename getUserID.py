@@ -2,7 +2,8 @@ import requests
 import pandas as pd
 
 # 設置 Channel Access Token
-CHANNEL_ACCESS_TOKEN = "pECFyW0nU67uld3MRDM+RmmNP6+GQVAvOUjDJptV5I0u4Ze5P4YZk4nTxYbSxndl6buVetJrp1D2NclLqx7hpSL7htdDN9NH7wAt0evpBYGnZjAEcIWauKleAqZXu3g5fyrkqP1y7yFA6XbiN6xa1QdB04t89/1O/w1cDnyilFU="
+# CHANNEL_ACCESS_TOKEN = "pECFyW0nU67uld3MRDM+RmmNP6+GQVAvOUjDJptV5I0u4Ze5P4YZk4nTxYbSxndl6buVetJrp1D2NclLqx7hpSL7htdDN9NH7wAt0evpBYGnZjAEcIWauKleAqZXu3g5fyrkqP1y7yFA6XbiN6xa1QdB04t89/1O/w1cDnyilFU="
+CHANNEL_ACCESS_TOKEN = "RA3hROIUnPP44Ruk7ranS+dLpf6O6pxKNS7nTca9udeIBeUkmyA/9qUTkBIXX/3hxPennnpu5dY1xFyjqYR5UWVX/qTQ7gCL7l9oOoFRTNSIfZsPfgeK/2Db2zv3TQK8rehw+OQeXJtHRsq3LwVxIgdB04t89/1O/w1cDnyilFU="
 
 # 取得所有 userID
 def get_follower_ids():
@@ -41,7 +42,7 @@ def main():
     for user_id in user_ids:
         display_name = get_user_profile(user_id)
         user_data.append({"userId": user_id, "displayName": display_name})
-    
+        print(user_id)
     # 轉成 DataFrame 並寫入 XLSX
     df = pd.DataFrame(user_data)
     df.to_excel("line_users.xlsx", index=False, engine="openpyxl")

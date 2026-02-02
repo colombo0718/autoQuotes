@@ -1,10 +1,17 @@
 import requests
 
 # 設置 Channel Access Token 和 userID
-CHANNEL_ACCESS_TOKEN = "pECFyW0nU67uld3MRDM+RmmNP6+GQVAvOUjDJptV5I0u4Ze5P4YZk4nTxYbSxndl6buVetJrp1D2NclLqx7hpSL7htdDN9NH7wAt0evpBYGnZjAEcIWauKleAqZXu3g5fyrkqP1y7yFA6XbiN6xa1QdB04t89/1O/w1cDnyilFU="
-USER_ID = "U0053e659a383ee64d46ac973abdc84be" # 自己
+# 全葳官網
+# CHANNEL_ACCESS_TOKEN = "pECFyW0nU67uld3MRDM+RmmNP6+GQVAvOUjDJptV5I0u4Ze5P4YZk4nTxYbSxndl6buVetJrp1D2NclLqx7hpSL7htdDN9NH7wAt0evpBYGnZjAEcIWauKleAqZXu3g5fyrkqP1y7yFA6XbiN6xa1QdB04t89/1O/w1cDnyilFU="
+# USER_ID = "U0053e659a383ee64d46ac973abdc84be" # 士豪
 # USER_ID = "U145660126c71f5f0d89d6f5c6aaccefc" # 羿宏
-# USER_ID = "Uf300bfeaecce2c1d350b30e3a933ce85" # 學長
+# USER_ID = "Uf300bfeaecce2c1d350b30e3a933ce85" # 彥偉
+
+# 全葳小助手
+CHANNEL_ACCESS_TOKEN = "RA3hROIUnPP44Ruk7ranS+dLpf6O6pxKNS7nTca9udeIBeUkmyA/9qUTkBIXX/3hxPennnpu5dY1xFyjqYR5UWVX/qTQ7gCL7l9oOoFRTNSIfZsPfgeK/2Db2zv3TQK8rehw+OQeXJtHRsq3LwVxIgdB04t89/1O/w1cDnyilFU="
+USER_ID = "U38daae74d279bef697f99a22c65c3751" # 士豪
+# USER_ID = "Ua52624cb319bcccab4d12703ef28929c" # 羿宏
+# USER_ID = "U34e144c9bf7d30bc07c543a4ebae0df1" # 彥偉
 
 # 發送訊息
 def send_message():
@@ -106,7 +113,7 @@ def check_message_consumption():
 if __name__ == "__main__":
     # send_message()
     # send_image()
-    send_pdf_link() 
-    # check_bot_status()  # 查詢帳號狀態
+    # send_pdf_link() 
+    # check_bot_info()  # 查詢帳號狀態
     # check_message_quota()  # 查詢額度類型
-    # check_message_consumption()  # 查詢已用量
+    check_message_consumption()  # 查詢已用量
