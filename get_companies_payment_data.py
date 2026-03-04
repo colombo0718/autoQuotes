@@ -94,7 +94,9 @@ def get_companies_data():
         cursor3.execute("SELECT 名稱, 設定值 FROM 基本設定 WHERE 名稱='總倉編號'")
         rows5=cursor3.fetchall()
         main_warehouse_id=rows5[0][1] # 總倉編號
-
+        cursor3.execute("SELECT 名稱, 設定值 FROM 基本設定 WHERE 名稱='總倉可銷貨'")
+        rows5=cursor3.fetchall()
+        main_warehouse_can_sell = rows5[0][1]  # 總倉可銷貨
         # 計算30天前的日期
         since_date = date.today() - timedelta(days=30)
 
@@ -149,12 +151,12 @@ def get_companies_data():
                 return cursor3.fetchone()[0] or 0
 
             created_dt = row3[create_idx]  # SQL Server 通常回 datetime/datetime2
-            print(created_dt)
+            # print(created_dt)
             is_new_branch = False
             if created_dt:
                 created_date = created_dt.date() if hasattr(created_dt, "date") else created_dt
                 is_new_branch = created_date >= since_date
-                print("新開店 : ",is_new_branch)
+                # print("新開店 : ",is_new_branch)
 
             if is_new_branch:
                 # 新店：直接視為活躍（即使 0 單據）
@@ -212,8 +214,11 @@ def get_companies_data():
 
             # 總倉不收費
             if int(main_warehouse_id) == row3[0] :
-                print(branch_name,'是總倉')
+                # print(main_warehouse_id,branch_name,'是總倉,可銷貨:',main_warehouse_can_sell)
                 branch_info["is_main"] = True
+
+            if int(main_warehouse_id) == row3[0] and main_warehouse_can_sell=="0":
+                print(main_warehouse_id,branch_name,'是總倉,但不收費')
                 branch_info["is_active"] = False
             else :
                 # 非總倉店家，用於收費
