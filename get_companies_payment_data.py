@@ -6,6 +6,8 @@ import re
 import sys
 import json
 from dateutil.relativedelta import relativedelta  # 需要 pip install python-dateutil
+from dotenv import load_dotenv
+import os
 
 
 # 讓 Python 能匯入 quote_generator.py
@@ -14,10 +16,17 @@ sys.path.append(".")
 from quote_generator import generate_quote
 
 # 資料庫連線資訊
-server = 'www.cwsoft.com.tw,1226'
-username = 'Pos'
-password = 'sql2wsxCFT^3edc'
-driver = 'ODBC Driver 17 for SQL Server'
+# server = 'www.cwsoft.com.tw,1226'
+# username = 'Pos'
+# password = 'sql2wsxCFT^3edc'
+# driver = 'ODBC Driver 17 for SQL Server'
+
+load_dotenv()
+
+server = os.getenv("DB_SERVER")
+username = os.getenv("DB_USERNAME")
+password = os.getenv("DB_PASSWORD")
+driver = os.getenv("DB_DRIVER")
 
 def get_companies_data():
     companies = []
