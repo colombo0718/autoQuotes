@@ -23,9 +23,14 @@ from dotenv import load_dotenv
 import os
 
 
+# 讓 Python 能匯入 quote_generator.py
+# sys.path.append(".")
 
-# 從 .env 讀取 SQL Server 連線資訊
+from quote_generator import generate_quote
+
+
 load_dotenv()
+
 server = os.getenv("DB_SERVER")
 username = os.getenv("DB_USERNAME")
 password = os.getenv("DB_PASSWORD")
