@@ -1,8 +1,21 @@
-from jinja2 import Environment, FileSystemLoader
+"""
+用途：
+1. 從 POSConfig 讀取公司層級的收費設定
+2. 從 POSV3shared 讀取各公司已購買的線上授權數
+3. 逐一連到各公司資料庫，統計近 30 天活躍分店數
+4. 推估各公司的應收金額、到期月份、是否需要補授權
+5. 輸出 companies_payment_data.json
+6. 依公司資料產生對應報價單
+
+注意：
+- 本程式目前同時負責資料整理與報價單生成
+- 活躍分店的判定依據為近 30 天內是否有銷貨單 / 出貨單 / 維修單
+- 總倉是否列入活躍與收費，會受到「總倉可銷貨」設定影響
+"""
+
 from pathlib import Path
 from datetime import date,timedelta
 import pyodbc
-import re
 import sys
 import json
 from dateutil.relativedelta import relativedelta  # 需要 pip install python-dateutil
@@ -10,19 +23,9 @@ from dotenv import load_dotenv
 import os
 
 
-# 讓 Python 能匯入 quote_generator.py
-sys.path.append(".")
 
-from quote_generator import generate_quote
-
-# 資料庫連線資訊
-# server = 'www.cwsoft.com.tw,1226'
-# username = 'Pos'
-# password = 'sql2wsxCFT^3edc'
-# driver = 'ODBC Driver 17 for SQL Server'
-
+# 從 .env 讀取 SQL Server 連線資訊
 load_dotenv()
-
 server = os.getenv("DB_SERVER")
 username = os.getenv("DB_USERNAME")
 password = os.getenv("DB_PASSWORD")
@@ -184,42 +187,6 @@ def get_companies_data():
                 total_count = sale_count + ship_count + repair_count
                 branch_info["is_active"] = total_count > 0
 
-            # print(driver,server,db_name,username,password)
-            # conn3 = pyodbc.connect(f'DRIVER={{{driver}}};SERVER={server};DATABASE={db_name};UID={username};PWD={password}')
-
-            # cursor3 = conn3.cursor()
-            # cursor3.execute("SELECT 單據編號 FROM 銷貨單")
-            # rows4 = cursor3.fetchall()
-            # for row4 in reversed(rows4):
-            #     document_number=row4[0]
-            #     if document_number[1:5]==yymm:
-            #         if document_number[7:9] == branch_numb :
-            #             print(document_number)
-            #             branch_info["is_active"] = True
-            #             branch_info["doc_num"] = document_number
-            #             break
-
-            # cursor3.execute("SELECT 單據編號 FROM 出貨單")
-            # rows4 = cursor3.fetchall()
-            # for row4 in reversed(rows4):
-            #     document_number=row4[0]
-            #     if document_number[1:5]==yymm:
-            #         if document_number[7:9] == branch_numb :
-            #             print(document_number)
-            #             branch_info["is_active"] = True
-            #             branch_info["doc_num"] = document_number
-            #             break
-
-            # cursor3.execute("SELECT 單據編號 FROM 維修單")
-            # rows4 = cursor3.fetchall()
-            # for row4 in reversed(rows4):
-            #     document_number=row4[0]
-            #     if document_number[1:5]==yymm:
-            #         if document_number[7:9] == branch_numb :
-            #             print(document_number)
-            #             branch_info["is_active"] = True
-            #             branch_info["doc_num"] = document_number
-            #             break
 
             # 總倉不收費
             if int(main_warehouse_id) == row3[0] :
@@ -307,9 +274,3 @@ if __name__ == "__main__":
         encoding="utf-8"
     )
 
-    # # 產出 HTML 儀表板
-    # env = Environment(loader=FileSystemLoader("."))
-    # template = env.get_template("dashboard_template.html")
-    # html_output = template.render(companies=companies_data)
-    # Path("dashboard.html").write_text(html_output, encoding="utf-8")
-    # print("✅ 已完成 dashboard.html") 
